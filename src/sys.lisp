@@ -2,7 +2,7 @@
 
 ;(ql 'lisa) ;miss this, km can do some of it
 ;(lt) ;was test for new u2.lisp fncs
-;(ql 'cl-csv) ;for io ;look@ data-table, not yet
+(ql 'cl-csv) ;for io ;look@ data-table, not yet
 (ql 'trivial-shell) ;for io
 ;(al 'future) &/or:
 ;(ql 'lfarm-test) ;which uses: (ql 'lparallel)
@@ -18,7 +18,8 @@
 ;(al 'ml)
 
 ;(al 'clml) ;https://github.com/mathematical-systems/clml
-;(al 'malecoli)  ;has protege.stanford.edu link;also algernon-tab
+(ql 'cl-store) ;for mlcl
+(al 'mlcl)  ;malecoli  ;has protege.stanford.edu link;also algernon-tab
 ;http://www.cs.utexas.edu/users/qr/QR-software.html sfs,algernon,qsim,qpc
  
 ;(ql 'cl-bayesnet) ;get into dne or get around
