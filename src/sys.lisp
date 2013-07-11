@@ -16,10 +16,10 @@
 ;ML/stat.. libs
 (ql 'mgl-example)
 (al 'ml) ;https://github.com/MBcode/LispUtils/tree/master/stat/ml-progs/ml Mooney UT-Austin
-(ql 'alexandria) ;for clml
-(al 'clml) ;https://github.com/mathematical-systems/clml
 (ql 'cl-store) ;for mlcl
 (al 'mlcl)  ;malecoli  ;has protege.stanford.edu link;also algernon-tab
+;(ql 'alexandria) ;for clml
+;(al 'clml) ;https://github.com/mathematical-systems/clml ;statistics loads,rest needs full acl/look@
 ;http://www.cs.utexas.edu/users/qr/QR-software.html sfs,algernon,qsim,qpc
  
 ;(ql 'cl-bayesnet) ;get into dne or get around
