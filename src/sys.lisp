@@ -15,9 +15,9 @@
 ;(lq) ;in my .sbclrc ;pnathan/cl-linq
 ;ML/stat.. libs
 (ql 'mgl-example)
-;(al 'ml)
-
-;(al 'clml) ;https://github.com/mathematical-systems/clml
+(al 'ml) ;https://github.com/MBcode/LispUtils/tree/master/stat/ml-progs/ml Mooney UT-Austin
+(ql 'alexandria) ;for clml
+(al 'clml) ;https://github.com/mathematical-systems/clml
 (ql 'cl-store) ;for mlcl
 (al 'mlcl)  ;malecoli  ;has protege.stanford.edu link;also algernon-tab
 ;http://www.cs.utexas.edu/users/qr/QR-software.html sfs,algernon,qsim,qpc
@@ -27,7 +27,7 @@
 ;(al 'sapa)
 ;(ql 'cl-mathstats) ;have cls on linux, miss xlispstat/vista viz
 
-;(ql 'rcl) ;also better in linux
+;(ql 'rcl) ;also (ql 'clpython)
 ;(al 'cl-octave) ;or just redo Ng's ML in other e.g.:
 ;(ql 'lisp-matrix) ;gsll, etc..
 ;(ql 'zeromq) ;or similar to ipython if possible
@@ -49,3 +49,5 @@
 ;&/or start by integrating a pkg w/a wider variety of routines
 ;=deciding on how to interface the km/e data w/the present dt data
 
+;https://github.com/pieterw cl-arff-parser.asd cl-framenet.asd cl-network.asd
+;langutils cl-nlp
