@@ -29,11 +29,11 @@
                ; (:file "util_mb") ;split into 3 parts:
                  (:file "util-mb1")
                  (:file "util-mb2")
-                ;(:file "s") ;mving from 3 to 2
                 ;(:file "util-mb3")  ;still an error
-                 (:file "km_2-5-33") ;can go back to (ql 'km) latter
+                 (:file "km_2-5-33") ;can go back to (ql 'km) latter  ;recompiles when shouldn't
                  (:file "u2")
                  (:file "kmb")
+                 (:file "io") ;try
                  )))
   :description ""
   :long-description

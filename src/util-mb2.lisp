@@ -1131,3 +1131,19 @@ If HEADER-VALUE-PARSER return multiple values, they are concatenated together in
 ;(defun split-strbybar (l)  (split-string l #\|)) 
 (defun split-strbybar (l)  (split_string l #\|)) 
 ;-------------------------------------
+;-move even more of mb3 here:
+(defun rm-nil (l)
+  (if (listp l) (remove 'nil l)
+    l))
+;-
+(defun mkhl (h l) 
+  "alst of:csv header&list of values for a line"
+  (rm-nil (mapcar #'(lambda (a b) (when b (cons a b))) h l)))
+
+;-
+(defun getnum (str)
+  (if (and (stringp str) (len-gt str 0)) ;new
+    (numstr (trim-punct str))
+    (when (numberp str) str)))
+
+(defun numericp (sn) (numberp (getnum sn))) 

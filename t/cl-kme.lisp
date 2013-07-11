@@ -20,4 +20,8 @@
 (taxonomy)
 (show "it")
 
+;now test io.lisp
+(read-data-csv)
+(taxonomy)
+
 ;(finalize)
