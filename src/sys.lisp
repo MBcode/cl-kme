@@ -20,12 +20,16 @@
 (al 'mlcl)  ;malecoli  ;has protege.stanford.edu link;also algernon-tab
 ;(ql 'alexandria) ;for clml
 ;(al 'clml) ;https://github.com/mathematical-systems/clml ;statistics loads,rest needs full acl/look@
+;  might port all/parts, but look@getting others going 1st; 
 ;http://www.cs.utexas.edu/users/qr/QR-software.html sfs,algernon,qsim,qpc
  
 ;(ql 'cl-bayesnet) ;get into dne or get around
 
 ;(al 'sapa)
 ;(ql 'cl-mathstats) ;have cls on linux, miss xlispstat/vista viz
+ 
+;(ql 'cl-graph) ;(al 'graph-utils),might need linux
+;(al 'vivace-graph-v2) ;not loading anymore
 
 ;(ql 'rcl) ;also (ql 'clpython)
 ;(al 'cl-octave) ;or just redo Ng's ML in other e.g.:

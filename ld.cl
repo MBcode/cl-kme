@@ -9,3 +9,7 @@
 ;(sv-cls "it" "data")
 ;(taxonomy)
 ;(show "it")
+ 
+;w/io.lisp can try
+;(cl-kme::read-data-csv)
+;(taxonomy)
