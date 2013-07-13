@@ -13,11 +13,11 @@
 ;(al '4store) ;for io
 ;(al 'ontolisp)
 ;(lq) ;in my .sbclrc ;pnathan/cl-linq
-;ML/stat.. libs
-(ql 'mgl-example)
+;ML/stat.. libs   ;start w/mlcl(w/it's cl-kb)&abstraction of techniques&get mgl then others w/in it
+(ql 'mgl-example)  ;next as easiest2share via QL 
 (al 'ml) ;https://github.com/MBcode/LispUtils/tree/master/stat/ml-progs/ml Mooney UT-Austin
-(ql 'cl-store) ;for mlcl
-(al 'mlcl)  ;malecoli  ;has protege.stanford.edu link;also algernon-tab
+(ql 'cl-store) ;for mlcl    ;ck-kb for protege(4now)&it's files readable by lisa.sf.net
+(al 'mlcl)  ;malecoli  ;has protege.stanford.edu link;also algernon-tab ;maybe2km.(2?).look@i/o /use
 ;(ql 'alexandria) ;for clml
 ;(al 'clml) ;https://github.com/mathematical-systems/clml ;statistics loads,rest needs full acl/look@
 ;  might port all/parts, but look@getting others going 1st; 
