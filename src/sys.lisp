@@ -18,6 +18,11 @@
 (al 'ml) ;https://github.com/MBcode/LispUtils/tree/master/stat/ml-progs/ml Mooney UT-Austin
 (ql 'cl-store) ;for mlcl    ;ck-kb for protege(4now)&it's files readable by lisa.sf.net
 (al 'mlcl)  ;malecoli  ;has protege.stanford.edu link;also algernon-tab ;maybe2km.(2?).look@i/o /use
+;Notes:   /another protege interaction w/:lsw2.googlecode.com is also possible
+;Malecoli heavier on protege data-mng, light on algo(though maybe a nice framework)
+;  still I'll probably do w/KM 1st, vs clos/protege,  also want meta-data on array/grids;focusOnAlgo:
+;Start w/quicklisp loadable mgl,  &maybe a little ml if easy to deal w/a stnd-i/o for that as well.
+ 
 ;(ql 'alexandria) ;for clml
 ;(al 'clml) ;https://github.com/mathematical-systems/clml ;statistics loads,rest needs full acl/look@
 ;  might port all/parts, but look@getting others going 1st; 
