@@ -22,6 +22,8 @@
 ;Malecoli heavier on protege data-mng, light on algo(though maybe a nice framework)
 ;  still I'll probably do w/KM 1st, vs clos/protege,  also want meta-data on array/grids;focusOnAlgo:
 ;Start w/quicklisp loadable mgl,  &maybe a little ml if easy to deal w/a stnd-i/o for that as well.
+;
+;look@ http://www.cs.ubc.ca/labs/beta/Projects/autoweka/papers/autoweka.pdf opt+ml
  
 ;(ql 'alexandria) ;for clml
 ;(al 'clml) ;https://github.com/mathematical-systems/clml ;statistics loads,rest needs full acl/look@
