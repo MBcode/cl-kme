@@ -24,4 +24,8 @@
 (read-data-csv)
 (taxonomy)
 
+;ml-prog test  ;have ln -s .... ml   ;sort out the package issues
+;ftp://ftp.cs.utexas.edu/.snapshot/nightly.10/pub/mooney/ml-progs/sample-univ-tester-trace
+;(cl:make-saved-tests "sample-dna-saved-tests.lisp" 10 80 '(10 25 40 80) nil "ml/dna-standard.lisp")
+
 ;(finalize)
