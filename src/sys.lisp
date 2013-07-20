@@ -14,7 +14,8 @@
 ;(al 'ontolisp)
 ;(lq) ;in my .sbclrc ;pnathan/cl-linq
 ;ML/stat.. libs   ;start w/mlcl(w/it's cl-kb)&abstraction of techniques&get mgl then others w/in it
-(ql 'mgl-example)  ;next as easiest2share via QL 
+(ql 'mgl-example)  ;next as easiest2share via QL         ;http://cliki.net/MGL
+                    ;http://quotenil.com/Introduction-to-MGL-(part-2).html http://quickdocs.org/mgl/
 (al 'ml) ;https://github.com/MBcode/LispUtils/tree/master/stat/ml-progs/ml Mooney UT-Austin
 (ql 'cl-store) ;for mlcl    ;ck-kb for protege(4now)&it's files readable by lisa.sf.net
 (al 'mlcl)  ;malecoli  ;has protege.stanford.edu link;also algernon-tab ;maybe2km.(2?).look@i/o /use
@@ -26,10 +27,14 @@
 ;
 ;look@ http://www.cs.ubc.ca/labs/beta/Projects/autoweka/papers/autoweka.pdf opt+ml
  
+;arff input(@least), pmml description of models
+ 
 ;(ql 'alexandria) ;for clml
 ;(al 'clml) ;https://github.com/mathematical-systems/clml ;statistics loads,rest needs full acl/look@
 ;  might port all/parts, but look@getting others going 1st; 
 ;http://www.cs.utexas.edu/users/qr/QR-software.html sfs,algernon,qsim,qpc
+
+;https://github.com/masatoi/clrl https://github.com/masatoi/clml-svm https://github.com/masatoi/clml
  
 ;(ql 'cl-bayesnet) ;get into dne or get around
 

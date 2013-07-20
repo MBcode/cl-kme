@@ -2,10 +2,11 @@
   This file is a part of cl-kme project.
   Copyright (c) 2013 Mike Bobak (bobak@balisp.org)
 |#
-
+(defun al (l) "asdf load" (asdf:oos 'asdf:load-op l))
 #|
   Author: Mike Bobak (bobak@balisp.org)
 |#
+(al 'ml)
 
 (in-package :cl-user)
 (eval-when (:compile-toplevel :load-toplevel :execute)
@@ -20,6 +21,7 @@
   :author "Mike Bobak"
   :license "LLGPL?"
  ;:depends-on (:km)
+  :depends-on (:ml)
   :components ((:module "src"
                   :serial t
                 :components
