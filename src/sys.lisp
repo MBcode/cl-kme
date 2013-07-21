@@ -28,6 +28,7 @@
 ;look@ http://www.cs.ubc.ca/labs/beta/Projects/autoweka/papers/autoweka.pdf opt+ml
  
 ;arff input(@least), pmml description of models
+;  mlcl has a arff parser if not cl version &lots of data, dwn/ai/disc/ml/app/pmml/pmml if useful
  
 ;(ql 'alexandria) ;for clml
 ;(al 'clml) ;https://github.com/mathematical-systems/clml ;statistics loads,rest needs full acl/look@
@@ -46,6 +47,8 @@
 
 ;(ql 'rcl) ;also (ql 'clpython)
 ;(al 'cl-octave) ;or just redo Ng's ML in other e.g.:
+;(ql 'clpython)
+;(ql 'zeromq) ;also a way2ipython, &then maybe octave/R /?
 ;(ql 'lisp-matrix) ;gsll, etc..
 ;(ql 'zeromq) ;or similar to ipython if possible
 ;(ql 'screamer) ;try on optimization assignments
