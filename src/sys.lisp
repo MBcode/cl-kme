@@ -49,6 +49,8 @@
 ;(al 'cl-octave) ;or just redo Ng's ML in other e.g.:
 ;(ql 'clpython)
 ;(ql 'zeromq) ;also a way2ipython, &then maybe octave/R /?
+;(ql 'hunchentoot) ;should think of web interface,  ..svg.
+; ;get back to some sparql/lod even old kmql/kif..new cl
 ;(ql 'lisp-matrix) ;gsll, etc..
 ;(ql 'zeromq) ;or similar to ipython if possible
 ;(ql 'screamer) ;try on optimization assignments
