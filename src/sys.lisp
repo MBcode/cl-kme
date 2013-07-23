@@ -1,4 +1,5 @@
 (cl:in-package #:cl-user)
+;too many directions, started: https://venture-lab.org/designthinking hope to get focus
 
 ;(ql 'lisa) ;miss this, km can do some of it
 ;(lt) ;was test for new u2.lisp fncs
