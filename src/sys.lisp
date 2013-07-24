@@ -2,6 +2,7 @@
 ;too many directions, started: https://venture-lab.org/designthinking hope to get focus
 
 ;(ql 'lisa) ;miss this, km can do some of it
+; also: minimal-production-system gbbopen ..
 ;(lt) ;was test for new u2.lisp fncs
 (ql 'cl-csv) ;for io ;look@ data-table, not yet
 (ql 'trivial-shell) ;for io
