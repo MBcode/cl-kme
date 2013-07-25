@@ -1,5 +1,7 @@
 (cl:in-package #:cl-user)
 ;too many directions, started: https://venture-lab.org/designthinking hope to get focus
+;   class won't have special pprj till late aug, but still before sept soc deadline
+;   still I have to shorten my exploratory bents, &get more commited here
 
 ;(ql 'lisa) ;miss this, km can do some of it
 ; also: minimal-production-system gbbopen ..
@@ -53,9 +55,9 @@
 ;(ql 'zeromq) ;also a way2ipython, &then maybe octave/R /?
 ;(ql 'hunchentoot) ;should think of web interface,  ..svg.
 ; ;get back to some sparql/lod even old kmql/kif..new cl
-;(ql 'lisp-matrix) ;gsll, etc..
+;(ql 'lisp-matrix) ;gsll, etc..  ;maxima (w/in sage w/py)
 ;(ql 'zeromq) ;or similar to ipython if possible
-;(ql 'screamer) ;try on optimization assignments
+;(ql 'screamer) ;try on optimization assignments ;soon
 ;(ql 'cl-graph) ;might want2try
 ;(ql 'kr) ;km has most of ;miss garnet
 ;(ql 'arnesi) ;for dt
