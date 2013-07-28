@@ -57,6 +57,7 @@
 ; ;get back to some sparql/lod even old kmql/kif..new cl
 ; looked@ https://github.com/MBcode/sfmishras http://www.cliki.net/semantic%20web
 ; will get this &/or malecoli(w/protege-links)going, might link2 any old sparql client
+;Maybe clpython calling: SPARQLWrapper as a start ;get this going
 ;(ql 'lisp-matrix) ;gsll, etc..  ;maxima (w/in sage w/py)
 ;(ql 'zeromq) ;or similar to ipython if possible
 ;(ql 'screamer) ;try on optimization assignments ;soon
