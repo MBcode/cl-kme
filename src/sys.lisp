@@ -58,6 +58,7 @@
 ; looked@ https://github.com/MBcode/sfmishras http://www.cliki.net/semantic%20web
 ; will get this &/or malecoli(w/protege-links)going, might link2 any old sparql client
 ;Maybe clpython calling: SPARQLWrapper as a start ;get this going
+; https://github.com/MBcode/LispUtils/blob/master/tsparql.cl does this;generalize for any qry.
 ;(ql 'lisp-matrix) ;gsll, etc..  ;maxima (w/in sage w/py)
 ;(ql 'zeromq) ;or similar to ipython if possible
 ;(ql 'screamer) ;try on optimization assignments ;soon

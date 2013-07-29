@@ -36,6 +36,7 @@
                  (:file "u2")
                  (:file "kmb")
                  (:file "io") ;try
+                 (:file "sparql-w") ;try
                  )))
   :description ""
   :long-description
