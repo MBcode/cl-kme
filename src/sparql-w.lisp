@@ -29,7 +29,8 @@ print results.toxml()
 ;(defvar *i2* "sparql-query -np http://dbpedia.org/sparql < i2.txt")
 ;(defvar *ix* "python x.py")
 ;(defvar *ix* "rxpy")
-(trace tshell-command)
+;(trace tshell-command)
+(trace tshell-cmnd-sxml)
 
 ;defun t2 (&optional (str *ix*))
 (defun t2 (&optional (qry-fn "i2.txt") (run-str "python tr.py"))
@@ -37,3 +38,43 @@ print results.toxml()
   ;(tshell-command str)
   (mk-tr (read-file-to-string qry-fn))
   (tshell-cmnd-sxml run-str))
+
+(defvar *t2* (t2))
+;sparql parsing, for now
+(defun len- (l) (typecase l
+                 (list  (length l))
+                 (string  l) ;(length l)
+                 (symbol  l) ;(length (symbol-name l))
+                 (array  (first (array-dimensions l))))) 
+#+ignore
+(NS-0:|result|
+ ((NS-0:|binding| :|name| "company")
+  (NS-0:|uri| "http://dbpedia.org/resource/Borland"))
+ ((NS-0:|binding| :|name| "product")
+  (NS-0:|uri| "http://dbpedia.org/resource/C++Builder"))) 
+
+(defun explode-by-slash (s) (explode- s #\/)) 
+
+(defun prs-var-bind- (vb)
+  (let ((varname (last_lv (first vb)))
+        (url (last_lv (second vb))))
+    (cons (intern varname) (last_lv (explode-by-slash url))))) 
+(defun prs-var-bind (vbl)
+  "((bnd .. varname) (uri url))->(varname url-end)"
+(let ((vb (if (first-eq vbl 'NS-0:|results|) (rest vbl) vbl)))
+  (let ((varname (last_lv (first vb)))
+        (url (last_lv (second vb))))
+    (cons (intern varname) (last_lv (explode-by-slash url)))))) 
+
+(defun binds-from-result- (rl)
+  (let ((rrl (if (first-eq rl 'NS-0:|results|) (rest rl) rl)))
+    (mapcar #'prs-var-bind rrl)))
+(defun binds-from-result (rl)
+  (mapcar #'prs-var-bind (rest rl)))
+
+(trace binds-from-result prs-var-bind)
+
+;(defun tsp () (mapcar #'binds-from-result (rest (third *t2*))))
+(defun tsp () 
+  "test to get bindings alst from sparql returns"
+  (binds-from-result (rest (third *t2*))))
