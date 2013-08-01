@@ -55,20 +55,13 @@ print results.toxml()
 
 (defun explode-by-slash (s) (explode- s #\/)) 
 
-(defun prs-var-bind- (vb)
-  (let ((varname (last_lv (first vb)))
-        (url (last_lv (second vb))))
-    (cons (intern varname) (last_lv (explode-by-slash url))))) 
 (defun prs-var-bind (vbl)
   "((bnd .. varname) (uri url))->(varname url-end)"
-(let ((vb (if (first-eq vbl 'NS-0:|results|) (rest vbl) vbl)))
+ (let ((vb (if (first-eq vbl 'NS-0:|results|) (rest vbl) vbl)))
   (let ((varname (last_lv (first vb)))
         (url (last_lv (second vb))))
     (cons (intern varname) (last_lv (explode-by-slash url)))))) 
 
-(defun binds-from-result- (rl)
-  (let ((rrl (if (first-eq rl 'NS-0:|results|) (rest rl) rl)))
-    (mapcar #'prs-var-bind rrl)))
 (defun binds-from-result (rl)
   (mapcar #'prs-var-bind (rest rl)))
 
@@ -78,3 +71,6 @@ print results.toxml()
 (defun tsp () 
   "test to get bindings alst from sparql returns"
   (binds-from-result (rest (third *t2*))))
+
+;boud vars asserted to KM, in context of the original query; 
+; so something like km-qry2 sparql would be cool here
