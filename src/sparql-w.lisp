@@ -66,6 +66,8 @@ print results.toxml()
   (mapcar #'prs-var-bind (rest rl)))
 
 (trace binds-from-result prs-var-bind)
+;got a nice binding list, but can get errs, 
+; might be time to go2pattern lib/code2make sure get the types i want
 
 ;(defun tsp () (mapcar #'binds-from-result (rest (third *t2*))))
 (defun tsp () 

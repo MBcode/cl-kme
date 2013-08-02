@@ -18,6 +18,7 @@
 ;(al 'ontolisp)
 ;(lq) ;in my .sbclrc ;pnathan/cl-linq
 ;ML/stat.. libs   ;start w/mlcl(w/it's cl-kb)&abstraction of techniques&get mgl then others w/in it
+; -having some issues w/some of these between osx&linux, might scale back ml while working on sparql
 (ql 'mgl-example)  ;next as easiest2share via QL         ;http://cliki.net/MGL
                     ;http://quotenil.com/Introduction-to-MGL-(part-2).html http://quickdocs.org/mgl/
 (al 'ml) ;https://github.com/MBcode/LispUtils/tree/master/stat/ml-progs/ml Mooney UT-Austin
