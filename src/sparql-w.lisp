@@ -19,26 +19,35 @@ print results.toxml()
                  (format strm "~A" (str-cat ta ss tb)))))
 
 (require :trivial-shell)
-(require :s-xml)
 (defun tshell-command (str)
  (trivial-shell:shell-command (to-str str))) 
 
+(require :s-xml)
 (defun tshell-cmnd-sxml (str)
    (s-xml:parse-xml-string (tshell-command str)))
+(trace tshell-cmnd-sxml)
+
+;(ql 'xmls)
+(require :xmls)
+(defun tshell-cmnd-xmls (str)
+   (xmls:parse (tshell-command str)))
+(trace tshell-cmnd-xmls)
 
 ;(defvar *i2* "sparql-query -np http://dbpedia.org/sparql < i2.txt")
 ;(defvar *ix* "python x.py")
 ;(defvar *ix* "rxpy")
 ;(trace tshell-command)
-(trace tshell-cmnd-sxml)
 
 ;defun t2 (&optional (str *ix*))
 (defun t2 (&optional (qry-fn "i2.txt") (run-str "python tr.py"))
   "make sparql qry of dbpedia, and parse resulting xml into an s-exp"
   ;(tshell-command str)
   (mk-tr (read-file-to-string qry-fn))
-  (tshell-cmnd-sxml run-str))
+ ;(tshell-cmnd-sxml run-str)
+  (tshell-cmnd-xmls run-str)
+  )
 
+;might skip py dependancy if possible
 (defvar *t2* (t2))
 ;sparql parsing, for now
 (defun len- (l) (typecase l
@@ -46,6 +55,9 @@ print results.toxml()
                  (string  l) ;(length l)
                  (symbol  l) ;(length (symbol-name l))
                  (array  (first (array-dimensions l))))) 
+(defpackage NS-0
+    (:use :cl)
+    (:export '|binding| '|uri| '|result|))
 #+ignore
 (NS-0:|result|
  ((NS-0:|binding| :|name| "company")
@@ -55,16 +67,28 @@ print results.toxml()
 
 (defun explode-by-slash (s) (explode- s #\/)) 
 
-(defun prs-var-bind (vbl)
+(defun t_p (l s) (when (first-eq l s) (last_lv l)))
+(defun result_p (l) (t_p l 'NS-0:|results|))
+(defun uri_p (l) (t_p l 'NS-0:|uri|))
+(defun binding_p (l) (t_p l 'NS-0:|binding|))
+
+(defun prs-var-bind- (vbl)
   "((bnd .. varname) (uri url))->(varname url-end)"
- (let ((vb (if (first-eq vbl 'NS-0:|results|) (rest vbl) vbl)))
+ (let ((vb (if (result-p vbl) (rest vbl) vbl)))
   (let ((varname (last_lv (first vb)))
         (url (last_lv (second vb))))
     (cons (intern varname) (last_lv (explode-by-slash url)))))) 
+(defun prs-var-bind (vbl)
+  "((bnd .. varname) (uri url))->(varname url-end)"
+ (let ((vb (result_p vbl))) (when vb
+  (let ((varname (binding_p (first vb)))
+        (url (uri_p (second vb))))
+    (when (stringp url) (cons (intern varname) (last_lv (explode-by-slash url))))))))
 
 (defun binds-from-result (rl)
   (mapcar #'prs-var-bind (rest rl)))
 
+(trace result_p uri_p binding_p)
 (trace binds-from-result prs-var-bind)
 ;got a nice binding list, but can get errs, 
 ; might be time to go2pattern lib/code2make sure get the types i want
