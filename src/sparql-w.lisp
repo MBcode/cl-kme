@@ -55,22 +55,32 @@ print results.toxml()
                  (string  l) ;(length l)
                  (symbol  l) ;(length (symbol-name l))
                  (array  (first (array-dimensions l))))) 
-(defpackage NS-0
-    (:use :cl)
-    (:export '|binding| '|uri| '|result|))
+ 
+;(defpackage NS-0 (:use :cl) (:export '|binding| '|uri| '|result|))
 #+ignore
-(NS-0:|result|
+(NS-0:|result| ;see if can skip the ns-0 part
  ((NS-0:|binding| :|name| "company")
   (NS-0:|uri| "http://dbpedia.org/resource/Borland"))
  ((NS-0:|binding| :|name| "product")
   (NS-0:|uri| "http://dbpedia.org/resource/C++Builder"))) 
+#+ignore ;xmls seems more friendly
+(("result" . "http://www.w3.org/2005/sparql-results#") NIL
+   (("binding" . "http://www.w3.org/2005/sparql-results#") (("name" "label"))
+    (("literal" . "http://www.w3.org/2005/sparql-results#") (("lang" "ca"))
+     "Astúries"))) 
 
 (defun explode-by-slash (s) (explode- s #\/)) 
 
-(defun t_p (l s) (when (first-eq l s) (last_lv l)))
-(defun result_p (l) (t_p l 'NS-0:|results|))
-(defun uri_p (l) (t_p l 'NS-0:|uri|))
-(defun binding_p (l) (t_p l 'NS-0:|binding|))
+(defun s-n (s) (if (symbolp s) (symbol-name s) s))
+(defun first-eqs (l e)
+    (when (listp l) (eq (s-n (first-lv l)) e)))
+(defun t_p (l s) (when (first-eqs l s) (last_lv l)))
+;(defun result_p (l) (t_p l 'NS-0:|results|))
+;(defun uri_p (l) (t_p l 'NS-0:|uri|))
+;(defun binding_p (l) (t_p l 'NS-0:|binding|))
+(defun result_p (l) (t_p l "results"))
+(defun uri_p (l) (t_p l "uri"))
+(defun binding_p (l) (t_p l "binding"))
 
 (defun prs-var-bind- (vbl)
   "((bnd .. varname) (uri url))->(varname url-end)"
