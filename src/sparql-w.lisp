@@ -1,4 +1,5 @@
 (lu)
+;using http://sparql-wrapper.sourceforge.net/ for now
 (defun mk-tr (ss)
   "send sparql str to tmp py file to run it"
  (let ((ta  "
@@ -8,15 +9,22 @@ from SPARQLWrapper import SPARQLWrapper, JSON, XML, N3, RDF
 sparql = SPARQLWrapper(\"http://dbpedia.org/sparql\")
 sparql.setQuery(\"\"\" 
                ")
-       (tb "\"\"\")
+       (tx "\"\"\")
 sparql.setReturnFormat(XML)
 results = sparql.query().convert()
 print results.toxml() 
-           "))
+           ")
+       (tj "\"\"\")
+sparql.setReturnFormat(JSON)
+results = sparql.query().convert()
+for result in results[\"results\"][\"bindings\"]:
+    print(result[\"label\"][\"value\"])
+           ")
+           )
                (with-open-file (strm "tr.py" :direction :output 
                                      :if-exists :overwrite
                                      :if-does-not-exist :create)
-                 (format strm "~A" (str-cat ta ss tb)))))
+                 (format strm "~A" (str-cat ta ss tj)))))
 
 (require :trivial-shell)
 (defun tshell-command (str)
@@ -27,11 +35,15 @@ print results.toxml()
    (s-xml:parse-xml-string (tshell-command str)))
 (trace tshell-cmnd-sxml)
 
-;(ql 'xmls)
 (require :xmls)
 (defun tshell-cmnd-xmls (str)
    (xmls:parse (tshell-command str)))
 (trace tshell-cmnd-xmls)
+
+(require :cl-json)
+(defun tshell-cmnd-js (str)
+   (cl-json:decode-json-from-string (tshell-command str)))
+(trace tshell-cmnd-js)
 
 ;(defvar *i2* "sparql-query -np http://dbpedia.org/sparql < i2.txt")
 ;(defvar *ix* "python x.py")
@@ -44,7 +56,8 @@ print results.toxml()
   ;(tshell-command str)
   (mk-tr (read-file-to-string qry-fn))
  ;(tshell-cmnd-sxml run-str)
-  (tshell-cmnd-xmls run-str)
+ ;(tshell-cmnd-xmls run-str)
+  (tshell-cmnd-js run-str)
   )
 
 ;might skip py dependancy if possible
