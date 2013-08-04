@@ -1,5 +1,6 @@
 (lu)
-;using http://sparql-wrapper.sourceforge.net/ for now
+;using http://sparql-wrapper.sourceforge.net/ for now ;try other examples that are working
+; want something in lisp(try easy);but maybe twinql or https://github.com/dydra/dydra-cl
 (defun mk-tr (ss)
   "send sparql str to tmp py file to run it"
  (let ((ta  "

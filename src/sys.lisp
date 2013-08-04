@@ -8,6 +8,8 @@
 ;(lt) ;was test for new u2.lisp fncs
 (ql 'cl-csv) ;for io ;look@ data-table, not yet
 (ql 'trivial-shell) ;for io
+;s-xml xmls for sparql-w:
+(ql 'cl-rdfxml)
 ;(al 'future) &/or:
 ;(ql 'lfarm-test) ;which uses: (ql 'lparallel)
 ;(al 'erlisp)  ;also sbcl has native mailboxes
