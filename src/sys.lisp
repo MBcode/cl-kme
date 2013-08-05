@@ -10,6 +10,14 @@
 (ql 'trivial-shell) ;for io
 ;s-xml xmls for sparql-w:
 (ql 'cl-rdfxml)
+;no twinql yet, but sicl can parse a qry
+(ql 'puri)
+(ql 'lexer)
+;(ql 'rdf) https://github.com/turbo24prg/rdf/ ;try cl-rdfxml
+(al 'yacc) ;http://www.pps.univ-paris-diderot.fr/~jch/software/cl-yacc/
+(ql 'cl-ppcre)
+(ql 'cl-interpol)
+(al 'sicl) ;https://github.com/turbolent/sicl
 ;(al 'future) &/or:
 ;(ql 'lfarm-test) ;which uses: (ql 'lparallel)
 ;(al 'erlisp)  ;also sbcl has native mailboxes
