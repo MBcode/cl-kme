@@ -10,6 +10,7 @@
 (ql 'trivial-shell) ;for io
 ;s-xml xmls for sparql-w:
 (ql 'cl-rdfxml)
+(al '4store) ;or the sbcl-4store file ;was considering virtuoso/but this is faster
 ;no twinql yet, but sicl can parse a qry
 (ql 'puri)
 (ql 'lexer)
