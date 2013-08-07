@@ -21,7 +21,9 @@
 (al 'sicl) ;https://github.com/turbolent/sicl
 ;(al 'future) &/or:
 ;(ql 'lfarm-test) ;which uses: (ql 'lparallel)
-;(al 'erlisp)  ;also sbcl has native mailboxes
+(al 'erlisp)  ;also sbcl has native mailboxes  
+; try erlisp/&/or agt/mailbox formalism, might be best to start earlier w/this
+;  also easier if diff componts only work on diff platforms
 ;(al 'par-eval) ;uses mpi
 ;(al 'cl-gui) ;https://github.com/mathematical-systems/cl-gui
 ;io, consider a dir, have some sqlite, also use lq
