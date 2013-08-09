@@ -2,7 +2,8 @@
 ;too many directions, started: https://venture-lab.org/designthinking hope to get focus
 ;   class won't have special pprj till late aug, but still before sept soc deadline
 ;   still I have to shorten my exploratory bents, &get more commited here
-
+;Probably have *tst* so some libs not being used can be skipped
+(defvar *tst* nil)
 ;(ql 'lisa) ;miss this, km can do some of it
 ; also: minimal-production-system gbbopen ..
 ;(lt) ;was test for new u2.lisp fncs
@@ -10,7 +11,11 @@
 (ql 'trivial-shell) ;for io
 ;s-xml xmls for sparql-w:
 (ql 'cl-rdfxml)
+(ql 'cl+ssl)
 (al '4store) ;or the sbcl-4store file ;was considering virtuoso/but this is faster
+(defparameter *server-url* "http://localhost:8080/")
+(defparameter *graph* "<http://ox.electronic-quill.net/4store-test>")
+  ;was almost just going to use lsp2basically curl for it, but cl-4store works
 ;no twinql yet, but sicl can parse a qry
 (ql 'puri)
 (ql 'lexer)
@@ -23,7 +28,8 @@
 ;(ql 'lfarm-test) ;which uses: (ql 'lparallel)
 (al 'erlisp)  ;also sbcl has native mailboxes  
 ; try erlisp/&/or agt/mailbox formalism, might be best to start earlier w/this
-;  also easier if diff componts only work on diff platforms
+;  also easier if diff componts only work on diff platforms 
+;  workflow(eng)interop could be cool as well
 ;(al 'par-eval) ;uses mpi
 ;(al 'cl-gui) ;https://github.com/mathematical-systems/cl-gui
 ;io, consider a dir, have some sqlite, also use lq
@@ -32,11 +38,13 @@
 ;(lq) ;in my .sbclrc ;pnathan/cl-linq
 ;ML/stat.. libs   ;start w/mlcl(w/it's cl-kb)&abstraction of techniques&get mgl then others w/in it
 ; -having some issues w/some of these between osx&linux, might scale back ml while working on sparql
+(when *tst*
 (ql 'mgl-example)  ;next as easiest2share via QL         ;http://cliki.net/MGL
                     ;http://quotenil.com/Introduction-to-MGL-(part-2).html http://quickdocs.org/mgl/
 (al 'ml) ;https://github.com/MBcode/LispUtils/tree/master/stat/ml-progs/ml Mooney UT-Austin
 (ql 'cl-store) ;for mlcl    ;ck-kb for protege(4now)&it's files readable by lisa.sf.net
 (al 'mlcl)  ;malecoli  ;has protege.stanford.edu link;also algernon-tab ;maybe2km.(2?).look@i/o /use
+)
 ;Notes:   /another protege interaction w/:lsw2.googlecode.com is also possible
 ;Malecoli heavier on protege data-mng, light on algo(though maybe a nice framework)
 ;  still I'll probably do w/KM 1st, vs clos/protege,  also want meta-data on array/grids;focusOnAlgo:
