@@ -13,11 +13,15 @@
 (ql 'cl-rdfxml)
 (ql 'cl+ssl)
 (al '4store) ;or the sbcl-4store file ;was considering virtuoso/but this is faster
-(defparameter *server-url* "http://localhost:8080/")
+(defparameter *server-url* "http://localhost:8000/")
 (defparameter *graph* "<http://ox.electronic-quill.net/4store-test>")
+;get sbcl-4store workspace.lisp libs in too
+(ql '(drakma cxml fare-matcher))
   ;was almost just going to use lsp2basically curl for it, but cl-4store works
 ;no twinql yet, but sicl can parse a qry
 (ql 'puri)
+;(import 'puri::render-uri)
+;(import 'puri::uri-p)
 (ql 'lexer)
 ;(ql 'rdf) https://github.com/turbo24prg/rdf/ ;try cl-rdfxml
 (al 'yacc) ;http://www.pps.univ-paris-diderot.fr/~jch/software/cl-yacc/
@@ -26,7 +30,8 @@
 (al 'sicl) ;https://github.com/turbolent/sicl
 ;(al 'future) &/or:
 ;(ql 'lfarm-test) ;which uses: (ql 'lparallel)
-(al 'erlisp)  ;also sbcl has native mailboxes  
+(when *tst*
+ (al 'erlisp))  ;also sbcl has native mailboxes  
 ; try erlisp/&/or agt/mailbox formalism, might be best to start earlier w/this
 ;  also easier if diff componts only work on diff platforms 
 ;  workflow(eng)interop could be cool as well
