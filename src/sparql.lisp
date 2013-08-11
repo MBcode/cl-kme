@@ -21,6 +21,9 @@
 (defun upper-case (string)
   (map 'string #'char-upcase string))
 
+(defun url-end (s) (last_lv (explode-by-slash s)))
+(defun url-end2 (s) (last (explode-by-slash s) 2))
+
 (defun make-better-list (results)
   (let (titles)
     (cons
@@ -47,3 +50,7 @@
              (babel:octets-to-string ret))))
       (t ret))))
  
+(defun sparql2lst (query)
+  (let ((r (query->list query)))
+    (when (listp r)
+      (mapcar #'(lambda (tri) (mapcar #'url-end2 tri)) r))))
