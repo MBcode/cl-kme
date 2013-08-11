@@ -22,6 +22,8 @@
 (ql 'puri)
 ;(import 'puri::render-uri)
 ;(import 'puri::uri-p)
+(al 'dbpedia-sparql) ;try: https://github.com/daimrod/dbpedia-sparql.git
+(ql '(#:drakma #:cl-json #:alexandria #:babel)) ;then could load generized sparql.lisp
 (ql 'lexer)
 ;(ql 'rdf) https://github.com/turbo24prg/rdf/ ;try cl-rdfxml
 (al 'yacc) ;http://www.pps.univ-paris-diderot.fr/~jch/software/cl-yacc/

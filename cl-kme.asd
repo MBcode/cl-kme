@@ -38,6 +38,7 @@
                  (:file "io") ;try
                  (:file "workspace") ;try
                  (:file "sparql-w") ;try
+                 (:file "sparql") ;try
                  )))
   :description ""
   :long-description
