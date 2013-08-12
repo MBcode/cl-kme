@@ -787,6 +787,11 @@ If HEADER-VALUE-PARSER return multiple values, they are concatenated together in
 ;(defun max-len (&rest lol) (sort lol #'len>))
 (defun max-len (&rest lol) (first-lv (sort-len-lol lol)))
 ;
+(defun len-eq (l n) (and (listp l) (eq (len l) n)))
+(defun len_gt (l n) (when (fulll l) (len-gt l n)))
+(defun len_ge (l n) (when (fulll l) (len-gt l (1- n))))
+(defun rm-nils (l) (collect-if #'full l))
+;
 (defun simple-replace-string (old new string) ;some replacements could be get it stuck/?
   "Replace OLD with NEW into STRING."
   (loop
@@ -1126,6 +1131,8 @@ If HEADER-VALUE-PARSER return multiple values, they are concatenated together in
  (if (eq (len s) 1) (clean-punct s)
   (if (alpha-start s) (format nil "*~a" (string-downcase s)) 
     (quote-str2 (num-str s)))))
+;
+(defun clean4echo (s) (rm-strs '("(" "*" ")" "_nil" "nil_" ">" "<" ":" "," "'") s))
 
 ;many more intersting fncs in the km utils/etc, &in the other gigs of opensrc code I have around.
 ;(defun split-strbybar (l)  (split-string l #\|)) 

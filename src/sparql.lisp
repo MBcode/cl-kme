@@ -1,3 +1,4 @@
+(cl:in-package :cl-kme)
 ;https://github.com/daimrod/dbpedia-sparql.git
 ;(in-package #:dbpedia-sparql)
 
@@ -21,6 +22,8 @@
 (defun upper-case (string)
   (map 'string #'char-upcase string))
 
+(defun explode-by-slash (s) (explode- s #\/))
+
 (defun url-end (s) (last_lv (explode-by-slash s)))
 (defun url-end2 (s) (last (explode-by-slash s) 2))
 
@@ -41,6 +44,7 @@
                                                      :keyword))
                                        :VALUE))))))
 
+;next send the where: (str-cat "http://" cls "/sparql")
 (defun query->list (query)
   (multiple-value-bind (ret code)
       (send-query query)
@@ -54,3 +58,16 @@
   (let ((r (query->list query)))
     (when (listp r)
       (mapcar #'(lambda (tri) (mapcar #'url-end2 tri)) r))))
+
+(defun sparql2ins (query)
+  (let ((rl (sparql2lst query)))
+    (when (len_gt rl 1)
+      (let ((f (first rl)) ;like csv header of varnames
+            (r (rest rl)))  ;all the values
+        ;assuming 1st var is the ins/name ;for now
+        (let ((snl (mapcar #'last_lv (rest f))) ;varlist
+              (cls "dbpedia.org"))
+          (mapcar #'(lambda (vl)  (let ((i (ki_ (first-lv vl))))
+                      (sv-cls i cls)
+                      (mapcar #'(lambda (sn sv) (sv i sn sv)) snl (mapcar #'last_lv (rest vl)))))
+                  r))))))
