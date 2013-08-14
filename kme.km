@@ -1,1 +1,3 @@
 (data has (superclasses (Thing)))
+(resource has (superclasses (Thing)))
+(dbpedia.org has (superclasses (resource)))
