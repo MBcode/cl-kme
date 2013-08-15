@@ -787,6 +787,21 @@ If HEADER-VALUE-PARSER return multiple values, they are concatenated together in
 ;(defun max-len (&rest lol) (sort lol #'len>))
 (defun max-len (&rest lol) (first-lv (sort-len-lol lol)))
 ;
+(defun max-l (l) (apply #'max l))
+(defun min-l (l) (apply #'min l))
+(defun max_l (l) (max-l (flat1onlys l)))
+(defun min_l (l) (min-l (flat1onlys l)))
+(defun max-fl (l) (max-l (flatten- l)))
+(defun min-fl (l) (min-l (flatten- l)))
+;-
+(defun range- (start end)
+    (when (and (numberp start) (numberp end))
+          (loop for i from start to end collect i)))
+(defun range_ (end &optional (start 0))
+    (range- start (1- end))) 
+(defun range_1 (end &optional (start 0))
+  (range_ (1+ end) (1+ start)))
+;-
 (defun len-eq (l n) (and (listp l) (eq (len l) n)))
 (defun len_gt (l n) (when (fulll l) (len-gt l n)))
 (defun len_ge (l n) (when (fulll l) (len-gt l (1- n))))
@@ -1154,3 +1169,26 @@ If HEADER-VALUE-PARSER return multiple values, they are concatenated together in
     (when (numberp str) str)))
 
 (defun numericp (sn) (numberp (getnum sn))) 
+
+(defvar *ticks* '(#\▁ #\▂ #\▃ #\▄ #\▅ #\▆ #\▇ #\█))
+
+(defun spark-l (nums)
+  "list of nums to sparkline"
+  (let* ((mx (max-l nums))
+         (mn (min-l nums))
+         (rng (- mx mn))
+         (ni (mapcar #'(lambda (n) (round (* 7 (/ n rng)))) nums)))
+    (when *dbg*
+     ;(format t "~%rn:~a" nums)
+      (format t "~%nr:~a" ni))
+    (implode-string (mapcar #'(lambda (i) (nth i *ticks*)) (rm-nil ni)))))
+;(spark-l '(0 30 55 80 33 150)) "▁▂▄▅▃█"
+
+(defun spark-csv (csvstr)
+  "csv str of nums to sparkline"
+  (let ((snums (explode- csvstr #\,)))
+    (when *dbg* 
+      (format t "~%rn:~a" snums))
+    (spark-l (mapcar #'num-str snums))))
+;(spark-csv "0,30,55,80,33,150") "▁▂▄▅▃█"
+ 
