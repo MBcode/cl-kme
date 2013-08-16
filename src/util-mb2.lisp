@@ -1184,11 +1184,14 @@ If HEADER-VALUE-PARSER return multiple values, they are concatenated together in
     (implode-string (mapcar #'(lambda (i) (nth i *ticks*)) (rm-nil ni)))))
 ;(spark-l '(0 30 55 80 33 150)) "▁▂▄▅▃█"
 
-(defun spark-csv (csvstr)
+(defun spark-csv (csvstr &optional (comma #\,))
   "csv str of nums to sparkline"
-  (let ((snums (explode- csvstr #\,)))
+  (let ((snums (explode- csvstr comma)))
     (when *dbg* 
       (format t "~%rn:~a" snums))
     (spark-l (mapcar #'num-str snums))))
 ;(spark-csv "0,30,55,80,33,150") "▁▂▄▅▃█"
+;(spark-csv "0 30 55 80 33 150" #\Space)
  
+(defun out (&optional (pkg :user))
+  (in-package pkg))
