@@ -71,3 +71,7 @@
                       (sv-cls i cls)
                       (mapcar #'(lambda (sn sv) (sv i sn sv)) snl (mapcar #'last_lv (rest vl)))))
                   r))))))
+
+;----might try some sicl
+(defun tst (p) (sicl:parse-sparql (read-file-to-string (str-cat "tst/" p ".rq"))))
+(defun t1 () (tst "syntax-sparql3/syn-01b"))
