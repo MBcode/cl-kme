@@ -1195,3 +1195,110 @@ If HEADER-VALUE-PARSER return multiple values, they are concatenated together in
  
 (defun out (&optional (pkg :user))
   (in-package pkg))
+
+;
+(defun flatten- (x) ;km has another flatten
+  (labels ((rec (x acc)
+             (cond ((null x) acc)
+                   ((atom x) (cons x acc))
+                   (t (rec (car x) (rec (cdr x) acc))))))
+    (rec x nil)))
+;
+(defun flat-1 (l) ;check on ;was flat1 but use below
+  (reduce #'nconc (copy-list l))) ;safter, 
+
+;ben/ocelot2obo.lisp
+(defun flatten1 (vals)
+    (apply #'append (mapcar (lambda (x) (if (listp x) x (list x))) vals))) 
+
+;(defun flat1 (vals) (flatten1 vals))
+(defun flat1 (vals) 
+  (if (full vals) (flatten1 vals)
+    (progn (warn "flat1 ~a" vals) vals)))
+
+;defun shuffle (x y)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Strings
+ 
+(defun tokens (string &key (start 0) (separators (list #\space #\return #\linefeed #\tab)))
+  (if (= start (length string))
+      '()
+      (let ((p (position-if #'(lambda (char) (find char separators)) string :start start)))
+        (if p
+            (if (= p start)
+                (tokens string :start (1+ start) :separators separators)
+                (cons (subseq string start p)
+                      (tokens string :start (1+ p) :separators separators)))
+            (list (subseq string start))))))
+;
+(defun eval-str (s) 
+  (eval (read-from-string s))) 
+
+(defun string-list->keyword-vector (string-list)
+    (loop for string
+          in (copy-list string-list)
+          collect (intern (string-downcase string) :keyword)
+          into keywords
+          finally (return (apply #'vector keywords))))
+
+(defun record->list (delimiter seq) ;explode could also do this
+  (let ((end (length seq)))
+    (loop for left = 0 then (+ right 1)
+          for right = (or (position delimiter seq :start left) end)
+          if (< left right)
+          collect (subseq seq left right)
+          until (eq right end))))
+
+;=look at using a bit more from: choice-params-ff3e-new.cl
+;; (find-elt-in-string "Age greater than 18 years" *english-arithmetic-comparators-vector*)
+;; (find-elt-in-string "pulmonary hypertension due to congenital heart disease" *semantic-connectors-vector*)
+(defun find-elt-in-string (string vector)
+  (loop with downcase-string = (string-downcase string)
+      with res = nil
+      for v across vector
+      thereis (when (setq res
+                      (let ((s (string-downcase v)))
+                        (or (and (find #\space s)
+                                 (search s downcase-string
+                                         :test #'string-equal)
+                                 s)
+                            (and (not (find #\space s))
+                                 (find s (record->list #\space downcase-string)
+                                       :test #'string-equal)
+                                 s))))
+                (return res))))
+
+(defun find-elt-n-string (s v)
+  "if key-vect in str, ret (substr str)"
+  (let ((ps (find-elt-in-string s v)))
+    (when ps (list ps s))))
+ 
+(defun find-substring-in-string (string list)
+  (loop with downcase-string = (string-downcase string)
+      with tokens = (record->list #\space downcase-string)
+      for elt in list
+      thereis (when (loop for token in tokens
+                        thereis (when (string-equal token elt)
+                                  (return elt)))
+                (return elt))))
+ 
+(defun seq-cmp (seq1 seq2 cmp) ;this is wrong, use len
+; (and (eq (type-of seq1) (type-of seq2))
+;      (or (stringp seq1) (listp seq1))
+;      (funcall cmp (length seq1) (length seq2)))
+       (funcall cmp (nnlen seq1) (nnlen seq2)))
+;broke out to allow other comparisions
+(defun seq-longerp (seq1 seq2)
+  (seq-cmp seq1 seq2 #'>))
+(defun seq-shorterp (seq1 seq2)
+  (seq-cmp seq1 seq2 #'<))
+ 
+;; (direct-siblings 'Quantitatively_Restricted_Term)
+(defun direct-siblings (class)
+  (when (ignore-errors (find-class class))
+    (let* ((superclasses (direct-superclasses class))
+           (siblings (loop for superclass in superclasses
+                       append (direct-subclasses superclass))))
+      siblings)))
+ 
+;defun list->choice-list (list-of-elements &key (index-p nil)
