@@ -10,6 +10,7 @@
 (ql 'cl-csv) ;for io ;look@ data-table, not yet
 (ql 'trivial-shell) ;for io
 ;s-xml xmls for sparql-w:
+(ql 'xmls) ;might get rid of
 (ql 's-xml) ;might get rid of
 (ql 'cl-rdfxml)
 (ql 'cl+ssl)
@@ -27,6 +28,7 @@
 (ql '(#:drakma #:cl-json #:alexandria #:babel)) ;then could load generized sparql.lisp
 (ql 'lexer)
 ;(ql 'rdf) https://github.com/turbo24prg/rdf/ ;try cl-rdfxml
+(al 'rdf-utils)
 (al 'yacc) ;http://www.pps.univ-paris-diderot.fr/~jch/software/cl-yacc/
 (ql 'cl-ppcre)
 (ql 'cl-interpol)
@@ -76,8 +78,8 @@
 ;(al 'sapa)
 ;(ql 'cl-mathstats) ;have cls on linux, miss xlispstat/vista viz
  
-;(ql 'cl-graph) ;(al 'graph-utils),might need linux
-;(al 'vivace-graph-v2) ;not loading anymore
+(ql 'cl-graph) (al 'graph-utils) ;might need linux
+(al 'vivace-graph-v2) ;not loading anymore
 
 ;(ql 'rcl) ;also (ql 'clpython)
 ;(al 'cl-octave) ;or just redo Ng's ML in other e.g.:
