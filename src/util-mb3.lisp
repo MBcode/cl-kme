@@ -200,7 +200,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Strings
- 
+#+ignore 
 (defun tokens (string &key (start 0) (separators (list #\space #\return #\linefeed #\tab)))
   (if (= start (length string))
       '()
@@ -287,9 +287,10 @@ the command has printed on stdout as string."
   #-sbcl (run-shell-command name args)
   ) 
  
-(defun eval-str (s) 
-  (eval (read-from-string s))) 
+;(defun eval-str (s) 
+;  (eval (read-from-string s))) 
 
+#+ignore
 (defun string-list->keyword-vector (string-list)
     (loop for string
           in (copy-list string-list)
@@ -297,6 +298,7 @@ the command has printed on stdout as string."
           into keywords
           finally (return (apply #'vector keywords))))
 
+#+ignore
 (defun record->list (delimiter seq) ;explode could also do this
   (let ((end (length seq)))
     (loop for left = 0 then (+ right 1)
@@ -308,6 +310,7 @@ the command has printed on stdout as string."
 ;=look at using a bit more from: choice-params-ff3e-new.cl
 ;; (find-elt-in-string "Age greater than 18 years" *english-arithmetic-comparators-vector*)
 ;; (find-elt-in-string "pulmonary hypertension due to congenital heart disease" *semantic-connectors-vector*)
+#+ignore
 (defun find-elt-in-string (string vector)
   (loop with downcase-string = (string-downcase string)
       with res = nil
@@ -324,11 +327,13 @@ the command has printed on stdout as string."
                                  s))))
                 (return res))))
 
+#+ignore
 (defun find-elt-n-string (s v)
   "if key-vect in str, ret (substr str)"
   (let ((ps (find-elt-in-string s v)))
     (when ps (list ps s))))
  
+#+ignore
 (defun find-substring-in-string (string list)
   (loop with downcase-string = (string-downcase string)
       with tokens = (record->list #\space downcase-string)
@@ -338,18 +343,20 @@ the command has printed on stdout as string."
                                   (return elt)))
                 (return elt))))
  
+#+ignore
 (defun seq-cmp (seq1 seq2 cmp) ;this is wrong, use len
 ; (and (eq (type-of seq1) (type-of seq2))
 ;      (or (stringp seq1) (listp seq1))
 ;      (funcall cmp (length seq1) (length seq2)))
        (funcall cmp (nnlen seq1) (nnlen seq2)))
 ;broke out to allow other comparisions
-(defun seq-longerp (seq1 seq2)
-  (seq-cmp seq1 seq2 #'>))
-(defun seq-shorterp (seq1 seq2)
-  (seq-cmp seq1 seq2 #'<))
+;(defun seq-longerp (seq1 seq2)
+;  (seq-cmp seq1 seq2 #'>))
+;(defun seq-shorterp (seq1 seq2)
+;  (seq-cmp seq1 seq2 #'<))
  
 ;; (direct-siblings 'Quantitatively_Restricted_Term)
+#+ignore
 (defun direct-siblings (class)
   (when (ignore-errors (find-class class))
     (let* ((superclasses (direct-superclasses class))
@@ -711,6 +718,7 @@ the command has printed on stdout as string."
      (terpri) 
      (show node "") 
      (values)))  
+
 (defun alst2 (al)
   "alist into 2 lists" ;op of pairlis
   (loop for e in al
@@ -718,20 +726,20 @@ the command has printed on stdout as string."
 	collect (cdr e) into b
 	finally (return (list a b))))
 
-(defun max-l (l) (apply #'max l))
-(defun min-l (l) (apply #'min l))
-(defun max_l (l) (max-l (flat1onlys l)))
-(defun min_l (l) (min-l (flat1onlys l)))
-(defun max-fl (l) (max-l (flatten- l)))
-(defun min-fl (l) (min-l (flatten- l)))
+;(defun max-l (l) (apply #'max l))
+;(defun min-l (l) (apply #'min l))
+;(defun max_l (l) (max-l (flat1onlys l)))
+;(defun min_l (l) (min-l (flat1onlys l)))
+;(defun max-fl (l) (max-l (flatten- l)))
+;(defun min-fl (l) (min-l (flatten- l)))
 ;-
-(defun range- (start end)
-    (when (and (numberp start) (numberp end))
-          (loop for i from start to end collect i)))
-(defun range_ (end &optional (start 0))
-    (range- start (1- end))) 
-(defun range_1 (end &optional (start 0))
-  (range_ (1+ end) (1+ start)))
+;(defun range- (start end)
+;    (when (and (numberp start) (numberp end))
+;          (loop for i from start to end collect i)))
+;(defun range_ (end &optional (start 0))
+;    (range- start (1- end))) 
+;(defun range_1 (end &optional (start 0))
+;  (range_ (1+ end) (1+ start)))
 ;-
 (defun date- () (run-ext "date"))
 ;-
@@ -1070,10 +1078,12 @@ the command has printed on stdout as string."
     (when *dbg-ut* (format nil "~&~a ~a" snl1 snl2))
     (mapcar #'(lambda (a b) (subseq lst a (if add2 (1+ b) b)))
         snl1 (rest snl2))))
+
 (defun break-by-pair (s p)
   "seq broken in parts between brakets or whatever"
   (let ((pl (positionsl p s)))
     (subseq-s s pl)))
+
 (defun break-by-brackets (s) ;no only if no embedding  ;finish&get2 json-decode quickly
   (break-by-pair s '(#\[ #\])))
 ;-have a version that gets from 1st in start to last from end-:ut/ascii.lisp between-str2curlys
@@ -1274,3 +1284,4 @@ is replaced with replacement."
         (write-char #\. *trace-output*)
         (force-output *trace-output*))
       (apply fun args))))
+
