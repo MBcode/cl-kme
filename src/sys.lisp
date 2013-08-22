@@ -80,6 +80,7 @@
  
 (ql 'cl-graph) (al 'graph-utils) ;might need linux
 (al 'vivace-graph-v2) ;not loading anymore
+(ql 'epigraph)
 
 ;(ql 'rcl) ;also (ql 'clpython)
 ;(al 'cl-octave) ;or just redo Ng's ML in other e.g.:
@@ -113,3 +114,4 @@
 
 ;https://github.com/pieterw cl-arff-parser.asd cl-framenet.asd cl-network.asd
 ;langutils cl-nlp
+(defun out () (in-package :user))
