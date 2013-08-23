@@ -73,5 +73,10 @@
                   r))))))
 
 ;----might try some sicl
+(defun nocom (sline) (unless (prefixp "#" sline) sline))
+(defun read-file-to-string2 (fn &optional (filtfn #'nocom)) 
+  (apply #'str-cat (rm-nils (map-lines fn filtfn))))
 (defun tst (p) (sicl:parse-sparql (read-file-to-string (str-cat "tst/" p ".rq"))))
+(defun tst2 (p) (sicl:parse-sparql (read-file-to-string2 (str-cat "tst/" p ".rq"))))
 (defun t1 () (tst "syntax-sparql3/syn-01b"))
+(defun t2 () (tst2 "syntax-sparql3/syn-01")) ;can stip comments now
