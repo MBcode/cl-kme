@@ -24,3 +24,5 @@ Licensed under the LLGPL? License.
 Knowledge_Modeling_Environment: Some ideas from my: http://bit.ly/TP8gfz incl using http://www.cs.utexas.edu/~mfkb/km/ , a linked(open)data/sparql-client, and a few machine-learning libraries, to get a kn-based assist to ML modeling/data-mining .. 
 
 Above is the description I gave for: http://lispinsummerprojects.org/ 
+
+Want to ask for feedback for this& https://venture-lab.org/designthinking/course_info_pages/127 pprj
