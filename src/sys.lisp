@@ -79,7 +79,8 @@
 ;(ql 'cl-mathstats) ;have cls on linux, miss xlispstat/vista viz
  
 (ql 'cl-graph) (al 'graph-utils) ;might need linux
-(al 'vivace-graph-v2) ;not loading anymore
+;(al 'vivace-graph-v2) ;not loading anymore
+;consider looking at/4 an agraph like interface
 (ql 'epigraph)
 
 ;(ql 'rcl) ;also (ql 'clpython)
