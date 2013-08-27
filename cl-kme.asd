@@ -34,6 +34,7 @@
                 ;(:file "util-mb3")  ;still an error/might be ok
                  (:file "km_2-5-33") ;can go back to (ql 'km) latter  ;recompiles when shouldn't
                  (:file "u2")
+                 (:file "tml") ;https://github.com/MBcode/LispUtils/blob/master/tml.cl
                  (:file "kmb")
                  (:file "load-lib") ;if we want km components
                  (:file "io") ;try
