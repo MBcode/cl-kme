@@ -72,6 +72,7 @@
                       (mapcar #'(lambda (sn sv) (sv i sn sv)) snl (mapcar #'last_lv (rest vl)))))
                   r))))))
 
+(defun ti1 () (sparql2ins (read-file-to-string "src/i1.txt")))
 ;----might try some sicl
 (defun nocom (sline) (unless (prefixp "#" sline) sline))
 (defun read-file-to-string2 (fn &optional (filtfn #'nocom)) 
