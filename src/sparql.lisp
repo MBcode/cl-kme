@@ -82,3 +82,4 @@
 (defun tst2 (p) (sicl:parse-sparql (read-file-to-string2 (str-cat "tst/" p ".rq"))))
 (defun t1 () (tst "syntax-sparql3/syn-01b"))
 (defun t2 () (tst2 "syntax-sparql3/syn-01")) ;can stip comments now
+(defun tn (n) (tst2 (str-cat "syntax-sparql3/syn-0" n))) ;extra sicl
