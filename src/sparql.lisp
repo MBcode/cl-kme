@@ -69,7 +69,8 @@
               (cls "dbpedia.org"))
           (mapcar #'(lambda (vl)  (let ((i (ki_ (first-lv vl))))
                       (sv-cls i cls)
-                      (mapcar #'(lambda (sn sv) (sv i sn sv)) snl (mapcar #'last_lv (rest vl)))))
+                      (mapcar #'(lambda (sn sv) (when (and i sn sv) (sv i sn sv)) )
+                                         snl (mapcar #'last_lv (rest vl)))))
                   r))))))
 
 (defun ti1 () (sparql2ins (read-file-to-string "src/i1.txt")))
