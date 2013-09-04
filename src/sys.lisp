@@ -2,6 +2,8 @@
 ;too many directions, started: https://venture-lab.org/designthinking hope to get focus
 ;   class won't have special pprj till late aug, but still before sept soc deadline
 ;   still I have to shorten my exploratory bents, &get more commited here
+;See what other http://mike.bobak.googlepages.com/classes I can work in.
+; 4news ones, need2start commiting from home server/hope i goes through under right login this time
 ;Probably have *tst* so some libs not being used can be skipped
 (defvar *tst* nil)
 ;(ql 'lisa) ;miss this, km can do some of it
@@ -33,6 +35,7 @@
 (ql 'cl-ppcre)
 (ql 'cl-interpol)
 (al 'sicl) ;https://github.com/turbolent/sicl
+;mix sicl w/other sparql code/maybe even simple factQL like ql,ultimately from KM qry
 ;(al 'future) &/or:
 ;(ql 'lfarm-test) ;which uses: (ql 'lparallel)
 (when *tst*

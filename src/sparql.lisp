@@ -69,11 +69,16 @@
               (cls "dbpedia.org"))
           (mapcar #'(lambda (vl)  (let ((i (ki_ (first-lv vl))))
                       (sv-cls i cls)
-                      (mapcar #'(lambda (sn sv) (sv i sn sv)) snl (mapcar #'last_lv (rest vl)))))
+                      (mapcar #'(lambda (sn sv) (when (and i sn sv) (sv i sn sv)) )
+                                         snl (mapcar #'last_lv (rest vl)))))
                   r))))))
 
 (defun ti1 () (sparql2ins (read-file-to-string "src/i1.txt")))
 (defun ti2 () (sparql2ins (read-file-to-string "src/i2.txt")))
+<<<<<<< HEAD
+=======
+(defun teo () (sparql2ins (read-file-to-string "src/eo.txt")))
+>>>>>>> a99d2b8cd603ee8f3500b49b056315442d866fee
 ;----might try some sicl
 (defun nocom (sline) (unless (prefixp "#" sline) sline))
 (defun read-file-to-string2 (fn &optional (filtfn #'nocom)) 
@@ -82,3 +87,4 @@
 (defun tst2 (p) (sicl:parse-sparql (read-file-to-string2 (str-cat "tst/" p ".rq"))))
 (defun t1 () (tst "syntax-sparql3/syn-01b"))
 (defun t2 () (tst2 "syntax-sparql3/syn-01")) ;can stip comments now
+(defun tn (n) (tst2 (str-cat "syntax-sparql3/syn-0" n))) ;extra sicl
