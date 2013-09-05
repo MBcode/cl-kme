@@ -75,10 +75,7 @@
 
 (defun ti1 () (sparql2ins (read-file-to-string "src/i1.txt")))
 (defun ti2 () (sparql2ins (read-file-to-string "src/i2.txt")))
-<<<<<<< HEAD
-=======
 (defun teo () (sparql2ins (read-file-to-string "src/eo.txt")))
->>>>>>> a99d2b8cd603ee8f3500b49b056315442d866fee
 ;----might try some sicl
 (defun nocom (sline) (unless (prefixp "#" sline) sline))
 (defun read-file-to-string2 (fn &optional (filtfn #'nocom)) 
