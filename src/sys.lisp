@@ -16,7 +16,8 @@
 (ql 's-xml) ;might get rid of
 (ql 'cl-rdfxml)
 (ql 'cl+ssl)
-(al '4store) ;or the sbcl-4store file ;was considering virtuoso/but this is faster
+;(al '4store) ;or the sbcl-4store file ;was considering virtuoso/but this is faster
+(load "workspace.lisp" :print t) ;from sbcl-4store
 (defparameter *server-url* "http://localhost:8000/")
 (defparameter *graph* "<http://ox.electronic-quill.net/4store-test>")
 ;get sbcl-4store workspace.lisp libs in too

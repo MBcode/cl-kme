@@ -37,6 +37,7 @@
                  (:file "tml") ;https://github.com/MBcode/LispUtils/blob/master/tml.cl
                  (:file "kmb")
                  (:file "load-lib") ;if we want km components
+                 (:file "llkm") ;if we want km components
                  (:file "io") ;try
                  (:file "workspace") ;try
                  (:file "sparql-w") ;try
