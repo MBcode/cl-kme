@@ -1,5 +1,7 @@
 (cl:in-package #:cl-user)
 ;should move more of this to the asd file, might start w/another skelton&go more agent oriented
+; ~workflow, maybe something like vistrails; redo in kme soon
+;
 ;too many directions, started: https://venture-lab.org/designthinking hope to get focus
 ;   class won't have special pprj till late aug, but still before sept soc deadline
 ;   still I have to shorten my exploratory bents, &get more commited here
