@@ -7,6 +7,8 @@
 ;   still I have to shorten my exploratory bents, &get more commited here
 ;See what other http://mike.bobak.googlepages.com/classes I can work in.
 ;.. 
+;something like: https://github.com/machinalis/quepy would be cool quepy.machinalis.com
+;
 ;; Want2start thinking apps, influences:(metadata/network/recommender)classes,&new metamap13 install
 ;;   which could pull some km3 src out for use.
 ;
