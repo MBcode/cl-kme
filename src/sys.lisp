@@ -1,11 +1,15 @@
 (cl:in-package #:cl-user)
 ;should move more of this to the asd file, might start w/another skelton&go more agent oriented
-; ~workflow, maybe something like vistrails; redo in kme soon
+; ~workflow, maybe something like vistrails; redo in kme soon ..
 ;
 ;too many directions, started: https://venture-lab.org/designthinking hope to get focus
 ;   class won't have special pprj till late aug, but still before sept soc deadline
 ;   still I have to shorten my exploratory bents, &get more commited here
 ;See what other http://mike.bobak.googlepages.com/classes I can work in.
+;.. 
+;; Want2start thinking apps, influences:(metadata/network/recommender)classes,&new metamap13 install
+;;   which could pull some km3 src out for use.
+;
 ; 4news ones, need2start commiting from home server/hope i goes through under right login this time
 ;Probably have *tst* so some libs not being used can be skipped
 (defvar *tst* nil)
