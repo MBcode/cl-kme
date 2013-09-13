@@ -15,6 +15,7 @@
 ; 4news ones, need2start commiting from home server/hope i goes through under right login this time
 ;Probably have *tst* so some libs not being used can be skipped
 (defvar *tst* nil)
+;look@using gbbopen ql pprjs
 ;(ql 'lisa) ;miss this, km can do some of it
 ; also: minimal-production-system gbbopen ..
 ;(lt) ;was test for new u2.lisp fncs
