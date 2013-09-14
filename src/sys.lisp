@@ -130,3 +130,24 @@
 ;https://github.com/pieterw cl-arff-parser.asd cl-framenet.asd cl-network.asd
 ;langutils cl-nlp
 (defun out () (in-package :user))
+;A breakdown of a few MachineLearning/Parallel&Distributed/SemanticWeb Libraries:
+;ml/cl-bayesian@            pd/Eager-Future2@          sw/cl-mql@
+;ml/cl-bayesnet@            pd/Starlisp-simulator@     sw/cl-ntriples-2012.12.16@
+;ml/cl-decision-tree@       pd/Starsim-f20@            sw/cl-rdfxml_0.9@
+;ml/cl-decisiontree@        pd/chanl@                  sw/cl-semantic@
+;ml/cl-libsvm-0.0.7@        pd/cl-muproc@              sw/dbpedia-sparql@
+;ml/cl-simple-neuralnet@    pd/cl-simd@                sw/dydra-cl@
+;ml/cl-svm@                 pd/erlisp@                 sw/n3@
+;ml/clml@                   pd/hevent@                 sw/ontolisp-0.9@
+;ml/clml-svm@               pd/lfarm@                  sw/porky@
+;ml/clrl@                   pd/lparallel@              sw/rdf-serialiser_0.3@
+;ml/decisiontree@           pd/patron@                 sw/rdf-store@
+;ml/icbr@                   pd/pcall@                  sw/rdf-utils@
+;ml/malecoli@               pd/philip-jose@            sw/rdf-wilbur-redis@
+;ml/mgl@                    pd/sb-concurrency@         sw/sbcl-4store@
+;ml/mgl-0.0.6@              pd/starsim@                sw/scoli@
+;ml/micmac@                 pd/stmx@                   sw/semantic-wikipedia@
+;ml/ml-progs@               sw/SWCLOS@                 sw/sicl@
+;ml/mulm@                   sw/SWCLOS2@                sw/twinql_0.3.1@
+;ml/pulcinella@             sw/SWCLOSforILC2005@
+;pd/Common-Lisp-Actors@     sw/cl-4store@
