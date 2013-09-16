@@ -1,4 +1,10 @@
 (cl:in-package #:cl-user)
+;Have had warning that I just go through, but have needed some(load)debugging, have also had thoughts of bigger reorg.
+;have to interively just go at it; maybe by having ground of things that are loaded, w/when member 'ml 'sw 'pd ..etc
+(defvar *t* '())
+;  might have subtopics, /could do a prefix match, but just start w/a bit of this.
+;Should still get more of this in an asd, w/dependancies, Such that un-needed thing won't be loaded if not needed.
+;
 ;should move more of this to the asd file, might start w/another skelton&go more agent oriented
 ; ~workflow, maybe something like vistrails; redo in kme soon ..
 ;
@@ -22,15 +28,18 @@
 (ql 'cl-csv) ;for io ;look@ data-table, not yet
 (ql 'trivial-shell) ;for io
 ;s-xml xmls for sparql-w:
-(ql 'xmls) ;might get rid of
-(ql 's-xml) ;might get rid of
-(ql 'cl-rdfxml)
+(when (memeber 'rdf *t*)
+ (ql 'xmls) ;might get rid of
+ (ql 's-xml) ;might get rid of
+ (ql 'cl-rdfxml)
+ )
 (ql 'cl+ssl)
 ;(al '4store) ;or the sbcl-4store file ;was considering virtuoso/but this is faster
 (load "workspace.lisp" :print t) ;from sbcl-4store
 (defparameter *server-url* "http://localhost:8000/")
 (defparameter *graph* "<http://ox.electronic-quill.net/4store-test>")
 ;get sbcl-4store workspace.lisp libs in too
+             ;prob
 (ql '(drakma cxml fare-matcher))
   ;was almost just going to use lsp2basically curl for it, but cl-4store works
 ;no twinql yet, but sicl can parse a qry
