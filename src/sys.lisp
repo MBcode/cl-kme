@@ -2,6 +2,7 @@
 ;Have had warning that I just go through, but have needed some(load)debugging, have also had thoughts of bigger reorg.
 ;have to interively just go at it; maybe by having ground of things that are loaded, w/when member 'ml 'sw 'pd ..etc
 (defvar *t* '())
+(defvar *tst* nil)
 ;  might have subtopics, /could do a prefix match, but just start w/a bit of this.
 ;Should still get more of this in an asd, w/dependancies, Such that un-needed thing won't be loaded if not needed.
 ;
@@ -20,7 +21,6 @@
 ;
 ; 4news ones, need2start commiting from home server/hope i goes through under right login this time
 ;Probably have *tst* so some libs not being used can be skipped
-(defvar *tst* nil)
 ;look@using gbbopen ql pprjs
 ;(ql 'lisa) ;miss this, km can do some of it
 ; also: minimal-production-system gbbopen ..
@@ -28,38 +28,39 @@
 (ql 'cl-csv) ;for io ;look@ data-table, not yet
 (ql 'trivial-shell) ;for io
 ;s-xml xmls for sparql-w:
-(when (memeber 'rdf *t*)
+(when (member 'rdf *t*)
  (ql 'xmls) ;might get rid of
  (ql 's-xml) ;might get rid of
  (ql 'cl-rdfxml)
  )
 (ql 'cl+ssl)
 ;(al '4store) ;or the sbcl-4store file ;was considering virtuoso/but this is faster
-(load "workspace.lisp" :print t) ;from sbcl-4store
+;(load "workspace.lisp" :print t) ;from sbcl-4store ;in asd file now
 (defparameter *server-url* "http://localhost:8000/")
 (defparameter *graph* "<http://ox.electronic-quill.net/4store-test>")
 ;get sbcl-4store workspace.lisp libs in too
              ;prob
-(ql '(drakma cxml fare-matcher))
   ;was almost just going to use lsp2basically curl for it, but cl-4store works
 ;no twinql yet, but sicl can parse a qry
-(ql 'puri)
+;(ql '(drakma cxml fare-matcher))
+(ql '(#:drakma #:cl-json #:alexandria #:babel)) ;then could load generized sparql.lisp
+(when (member 'sicl *t*)
+ (ql 'puri)
 ;(import 'puri::render-uri)
 ;(import 'puri::uri-p)
 ;(al 'dbpedia-sparql) ;try: https://github.com/daimrod/dbpedia-sparql.git
-(ql '(#:drakma #:cl-json #:alexandria #:babel)) ;then could load generized sparql.lisp
-(ql 'lexer)
+ (ql 'lexer)
 ;(ql 'rdf) https://github.com/turbo24prg/rdf/ ;try cl-rdfxml
-(al 'rdf-utils)
-(al 'yacc) ;http://www.pps.univ-paris-diderot.fr/~jch/software/cl-yacc/
-(ql 'cl-ppcre)
-(ql 'cl-interpol)
-(al 'sicl) ;https://github.com/turbolent/sicl
+ (al 'rdf-utils)
+ (al 'yacc) ;http://www.pps.univ-paris-diderot.fr/~jch/software/cl-yacc/
+ (ql 'cl-ppcre)
+ (ql 'cl-interpol)
+ (al 'sicl) ;https://github.com/turbolent/sicl
+ )
 ;mix sicl w/other sparql code/maybe even simple factQL like ql,ultimately from KM qry
 ;(al 'future) &/or:
 ;(ql 'lfarm-test) ;which uses: (ql 'lparallel)
-(when *tst*
- (al 'erlisp))  ;also sbcl has native mailboxes  
+(when *tst* (al 'erlisp))  ;also sbcl has native mailboxes  
 ; try erlisp/&/or agt/mailbox formalism, might be best to start earlier w/this
 ;  also easier if diff componts only work on diff platforms 
 ;  workflow(eng)interop could be cool as well
@@ -71,12 +72,12 @@
 ;(lq) ;in my .sbclrc ;pnathan/cl-linq
 ;ML/stat.. libs   ;start w/mlcl(w/it's cl-kb)&abstraction of techniques&get mgl then others w/in it
 ; -having some issues w/some of these between osx&linux, might scale back ml while working on sparql
-(when *tst*
-(ql 'mgl-example)  ;next as easiest2share via QL         ;http://cliki.net/MGL
+(when (member 'ml *t*) ;*tst*
+ (ql 'mgl-example)  ;next as easiest2share via QL         ;http://cliki.net/MGL
                     ;http://quotenil.com/Introduction-to-MGL-(part-2).html http://quickdocs.org/mgl/
-(al 'ml) ;https://github.com/MBcode/LispUtils/tree/master/stat/ml-progs/ml Mooney UT-Austin
-(ql 'cl-store) ;for mlcl    ;ck-kb for protege(4now)&it's files readable by lisa.sf.net
-(al 'mlcl)  ;malecoli  ;has protege.stanford.edu link;also algernon-tab ;maybe2km.(2?).look@i/o /use
+ (al 'ml) ;https://github.com/MBcode/LispUtils/tree/master/stat/ml-progs/ml Mooney UT-Austin
+ (ql 'cl-store) ;for mlcl    ;ck-kb for protege(4now)&it's files readable by lisa.sf.net
+ (al 'mlcl)  ;malecoli  ;has protege.stanford.edu link;also algernon-tab ;maybe2km.(2?).look@i/o /use
 )
 ;Notes:   /another protege interaction w/:lsw2.googlecode.com is also possible
 ;Malecoli heavier on protege data-mng, light on algo(though maybe a nice framework)
@@ -100,12 +101,12 @@
 
 ;(al 'sapa)
 ;(ql 'cl-mathstats) ;have cls on linux, miss xlispstat/vista viz
- 
-(ql 'cl-graph) (al 'graph-utils) ;might need linux
-;(al 'vivace-graph-v2) ;not loading anymore
-;consider looking at/4 an agraph like interface
-(ql 'epigraph)
-
+(when (member 'graph *t*) 
+ (ql 'cl-graph) (al 'graph-utils) ;might need linux
+ ;(al 'vivace-graph-v2) ;not loading anymore
+ ;consider looking at/4 an agraph like interface
+ (ql 'epigraph)
+)
 ;(ql 'rcl) ;also (ql 'clpython)
 ;(al 'cl-octave) ;or just redo Ng's ML in other e.g.:
 ;(ql 'clpython)
@@ -138,6 +139,7 @@
 
 ;https://github.com/pieterw cl-arff-parser.asd cl-framenet.asd cl-network.asd
 ;langutils cl-nlp
+(defun in () (in-package :cl-kme))
 (defun out () (in-package :user))
 ;A breakdown of a few MachineLearning/Parallel&Distributed/SemanticWeb Libraries:
 ;ml/cl-bayesian@            pd/Eager-Future2@          sw/cl-mql@

@@ -27,6 +27,7 @@
 (defun url-end (s) (last_lv (explode-by-slash s)))
 (defun url-end2 (s) (last (explode-by-slash s) 2))
 
+#+IGNORE
 (defun make-better-list (results)
   (let (titles)
     (cons
@@ -39,6 +40,23 @@
            :collect
            (loop :for title :in titles
                  :collect (alexandria:assoc-value (alexandria:assoc-value line
+                                                    (intern
+                                                     (upper-case title)
+                                                     :keyword))
+                                       :VALUE))))))
+;loading lists.lisp from alexandria now
+(defun make-better-list (results)
+  (let (titles)
+    (cons
+     (setf titles
+           (loop :for title :in (assoc-value (assoc-value results :HEAD)
+                                             :VARS)
+                 :collect title))
+     (loop :for line :in (assoc-value (assoc-value results :RESULTS)
+                                      :BINDINGS)
+           :collect
+           (loop :for title :in titles
+                 :collect (assoc-value (assoc-value line
                                                     (intern
                                                      (upper-case title)
                                                      :keyword))
@@ -73,15 +91,19 @@
                                          snl (mapcar #'last_lv (rest vl)))))
                   r))))))
 
-(defun ti1 () (sparql2ins (read-file-to-string "src/i1.txt")))
-(defun ti2 () (sparql2ins (read-file-to-string "src/i2.txt")))
-(defun teo () (sparql2ins (read-file-to-string "src/eo.txt")))
+;(defun ti1 () (sparql2ins (read-file-to-string "src/i1.txt")))
+;(defun ti2 () (sparql2ins (read-file-to-string "src/i2.txt")))
+;(defun teo () (sparql2ins (read-file-to-string "src/eo.txt")))
+(defun ti1 () (sparql2ins (read-file-string "src/i1.txt")))
+(defun ti2 () (sparql2ins (read-file-string "src/i2.txt")))
+(defun teo () (sparql2ins (read-file-string "src/eo.txt")))
 ;----might try some sicl
 (defun nocom (sline) (unless (prefixp "#" sline) sline))
 (defun read-file-to-string2 (fn &optional (filtfn #'nocom)) 
   (apply #'str-cat (rm-nils (map-lines fn filtfn))))
-(defun tst (p) (sicl:parse-sparql (read-file-to-string (str-cat "tst/" p ".rq"))))
-(defun tst2 (p) (sicl:parse-sparql (read-file-to-string2 (str-cat "tst/" p ".rq"))))
+;when (member 'sicl *t*)
+;(defun tst (p) (sicl:parse-sparql (read-file-to-string (str-cat "tst/" p ".rq"))))
+;(defun tst2 (p) (sicl:parse-sparql (read-file-to-string2 (str-cat "tst/" p ".rq"))))
 (defun t1 () (tst "syntax-sparql3/syn-01b"))
 (defun t2 () (tst2 "syntax-sparql3/syn-01")) ;can stip comments now
 (defun tn (n) (tst2 (str-cat "syntax-sparql3/syn-0" n))) ;extra sicl
