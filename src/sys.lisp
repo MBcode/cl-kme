@@ -141,6 +141,8 @@
 ;langutils cl-nlp
 (defun in () (in-package :cl-kme))
 (defun out () (in-package :user))
+;(defun lu () (load "/home/bobak/lsp/util_mb"))
+;(defun cl-kme:lu () (lu)) ;my init fnc to load mb_utils
 ;A breakdown of a few MachineLearning/Parallel&Distributed/SemanticWeb Libraries:
 ;ml/cl-bayesian@            pd/Eager-Future2@          sw/cl-mql@
 ;ml/cl-bayesnet@            pd/Starlisp-simulator@     sw/cl-ntriples-2012.12.16@
