@@ -37,4 +37,4 @@
                         (sv-cls name "data") 
                         )))))
 
-(defun lu () (user:lu)) ;my init fnc to load mb_utils
+;(defun lu () (user:lu)) ;my init fnc to load mb_utils

@@ -6,6 +6,9 @@
 ;  might have subtopics, /could do a prefix match, but just start w/a bit of this.
 ;Should still get more of this in an asd, w/dependancies, Such that un-needed thing won't be loaded if not needed.
 ;
+;also looking at xcvb  /an agent-based view could have different instances w/diff makeups
+;Might start w/much more simple km core, &just load that /then ..
+;
 ;should move more of this to the asd file, might start w/another skelton&go more agent oriented
 ; ~workflow, maybe something like vistrails; redo in kme soon ..
 ;
@@ -164,3 +167,4 @@
 ;ml/mulm@                   sw/SWCLOS2@                sw/twinql_0.3.1@
 ;ml/pulcinella@             sw/SWCLOSforILC2005@
 ;pd/Common-Lisp-Actors@     sw/cl-4store@
+;cl-graph graph-utils epigraph ;vivace-graph-v2
