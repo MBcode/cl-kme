@@ -30,6 +30,7 @@
 ;(lt) ;was test for new u2.lisp fncs
 (ql 'cl-csv) ;for io ;look@ data-table, not yet
 (ql 'trivial-shell) ;for io
+;cl-ace works w/the osx git version of cxml /ql v has had probs4awhile
 ;s-xml xmls for sparql-w:
 (when (member 'rdf *t*)
  (ql 'xmls) ;might get rid of
@@ -142,6 +143,7 @@
 
 ;https://github.com/pieterw cl-arff-parser.asd cl-framenet.asd cl-network.asd
 ;langutils cl-nlp
+;cl-ace nlp+owl http://www.cs.rpi.edu/~tayloj/CL-ACE/
 (defun in () (in-package :cl-kme))
 (defun out () (in-package :user))
 ;(defun lu () (load "/home/bobak/lsp/util_mb"))
