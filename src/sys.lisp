@@ -170,3 +170,4 @@
 ;ml/pulcinella@             sw/SWCLOSforILC2005@
 ;pd/Common-Lisp-Actors@     sw/cl-4store@
 ;cl-graph graph-utils epigraph ;vivace-graph-v2
+;clpython  rcl rclg rclmath
