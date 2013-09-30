@@ -168,6 +168,6 @@
 ;ml/ml-progs@               sw/SWCLOS@                 sw/sicl@
 ;ml/mulm@                   sw/SWCLOS2@                sw/twinql_0.3.1@
 ;ml/pulcinella@             sw/SWCLOSforILC2005@
-;pd/Common-Lisp-Actors@     sw/cl-4store@
+;pd/Common-Lisp-Actors@     sw/cl-4store@              sw/cl-ace@
 ;cl-graph graph-utils epigraph ;vivace-graph-v2
 ;clpython  rcl rclg rclmath

@@ -22,3 +22,5 @@ Knowledge_Modeling_Environment: Some ideas from my: http://bit.ly/TP8gfz incl us
 
 Above is the description I gave for: http://lispinsummerprojects.org/ 
 Might try to incl some design-thinking feedback.
+
+More work being done in https://github.com/MBcode/kmp now
