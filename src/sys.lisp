@@ -169,5 +169,5 @@
 ;ml/mulm@                   sw/SWCLOS2@                sw/twinql_0.3.1@
 ;ml/pulcinella@             sw/SWCLOSforILC2005@       sw/reasoner-3.2@
 ;pd/Common-Lisp-Actors@     sw/cl-4store@              sw/cl-ace@
-;cl-graph graph-utils epigraph ;vivace-graph-v2           cl-nlp
-;clpython  rcl rclg rclmath
+;cl-graph graph-utils epigraph ;vivace-graph-v2           cl-nlp langutils /cl-registry
+;clpython  rcl rclg rclmath;looked@lsp/clj-hdf5/sci-db /but R-sci-db might be better  so rcl/etc
