@@ -110,6 +110,8 @@
  ;(al 'vivace-graph-v2) ;not loading anymore
  ;consider looking at/4 an agraph like interface
  (ql 'epigraph)
+;(ql 'fgraph)
+;(ql 'graph)
 )
 ;(ql 'rcl) ;also (ql 'clpython)
 ;(al 'cl-octave) ;or just redo Ng's ML in other e.g.:
@@ -142,7 +144,7 @@
 ;=deciding on how to interface the km/e data w/the present dt data
 
 ;https://github.com/pieterw cl-arff-parser.asd cl-framenet.asd cl-network.asd
-;langutils cl-nlp
+;langutils cl-nlp /tagger
 ;cl-ace nlp+owl http://www.cs.rpi.edu/~tayloj/CL-ACE/
 (defun in () (in-package :cl-kme))
 (defun out () (in-package :user))
@@ -169,5 +171,5 @@
 ;ml/mulm@                   sw/SWCLOS2@                sw/twinql_0.3.1@
 ;ml/pulcinella@             sw/SWCLOSforILC2005@       sw/reasoner-3.2@
 ;pd/Common-Lisp-Actors@     sw/cl-4store@              sw/cl-ace@
-;cl-graph graph-utils epigraph ;vivace-graph-v2           cl-nlp langutils /cl-registry
+;cl-graph graph-utils epigraph ;vivace-graph-v2           cl-nlp langutils /cl-registry  /tagger
 ;clpython  rcl rclg rclmath;looked@lsp/clj-hdf5/sci-db /but R-sci-db might be better  so rcl/etc

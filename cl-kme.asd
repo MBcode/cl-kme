@@ -3,10 +3,12 @@
   Copyright (c) 2013 Mike Bobak (bobak@balisp.org)
 |#
 (defun al (l) "asdf load" (asdf:oos 'asdf:load-op l))
+#+quicklisp (defun ql (a) (ql:quickload  a :verbose t :explain t))
 #|
   Author: Mike Bobak (bobak@balisp.org)
 |#
 (al 'ml)
+(ql 'list-of)
 
 (in-package :cl-user)
 (eval-when (:compile-toplevel :load-toplevel :execute)
