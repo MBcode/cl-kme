@@ -13,3 +13,4 @@
 ;#<RCL::R-MATRIX #2A((1 2) (3 4)) NIL {1005B6B973}>
 ;USER(6): (rcl::matrix *)
 ;#2A((1 2) (3 4))
+;maybe http://cran.r-project.org/web/packages/snow/index.html vs cl-pvm

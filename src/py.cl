@@ -58,3 +58,8 @@
 ;NIL
 ;USER(14): (run "import math; assert 2.71 < math.e < 2.72")
 ;NIL
+;;look@ https://github.com/doomcat/pySpark  &RRDs ..
+;;       &then go http://py4j.sourceforge.net/ 2java libs more easily?
+;http://spark.incubator.apache.org/docs/0.7.2/api/pyspark/pyspark.rdd.RDD-class.html
+;Still interested in amplab MLBase like work;maybe build off base RRD ops vs some old code
+; &/or compose as much as possible&..
