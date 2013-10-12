@@ -174,6 +174,7 @@
 ;cl-graph graph-utils epigraph ;vivace-graph-v2           cl-nlp langutils /cl-registry  /tagger
 ;clpython  rcl rclg rclmath;looked@lsp/clj-hdf5/sci-db /but R-sci-db might be better  so rcl/etc
 ;pd(parallel/distributed)stuff might be able to be done via the R/Py pkgs
+;   r.cl py.cl (jl.cl, but ijulia, or just mq);ql: zeromq|zmq|pzmq
 ;lots of math/stat,  &data-table cl-linq
 ;
 ;m/Maxima-CAS@        m/gnoem@             m/mma@               m/rclmath@
