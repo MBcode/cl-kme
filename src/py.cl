@@ -63,3 +63,20 @@
 ;http://spark.incubator.apache.org/docs/0.7.2/api/pyspark/pyspark.rdd.RDD-class.html
 ;Still interested in amplab MLBase like work;maybe build off base RRD ops vs some old code
 ; &/or compose as much as possible&..
+;-----------------------julia too
+;(require :trivial-shell)
+(ql 'trivial-shell)
+;(lu)
+(defun jl1 (s)
+  (trivial-shell:shell-command (format nil "julia -E \"~a\"" s)))
+
+;there is a julia ipython connection so use clpython instead
+;USER(2): (jl1 "1+1")
+;
+;"2
+;"
+;"Using pipes/files as STDIN is not yet supported. Proceed with caution!
+;Aborted (core dumped)
+;"
+;134
+;USER(3):
