@@ -174,3 +174,18 @@
 ;cl-graph graph-utils epigraph ;vivace-graph-v2           cl-nlp langutils /cl-registry  /tagger
 ;clpython  rcl rclg rclmath;looked@lsp/clj-hdf5/sci-db /but R-sci-db might be better  so rcl/etc
 ;pd(parallel/distributed)stuff might be able to be done via the R/Py pkgs
+;lots of math/stat,  &data-table cl-linq
+;
+;m/Maxima-CAS@        m/gnoem@             m/mma@               m/rclmath@
+;m/cl-mathstats@      m/gsll@              m/mulm@              m/simlab@
+;m/cl-octave_0.1@     m/lassie@            m/nlisp_0.8.2@       m/soundlab@
+;m/cl-rsm-fuzzy@      m/linear-algebra@    m/numerical-lisp@    m/units@
+;m/cl-sparsematrix@   m/lisp-matrix@       m/nurarihyon@        m/vmath@
+;m/clem@              m/lisphys@           m/pythononlisp@      m/wiz-util@
+;m/common-lisp-stat@  m/maxima@            m/r@                 m/data-table
+;m/embeddable-maxima@ m/micmac@            m/rcl@
+;m/fsvd@              m/minpack@           m/rclg@
+;NLP
+;nl/EPILOG@                    nl/cl-earley-parser_0.9.2@    nl/langutils@
+;nl/basic-english-grammar-1.0@ nl/cl-inflector@              nl/lassie@
+;nl/cl-ace@                    nl/cl-nlp@
