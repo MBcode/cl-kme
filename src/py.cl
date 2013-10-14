@@ -72,6 +72,7 @@
 
 ;there is a julia ipython connection so use clpython instead
 ;https://github.com/JuliaLang/IJulia.jl  though uses zmq, which I'd love to just go to directly
+;julia> Pkg.add("IJulia")
 ;USER(2): (jl1 "1+1")
 ;
 ;"2
