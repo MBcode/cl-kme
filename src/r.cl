@@ -14,3 +14,6 @@
 ;USER(6): (rcl::matrix *)
 ;#2A((1 2) (3 4))
 ;maybe http://cran.r-project.org/web/packages/snow/index.html vs cl-pvm
+;
+;https://github.com/VincentToups/rcl/blob/master/examples/ggplot-book.lisp
+;https://github.com/VincentToups/rcl/blob/master/examples/ggplot.lisp

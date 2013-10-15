@@ -213,13 +213,31 @@
 
 (defun rm-commas (s)
   (remove #\, s))
+;(defun trim-commas (s)
+;  (string-trim '(#\, #\Space #\Tab #\Newline ;#\no-break_space ;#\NO-BREAK_SPACE
+;                 ) s))
+;#+ignore
+;(defun rm-space (s)
+;  (remove #\NO-BREAK_SPACE (remove #\space s)))
+;(defun rm-space (s) (remove #\space s))
+(defvar +whitespace-chars+ ;https://github.com/kingcheez/clsql-cheez/blob/master/sql/utils.lisp
+  '(#\space #\tab #\newline #\return
+    ;; Tested: sbcl unicode, allegrocl, openmcl,clisp use #\no-break_space
+    ;; lispworks uses #\no-break-space
+    ;; sbcl non-unicode doesn't support no break space
+    ;; AllegroCL 8-bit strings don't fail on reading #\no-break_space,
+    ;; but can't represent such a character
+    ;; CMUCL errors when trying to read #\no-break_space
+    #+(and lispworks unicode) #\no-break-space
+    #+(or (and sbcl sb-unicode) (and allegro ics) (and clisp i18n)
+       (and openmcl openmcl-unicode-strings))
+    #\no-break_space
+    )
+  "List of whitespace characters for this lisp implementation.")
 (defun trim-commas (s)
-  (string-trim '(#\, #\Space #\Tab #\Newline ;#\no-break_space ;#\NO-BREAK_SPACE
-                 ) s))
-#+ignore
+  (string-trim '(#\, #\Space #\Tab #\Newline +whitespace-chars+) s))
 (defun rm-space (s)
-  (remove #\NO-BREAK_SPACE (remove #\space s)))
-(defun rm-space (s) (remove #\space s))
+  (remove +whitespace-chars+ (remove #\space s))) 
 
 (defun rm-ws-parens (s)
   ;(when (full s) (remove-if #'(lambda (x) (member x "( )")) s))

@@ -47,6 +47,7 @@
   ;was almost just going to use lsp2basically curl for it, but cl-4store works
 ;no twinql yet, but sicl can parse a qry
 ;(ql '(drakma cxml fare-matcher))
+(ql 'cxml)
 (ql '(#:drakma #:cl-json #:alexandria #:babel)) ;then could load generized sparql.lisp
 (when (member 'sicl *t*)
  (ql 'puri)
