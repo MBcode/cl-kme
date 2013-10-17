@@ -103,6 +103,7 @@
 ;https://github.com/masatoi/clrl https://github.com/masatoi/clml-svm https://github.com/masatoi/clml
  
 ;(ql 'cl-bayesnet) ;get into dne or get around
+;used in bne.cl
 
 ;(al 'sapa)
 ;(ql 'cl-mathstats) ;have cls on linux, miss xlispstat/vista viz

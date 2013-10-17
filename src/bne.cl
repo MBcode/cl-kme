@@ -1,5 +1,5 @@
 ;bobak@balisp.org
-(ql 'cl-bayesnet)
+(ql 'cl-bayesnet)  ;try w/other inputs from here&elsewhere
 (defparameter *join-tree*
     (cl-bayesnet:load-dne "asia.dne")) ;need path/link to this
 ;cl-bayesnet example asia(2).dne

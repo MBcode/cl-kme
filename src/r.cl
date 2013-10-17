@@ -17,3 +17,30 @@
 ;
 ;https://github.com/VincentToups/rcl/blob/master/examples/ggplot-book.lisp
 ;https://github.com/VincentToups/rcl/blob/master/examples/ggplot.lisp
+;
+;plotting:
+;USER(2): (in-package :rcl)
+;
+;#<PACKAGE "RCL">
+;R(3): (r-init)
+;WARNING: R already running
+;
+;:RUNNING
+;R(4): (enable-rcl-syntax)
+;
+;R(5): [library 'ggplot2]
+;WARNING: string attribute: profmem
+;;R! Loading required package: reshape
+;;R! Loading required package: plyr
+;;R! 
+;;R! Attaching package: ‘reshape’
+;;R! 
+;;R! The following object(s) are masked from ‘package:plyr’:
+;;R! 
+;;R!     rename, round_any
+;;R! 
+;;R! Loading required package: grid
+;;R! Loading required package: proto
+;("ggplot2" "proto" "grid" "reshape" "plyr" "stats" "graphics" "grDevices"
+; "utils" "datasets" "methods" "base")
+;R(6): [print [_qplot 'mpg 'wt :data 'mtcars :size 'cyl :geom '("smooth" "point")]]
