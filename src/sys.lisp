@@ -192,3 +192,5 @@
 ;nl/EPILOG@                    nl/cl-earley-parser_0.9.2@    nl/langutils@
 ;nl/basic-english-grammar-1.0@ nl/cl-inflector@              nl/lassie@
 ;nl/cl-ace@                    nl/cl-nlp@
+;lots of other reasoning/aid beyond KM; have considered ML via workflow or even blackboar;;gbbopen
+(ql 'gbbopen)
