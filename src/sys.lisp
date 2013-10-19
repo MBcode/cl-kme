@@ -194,3 +194,4 @@
 ;nl/cl-ace@                    nl/cl-nlp@
 ;lots of other reasoning/aid beyond KM; have considered ML via workflow or even blackboar;;gbbopen
 (ql 'gbbopen)
+(ql 'caveman) ;or toot, to get a nicer front end on notional.no-ip.org
