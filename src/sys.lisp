@@ -196,3 +196,4 @@
 (ql 'gbbopen)
 (ql 'hunchentoot) ;now but
 ;(ql 'caveman) ;(or wuwei toot), to get a nicer front end on notional.no-ip.org
+;https://twitter.com/MBstream iswc2013.semanticweb.org work worth looking@
