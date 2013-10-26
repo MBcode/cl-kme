@@ -153,6 +153,7 @@
 ;(defun lu () (load "/home/bobak/lsp/util_mb"))
 ;(defun cl-kme:lu () (lu)) ;my init fnc to load mb_utils
 ;A breakdown of a few MachineLearning/Parallel&Distributed/SemanticWeb Libraries:
+; started this page: http://cliki.net/machine%20learning showing a few top ML libs
 ;ml/cl-bayesian@            pd/Eager-Future2@          sw/cl-mql@
 ;ml/cl-bayesnet@            pd/Starlisp-simulator@     sw/cl-ntriples-2012.12.16@
 ;ml/cl-decision-tree@       pd/Starsim-f20@            sw/cl-rdfxml_0.9@
