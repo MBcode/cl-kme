@@ -198,3 +198,18 @@
 (ql 'hunchentoot) ;now but
 ;(ql 'caveman) ;(or wuwei toot), to get a nicer front end on notional.no-ip.org
 ;https://twitter.com/MBstream iswc2013.semanticweb.org work worth looking@
+;Document this more:
+;
+;-rw-r--r-- 1 bobak bobak 3.1K Oct 16 23:51 bne.cl
+;-rw-r--r-- 1 bobak bobak 1.6K Oct 15 14:41 load-lib.lisp
+;-rw-rw-r-- 1 bobak bobak  48K Oct 15 14:26 util-mb2.lisp
+;-rw-rw-r-- 1 bobak bobak 101K Oct 15 14:25 util_mb.lisp
+;-rw-r--r-- 1 bobak bobak  889 Oct 15 14:25 fx
+;-rw-rw-r-- 1 bobak bobak 3.2K Oct 14 14:17 py.cl
+;-rw-rw-r-- 1 bobak bobak  445 Oct 13 23:54 jl.cl
+;-rw-rw-r-- 1 bobak bobak 1.6K Sep 19 22:51 io.lisp
+;-rw-rw-r-- 1 bobak bobak  222 Sep 18 23:54 t.cl
+;-rw-rw-r-- 1 bobak bobak 4.5K Sep 17 23:04 sparql.lisp
+;-rw-rw-r-- 1 bobak bobak  14K Sep 17 22:44 lists.lisp
+;-rw-rw-r-- 1 bobak bobak 6.4K Sep  5 19:12 workspace.lisp
+;-rw-r--r-- 1 bobak bobak  31K Sep  4 21:10 llkm.lisp
