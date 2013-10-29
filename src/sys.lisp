@@ -213,3 +213,4 @@
 ;-rw-rw-r-- 1 bobak bobak  14K Sep 17 22:44 lists.lisp
 ;-rw-rw-r-- 1 bobak bobak 6.4K Sep  5 19:12 workspace.lisp another rdf example
 ;-rw-r--r-- 1 bobak bobak  31K Sep  4 21:10 llkm.lisp specific load-lib files
+;recently played w/emacs+evil+slime, vagrant(core-os/docker) ;ilse mbr code, then sejits.org too
