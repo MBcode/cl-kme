@@ -213,4 +213,7 @@
 ;-rw-rw-r-- 1 bobak bobak  14K Sep 17 22:44 lists.lisp
 ;-rw-rw-r-- 1 bobak bobak 6.4K Sep  5 19:12 workspace.lisp another rdf example
 ;-rw-r--r-- 1 bobak bobak  31K Sep  4 21:10 llkm.lisp specific load-lib files
-;recently played w/emacs+evil+slime, vagrant(core-os/docker) ;ilse mbr code, then sejits.org too
+;recently played w/emacs+evil+slime, vagrant(core-os/docker) ;ilse.org mbr code, then sejits.org too
+;look@acl2 optimization routines, &ast-transforms ;also look back@lush lang mixing;&sbcl-llvm
+;also slime/swank use beyond editing(eg. editing live event loop)&enanched dbg/stack/profile output
+;lots of interesting eecs.berk research present/past:incl distrib-os sprite ;look@MLbase autoweka..
