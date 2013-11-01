@@ -86,3 +86,20 @@
 ;==================
 ;plotting:    if not rcl2ggplot
 ;https://github.com/yhat/ggplot
+;http://blog.leahhanson.us/julia-calling-python-calling-julia.html
+;
+;try to get jl.cl going, as this isn't working yet, even directly from python:
+;
+;>>> j = julia.Julia()
+;Traceback (most recent call last):
+;  File "<stdin>", line 1, in <module>
+;  File "julia/core.py", line 86, in __init__
+;    % (jpath_so, jpath_dylib))
+;ValueError: Julia release library not found
+;  searched /Users/bobak/dwn/sci/math/env/julia/Julia-0.2.0-pre-afd47d8ba8.app/Contents/Resources/julia/lib/libjulia-release.so
+;  and /Users/bobak/dwn/sci/math/env/julia/Julia-0.2.0-pre-afd47d8ba8.app/Contents/Resources/julia/lib/libjulia-release.dylib
+;>>> j.run("2+2")
+;Traceback (most recent call last):
+;  File "<stdin>", line 1, in <module>
+;  NameError: name 'j' is not defined
+;>>>
