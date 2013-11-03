@@ -186,9 +186,12 @@
 ;m/cl-rsm-fuzzy@      m/linear-algebra@    m/numerical-lisp@    m/units@
 ;m/cl-sparsematrix@   m/lisp-matrix@       m/nurarihyon@        m/vmath@
 ;m/clem@              m/lisphys@           m/pythononlisp@      m/wiz-util@
-;m/common-lisp-stat@  m/maxima@            m/r@                 m/data-table
+;m/common-lisp-stat@  m/maxima@            m/r@                 m/data-table *
 ;m/embeddable-maxima@ m/micmac@            m/rcl@
 ;m/fsvd@              m/minpack@           m/rclg@
+;Starlisp-simulator Starsim-f20 starsim /also lush.sf &xlsipstat/vista
+;* cl-data-frame data-objects cl-num-utils
+; interact w/rcl cl-octave py etc bridges
 ;NLP
 ;nl/EPILOG@                    nl/cl-earley-parser_0.9.2@    nl/langutils@
 ;nl/basic-english-grammar-1.0@ nl/cl-inflector@              nl/lassie@
