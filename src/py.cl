@@ -103,3 +103,5 @@
 ;  File "<stdin>", line 1, in <module>
 ;  NameError: name 'j' is not defined
 ;>>>
+;
+;might start calling out to: https://github.com/halgari/clojure-py ;could still go mq comm route too
