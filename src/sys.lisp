@@ -221,3 +221,5 @@
 ;look@acl2 optimization routines, &ast-transforms ;also look back@lush lang mixing;&sbcl-llvm
 ;also slime/swank use beyond editing(eg. editing live event loop)&enanched dbg/stack/profile output
 ;lots of interesting eecs.berk research present/past:incl distrib-os sprite ;look@MLbase autoweka..
+;Math, r/py/jl .cl also bridges to hdf5&scidb,doing matrix/array math@the data/base,look back@
+; xldb/vldb talks, &old use of MUMPS, persistant Lisp in memory|store like that could be cool
