@@ -223,3 +223,5 @@
 ;lots of interesting eecs.berk research present/past:incl distrib-os sprite ;look@MLbase autoweka..
 ;Math, r/py/jl .cl also bridges to hdf5&scidb,doing matrix/array math@the data/base,look back@
 ; xldb/vldb talks, &old use of MUMPS, persistant Lisp in memory|store like that could be cool
+;turns out mumps is also the name of a Multifrontal Massively Parallel sparse direct Solver
+;_I want both the persistance/working on in mem or not &matrix op/libs ;sparse4graph algorithms too
