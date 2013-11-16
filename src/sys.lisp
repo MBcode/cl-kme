@@ -234,4 +234,4 @@
 ;#194     551    6296 frontend.py this file, load from py.cl/?  to call w/lisp code
 ;#270     733    8717 kernel.py could still run on other side/&later iPy proper/?
 ;#119     333    3150 session.py 
-;#mb: I want to have a lisp client for (something)Ipython(like)
+;#mb: I want to have a lisp client for (something)Ipython(like) ;I'll add the files if it works
