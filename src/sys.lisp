@@ -227,3 +227,11 @@
 ;_I want both the persistance/working on in mem or not &matrix op/libs ;sparse4graph algorithms too
 ;Looked at workflow/mq/lang-interop incl some shmem/file(as mem) &maybe a little msg-passing
 ;_also seeing a few osx/lnx differences, might run via vagrant(etc)if need be ;also ccl/(c)lisp etc
+;Still trying lang interop: java w/: http://sourceforge.net/projects/jacol/ &zmq to ipy... w:
+;#https://github.com/fperez/zmq-pykernel Simple interactive Python kernel/frontend with ZeroMQ
+;#This is the code that served as the original prototype for today's IPython client/server model.
+;#86     278    2783 completer.py
+;#194     551    6296 frontend.py this file, load from py.cl/?  to call w/lisp code
+;#270     733    8717 kernel.py could still run on other side/&later iPy proper/?
+;#119     333    3150 session.py 
+;#mb: I want to have a lisp client for (something)Ipython(like)
