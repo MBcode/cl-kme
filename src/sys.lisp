@@ -235,3 +235,4 @@
 ;#270     733    8717 kernel.py could still run on other side/&later iPy proper/?
 ;#119     333    3150 session.py 
 ;#mb: I want to have a lisp client for (something)Ipython(like) ;I'll add the files if it works
+;Trying:docs.docker.io/en/latest/installation/vagrant/ github.com/finitud/vagrant-common-lisp.git b4
