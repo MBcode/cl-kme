@@ -236,3 +236,4 @@
 ;#119     333    3150 session.py 
 ;#mb: I want to have a lisp client for (something)Ipython(like) ;I'll add the files if it works
 ;Trying:docs.docker.io/en/latest/installation/vagrant/ github.com/finitud/vagrant-common-lisp.git b4
+;Think about how2mv parts of http://notional.no-ip.org fwd;still following confs,incl amia../py inter
