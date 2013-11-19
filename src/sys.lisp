@@ -223,6 +223,7 @@
 ;lots of interesting eecs.berk research present/past:incl distrib-os sprite ;look@MLbase autoweka..
 ;Math, r/py/jl .cl also bridges to hdf5&scidb,doing matrix/array math@the data/base,look back@
 ; xldb/vldb talks, &old use of MUMPS, persistant Lisp in memory|store like that could be cool
+; _ https://www.google.com/search?q=mumps-language+postgress w/rules/etc..
 ;turns out mumps is also the name of a Multifrontal Massively Parallel sparse direct Solver
 ;_I want both the persistance/working on in mem or not &matrix op/libs ;sparse4graph algorithms too
 ;Looked at workflow/mq/lang-interop incl some shmem/file(as mem) &maybe a little msg-passing
@@ -234,6 +235,8 @@
 ;#194     551    6296 frontend.py this file, load from py.cl/?  to call w/lisp code
 ;#270     733    8717 kernel.py could still run on other side/&later iPy proper/?
 ;#119     333    3150 session.py 
+;  _after this look@: https://github.com/JuliaLang/IJulia.jl &try2do4lsp
 ;#mb: I want to have a lisp client for (something)Ipython(like) ;I'll add the files if it works
 ;Trying:docs.docker.io/en/latest/installation/vagrant/ github.com/finitud/vagrant-common-lisp.git b4
 ;Think about how2mv parts of http://notional.no-ip.org fwd;still following confs,incl amia../py inter
+;i want: http://www.talyarkoni.org/blog/2013/11/18/the-homogenization-of-scientific-computing-or-why-python-is-steadily-eating-other-languages-lunch/ but4lisp
