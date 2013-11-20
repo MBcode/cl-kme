@@ -190,6 +190,7 @@
 ;m/embeddable-maxima@ m/micmac@            m/rcl@
 ;m/fsvd@              m/minpack@           m/rclg@
 ;Starlisp-simulator Starsim-f20 starsim /also lush.sf &xlsipstat/vista
+; https://github.com/barak/lush lnx not osx ;vista osx not lnx
 ;* cl-data-frame data-objects cl-num-utils
 ; interact w/rcl cl-octave py etc bridges
 ;NLP
