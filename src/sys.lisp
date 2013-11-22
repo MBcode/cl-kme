@@ -180,23 +180,23 @@
 ;   r.cl py.cl (jl.cl, but ijulia, or just mq);ql: zeromq|zmq|pzmq
 ;lots of math/stat,  &data-table cl-linq
 ;
-;m/Maxima-CAS@        m/gnoem@             m/mma@               m/rclmath@
-;m/cl-mathstats@      m/gsll@              m/mulm@              m/simlab@
-;m/cl-octave_0.1@     m/lassie@            m/nlisp_0.8.2@       m/soundlab@
-;m/cl-rsm-fuzzy@      m/linear-algebra@    m/numerical-lisp@    m/units@
-;m/cl-sparsematrix@   m/lisp-matrix@       m/nurarihyon@        m/vmath@
-;m/clem@              m/lisphys@           m/pythononlisp@      m/wiz-util@
-;m/common-lisp-stat@  m/maxima@            m/r@                 m/data-table *
-;m/embeddable-maxima@ m/micmac@            m/rcl@
-;m/fsvd@              m/minpack@           m/rclg@
+;m/Maxima-CAS        m/gnoem             m/mma               m/rclmath
+;m/cl-mathstats      m/gsll              m/mulm              m/simlab
+;m/cl-octave_0.1     m/lassie            m/nlisp_0.8.2       m/soundlab
+;m/cl-rsm-fuzzy      m/linear-algebra    m/numerical-lisp    m/units
+;m/cl-sparsematrix   m/lisp-matrix       m/nurarihyon        m/vmath
+;m/clem              m/lisphys           m/pythononlisp      m/wiz-util
+;m/common-lisp-stat  m/maxima            m/r                 m/data-table *
+;m/embeddable-maxima m/micmac            m/rcl
+;m/fsvd              m/minpack           m/rclg              axiom
 ;Starlisp-simulator Starsim-f20 starsim /also lush.sf &xlsipstat/vista
 ; https://github.com/barak/lush lnx not osx ;vista osx not lnx
 ;* cl-data-frame data-objects cl-num-utils
 ; interact w/rcl cl-octave py etc bridges
 ;NLP
-;nl/EPILOG@                    nl/cl-earley-parser_0.9.2@    nl/langutils@
-;nl/basic-english-grammar-1.0@ nl/cl-inflector@              nl/lassie@
-;nl/cl-ace@                    nl/cl-nlp@
+;nl/EPILOG                    nl/cl-earley-parser_0.9.2    nl/langutils
+;nl/basic-english-grammar-1.0 nl/cl-inflector              nl/lassie
+;nl/cl-ace                    nl/cl-nlp
 ;lots of other reasoning/aid beyond KM; have considered ML via workflow or even blackboar;;gbbopen
 (ql 'gbbopen)
 (ql 'hunchentoot) ;now but
@@ -230,6 +230,7 @@
 ;Looked at workflow/mq/lang-interop incl some shmem/file(as mem) &maybe a little msg-passing
 ;_also seeing a few osx/lnx differences, might run via vagrant(etc)if need be ;also ccl/(c)lisp etc
 ;Still trying lang interop: java w/: http://sourceforge.net/projects/jacol/ &zmq to ipy... w:
+;  _also tried abcl, but no c/ffi w/jni; I'd rather keep the lang interop via web/mq msgs _
 ;#https://github.com/fperez/zmq-pykernel Simple interactive Python kernel/frontend with ZeroMQ
 ;#This is the code that served as the original prototype for today's IPython client/server model.
 ;#86     278    2783 completer.py

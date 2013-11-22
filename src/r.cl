@@ -44,3 +44,5 @@
 ;("ggplot2" "proto" "grid" "reshape" "plyr" "stats" "graphics" "grDevices"
 ; "utils" "datasets" "methods" "base")
 ;R(6): [print [_qplot 'mpg 'wt :data 'mtcars :size 'cyl :geom '("smooth" "point")]]
+;
+;http://www.r-bloggers.com/r-fiddle-an-online-playground-for-r-code/ other more web based interaction
