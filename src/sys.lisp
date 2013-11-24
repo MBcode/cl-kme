@@ -242,3 +242,4 @@
 ;Trying:docs.docker.io/en/latest/installation/vagrant/ github.com/finitud/vagrant-common-lisp.git b4
 ;Think about how2mv parts of http://notional.no-ip.org fwd;still following confs,incl amia../py inter
 ;i want: http://www.talyarkoni.org/blog/2013/11/18/the-homogenization-of-scientific-computing-or-why-python-is-steadily-eating-other-languages-lunch/ but4lisp
+;maybe http://stackoverflow.com/questions/2353353/how-to-process-input-and-output-streams-in-steel-bank-common-lisp
