@@ -111,3 +111,4 @@
 ;http://cjelupton.wordpress.com/2013/11/12/hacking-d-wave-one-in-common-lisp-introducing-silver-sword/
 ;https://github.com/pinterface/burgled-batteries
 ;http://www.talyarkoni.org/blog/2013/11/18/the-homogenization-of-scientific-computing-or-why-python-is-steadily-eating-other-languages-lunch/ but wish it was4lisp
+;wf: https://github.com/birc-aeh/gwf
