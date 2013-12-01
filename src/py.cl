@@ -66,7 +66,20 @@
 ;-----------------------julia too
 ;(require :trivial-shell)
 (ql 'trivial-shell)
-;(lu)
+;(lt)
+(lu)
+(require :trivial-shell)
+;defun tshell-command (str)
+(defun ts (str)
+ (trivial-shell:shell-command (to-str str)))
+;alt2 cl-python:
+(defun tpy (s) (ts (str-cat "python t.py " s)))
+;USER(1): (tpy "2+3")
+;
+;"['t.py', '2+3']
+;eval:2+3
+;5
+;"
 (defun jl1 (s)
   (trivial-shell:shell-command (format nil "julia -E \"~a\"" s)))
 
