@@ -126,3 +126,5 @@
 ;http://www.talyarkoni.org/blog/2013/11/18/the-homogenization-of-scientific-computing-or-why-python-is-steadily-eating-other-languages-lunch/ but wish it was4lisp
 ;wf: https://github.com/birc-aeh/gwf
 ;check on sb-posix on linux &get trivial-shell &/or pipe code to get ipy working
+;
+;tried rpy but had probs

@@ -50,3 +50,10 @@
 ; julia> pylab.show() 
 ;
 ; julia> 
+;
+; fix:
+; USER(3): (jl1 "help()")
+;
+; debugger invoked on a UNBOUND-VARIABLE in thread
+; #<THREAD "main thread" RUNNING {1002AC3613}>:
+;   The variable LOADING is unbound.
