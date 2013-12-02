@@ -2,7 +2,15 @@
 ;(require :trivial-shell)
 (ql 'trivial-shell)
 (lu)
-(defun jl1 (s)
+(defun jl (s)
+  (trivial-shell:shell-command (format nil "julia -E \"~a\"" s)))
+
+(defun jl1 (s &optional (ret nil))
+ (let ((r (trivial-shell:shell-command (format nil "julia -E \"~a\"" s))))
+   (if ret r
+    (when (stringp r) (eval-str r)))))
+
+(defun jl0 (s)
  (let ((r (trivial-shell:shell-command (format nil "julia -E \"~a\"" s))))
    (when (stringp r) (eval-str r))))
 
@@ -51,9 +59,67 @@
 ;
 ; julia> 
 ;
-; fix:
-; USER(3): (jl1 "help()")
+;USER(2): (jl1 "help()" t)
 ;
-; debugger invoked on a UNBOUND-VARIABLE in thread
-; #<THREAD "main thread" RUNNING {1002AC3613}>:
-;   The variable LOADING is unbound.
+;"Loading help data...
+; Welcome to Julia. The full manual is available at
+;
+;     http://docs.julialang.org
+;
+;      To get help on a function, try help(function). To search all help text,
+;       try apropos(\"string\"). To see available functions, try help(category),
+;        for one of the following categories:
+;
+;\"ArgParse\"
+;\"Getting Around\"
+;\"All Objects\"
+;\"Types\"
+;\"Generic Functions\"
+;\"Iteration\"
+;\"General Collections\"
+;\"Iterable Collections\"
+;\"Indexable Collections\"
+;\"Associative Collections\"
+;\"Set-Like Collections\"
+;\"Dequeues\"
+;\"Strings\"
+;\"I/O\"
+;\"Text I/O\"
+;\"Memory-mapped I/O\"
+;\"Mathematical Functions\"
+;\"Data Formats\"
+;\"Numbers\"
+;\"Random Numbers\"
+;\"Arrays\"
+;\"Sparse Matrices\"
+;\"Linear Algebra\"
+;\"Combinatorics\"
+;\"Statistics\"
+;\"Signal Processing\"
+;\"Parallel Computing\"
+;\"Distributed Arrays\"
+;\"System\"
+;\"Errors\"
+;\"Tasks\"
+;\"BLAS\"
+;\"cpp.jl\"
+;\"GLPK\"
+;\"GZip\"
+;\"OptionsMod\"
+;\"profile.jl\"
+;\"Base.Sort\"
+;\"Sound\"
+;\"strpack.jl\"
+;\"TextWrap\"
+;\"Zlib\"
+;nothing
+;"
+;USER(3): 
+;USER(4): (jl1 "5+6" t)
+;
+;"11
+;"
+;USER(5): 
+;-using jl instead, also see:
+;"Using pipes/files as STDIN is not yet supported. Proceed with caution!
+;Aborted (core dumped)
