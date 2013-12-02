@@ -119,7 +119,12 @@
 ;
 ;"11
 ;"
-;USER(5): 
+;USER(5):;but still str 
 ;-using jl instead, also see:
 ;"Using pipes/files as STDIN is not yet supported. Proceed with caution!
 ;Aborted (core dumped)
+;-this is only w/lnx v: Version 0.0.0+107474290.reffd.dirty
+;while osx w/v: Version 0.2.0-prerelease+4000 is ok
+;USER(3): (jl0 "1+2+3")
+;
+;6
