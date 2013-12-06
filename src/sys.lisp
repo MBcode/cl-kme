@@ -168,12 +168,14 @@
 ;ml/icbr@                   pd/pcall@                  sw/rdf-utils@
 ;ml/malecoli@               pd/philip-jose@            sw/rdf-wilbur-redis@
 ;ml/mgl@                    pd/sb-concurrency@         sw/sbcl-4store@
-;ml/mgl-0.0.6@              pd/starsim@                sw/scoli@
-;ml/micmac@                 pd/stmx@                   sw/semantic-wikipedia@
-;ml/ml-progs@               sw/SWCLOS@                 sw/sicl@
-;ml/mulm@                   sw/SWCLOS2@                sw/twinql_0.3.1@
-;ml/pulcinella@             sw/SWCLOSforILC2005@       sw/reasoner-3.2@
-;pd/Common-Lisp-Actors@     sw/cl-4store@              sw/cl-ace@
+;ml/mgl-0.0.6@              pd/starsim@                sw/scoli 
+;ml/micmac@                 pd/stmx@                   sw/semantic-wikipedia 
+;ml/ml-progs@               sw/SWCLOS@                 sw/sicl 
+;ml/mulm@                   sw/SWCLOS2@                sw/twinql_0.3.1 
+;ml/pulcinella@             sw/SWCLOSforILC2005@       sw/reasoner-3.2 
+;pd/Common-Lisp-Actors@     sw/cl-4store@              sw/cl-ace restricted-nl
+;                              wilbur        http://ap5.com/doc/ap5-man.html
+;pd: https://github.com/cpc26/netclos    sw: http://ap5.com/ http://ap5.com/ap5-20120509.zip
 ;cl-graph graph-utils epigraph ;vivace-graph-v2           cl-nlp langutils /cl-registry  /tagger
 ;clpython  rcl rclg rclmath;looked@lsp/clj-hdf5/sci-db /but R-sci-db might be better  so rcl/etc
 ;pd(parallel/distributed)stuff might be able to be done via the R/Py pkgs
@@ -198,8 +200,8 @@
 ;nl/basic-english-grammar-1.0 nl/cl-inflector              nl/lassie
 ;nl/cl-ace                    nl/cl-nlp
 ;lots of other reasoning/aid beyond KM; have considered ML via workflow or even blackboar;;gbbopen
-(ql 'gbbopen)
-(ql 'hunchentoot) ;now but
+(ql 'gbbopen)  ;will stay w/km, but look@ &at ap5   ;also look@roslisp again
+(ql 'hunchentoot) ;now (for: http://notional.no-ip.org) but
 ;(ql 'caveman) ;(or wuwei toot), to get a nicer front end on notional.no-ip.org
 ;https://twitter.com/MBstream iswc2013.semanticweb.org work worth looking@
 ;Document this more:
@@ -243,3 +245,5 @@
 ;Think about how2mv parts of http://notional.no-ip.org fwd;still following confs,incl amia../py inter
 ;i want: http://www.talyarkoni.org/blog/2013/11/18/the-homogenization-of-scientific-computing-or-why-python-is-steadily-eating-other-languages-lunch/ but4lisp
 ;maybe http://stackoverflow.com/questions/2353353/how-to-process-input-and-output-streams-in-steel-bank-common-lisp
+;new https://github.com/ros/roslisp.git &pip install:
+;sudo pip install -U wstool rosdep rosinstall rosinstall_generator rospkg catkin-pkg Distribute
