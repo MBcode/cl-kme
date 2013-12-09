@@ -203,6 +203,7 @@
 (ql 'gbbopen)  ;will stay w/km, but look@ &at ap5   ;also look@roslisp again
 (ql 'hunchentoot) ;now (for: http://notional.no-ip.org) but
 ;(ql 'caveman) ;(or wuwei toot), to get a nicer front end on notional.no-ip.org
+;like hunchentoot-1.2.21/www static pages
 ;https://twitter.com/MBstream iswc2013.semanticweb.org work worth looking@
 ;Document this more:
 ;
@@ -247,3 +248,4 @@
 ;maybe http://stackoverflow.com/questions/2353353/how-to-process-input-and-output-streams-in-steel-bank-common-lisp
 ;new https://github.com/ros/roslisp.git &pip install:
 ;sudo pip install -U wstool rosdep rosinstall rosinstall_generator rospkg catkin-pkg Distribute
+;More clj soon/few things I want2learn from/incl: http://clojurefun.wordpress.com/2013/12/07/enter-the-matrix 
