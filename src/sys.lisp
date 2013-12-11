@@ -11,6 +11,7 @@
 ;
 ;should move more of this to the asd file, might start w/another skelton&go more agent oriented
 ; ~workflow, maybe something like vistrails; redo in kme soon ..
+; _tieing in to some of the sci/ml/nlp/etc workflow setups, might save time/look@protocols/etc
 ;
 ;too many directions, started: https://venture-lab.org/designthinking hope to get focus
 ;   class won't have special pprj till late aug, but still before sept soc deadline
@@ -242,6 +243,7 @@
 ;#119     333    3150 session.py 
 ;  _after this look@: https://github.com/JuliaLang/IJulia.jl &try2do4lsp
 ;#mb: I want to have a lisp client for (something)Ipython(like) ;I'll add the files if it works
+; maybe like: https://github.com/tkf/emacs-ipython-notebook
 ;Trying:docs.docker.io/en/latest/installation/vagrant/ github.com/finitud/vagrant-common-lisp.git b4
 ;Think about how2mv parts of http://notional.no-ip.org fwd;still following confs,incl amia../py inter
 ;i want: http://www.talyarkoni.org/blog/2013/11/18/the-homogenization-of-scientific-computing-or-why-python-is-steadily-eating-other-languages-lunch/ but4lisp
@@ -249,3 +251,4 @@
 ;new https://github.com/ros/roslisp.git &pip install:
 ;sudo pip install -U wstool rosdep rosinstall rosinstall_generator rospkg catkin-pkg Distribute
 ;More clj soon/few things I want2learn from/incl: http://clojurefun.wordpress.com/2013/12/07/enter-the-matrix 
+;simple Service-wise pipe or ~like: https://github.com/joewalnes/websocketd ..
