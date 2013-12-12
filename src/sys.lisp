@@ -252,3 +252,5 @@
 ;sudo pip install -U wstool rosdep rosinstall rosinstall_generator rospkg catkin-pkg Distribute
 ;More clj soon/few things I want2learn from/incl: http://clojurefun.wordpress.com/2013/12/07/enter-the-matrix 
 ;simple Service-wise pipe or ~like: https://github.com/joewalnes/websocketd ..
+;tried2get de.setf going wilbur does, but not thrift/cassandra yet
+; still think of pg (scidb) &hdf which now had a lighter more db like connection: Supporting a Light-Weight Data Management Layer over #HDF5: HDF5_SQL #tweet: Supporting a Light-We... http://bit.ly/1dmwqK8 
