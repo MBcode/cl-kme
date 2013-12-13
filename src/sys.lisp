@@ -65,7 +65,7 @@
  )
 ;mix sicl w/other sparql code/maybe even simple factQL like ql,ultimately from KM qry
 ;(al 'future) &/or:
-;(ql 'lfarm-test) ;which uses: (ql 'lparallel)
+;(ql 'lfarm-test) ;which uses: (ql 'lparallel) *try soon*
 (when *tst* (al 'erlisp))  ;also sbcl has native mailboxes  
 ; try erlisp/&/or agt/mailbox formalism, might be best to start earlier w/this
 ;  also easier if diff componts only work on diff platforms 
@@ -254,3 +254,4 @@
 ;simple Service-wise pipe or ~like: https://github.com/joewalnes/websocketd ..
 ;tried2get de.setf going wilbur does, but not thrift/cassandra yet
 ; still think of pg (scidb) &hdf which now had a lighter more db like connection: Supporting a Light-Weight Data Management Layer over #HDF5: HDF5_SQL #tweet: Supporting a Light-We... http://bit.ly/1dmwqK8 
+;http://architects.dzone.com/articles/openstack-meets-lisp-cl & http://bit.ly/TP8gfz has more..
