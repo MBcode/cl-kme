@@ -175,6 +175,7 @@
 ;ml/mulm@                   sw/SWCLOS2@                sw/twinql_0.3.1 
 ;ml/pulcinella@             sw/SWCLOSforILC2005@       sw/reasoner-3.2 
 ;pd/Common-Lisp-Actors@     sw/cl-4store@              sw/cl-ace restricted-nl
+;  have been waiting for streaming sparql: https://github.com/aaltodsg/instans.git /get it going
 ;                              wilbur        http://ap5.com/doc/ap5-man.html
 ;pd: https://github.com/cpc26/netclos    sw: http://ap5.com/ http://ap5.com/ap5-20120509.zip
 ;cl-graph graph-utils epigraph ;vivace-graph-v2           cl-nlp langutils /cl-registry  /tagger
@@ -255,3 +256,4 @@
 ;tried2get de.setf going wilbur does, but not thrift/cassandra yet
 ; still think of pg (scidb) &hdf which now had a lighter more db like connection: Supporting a Light-Weight Data Management Layer over #HDF5: HDF5_SQL #tweet: Supporting a Light-We... http://bit.ly/1dmwqK8 
 ;http://architects.dzone.com/articles/openstack-meets-lisp-cl & http://bit.ly/TP8gfz has more..
+;Look@lisp for different chips/mem-size/etc. eg. clozure, ecl  ;also on android other than clj
