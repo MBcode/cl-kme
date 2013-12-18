@@ -231,6 +231,7 @@
 ; xldb/vldb talks, &old use of MUMPS, persistant Lisp in memory|store like that could be cool
 ; _ https://www.google.com/search?q=mumps-language+postgress w/rules/etc..
 ;turns out mumps is also the name of a Multifrontal Massively Parallel sparse direct Solver
+;  there is a persistent lisp w/prolog: http://picolisp.com/5000/!wiki?Home which might be good4IoT2
 ;_I want both the persistance/working on in mem or not &matrix op/libs ;sparse4graph algorithms too
 ;Looked at workflow/mq/lang-interop incl some shmem/file(as mem) &maybe a little msg-passing
 ;_also seeing a few osx/lnx differences, might run via vagrant(etc)if need be ;also ccl/(c)lisp etc

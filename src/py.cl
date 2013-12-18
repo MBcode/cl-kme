@@ -128,3 +128,5 @@
 ;check on sb-posix on linux &get trivial-shell &/or pipe code to get ipy working
 ;
 ;tried rpy but had probs
+;
+;try interacting w/: https://github.com/msiemens/tinydb
