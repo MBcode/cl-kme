@@ -108,6 +108,7 @@
 
 ;(al 'sapa)
 ;(ql 'cl-mathstats) ;have cls on linux, miss xlispstat/vista viz
+;-want more plotting, look at vecto/sparklines, as well as links to ext plotting
 (when (member 'graph *t*) 
  (ql 'cl-graph) (al 'graph-utils) ;might need linux
  ;(al 'vivace-graph-v2) ;not loading anymore
@@ -206,6 +207,8 @@
 (ql 'hunchentoot) ;now (for: http://notional.no-ip.org) but
 ;(ql 'caveman) ;(or wuwei toot), to get a nicer front end on notional.no-ip.org
 ;like hunchentoot-1.2.21/www static pages
+;look@ https://github.com/fukamachi/ningle http://8arrow.org/ningle/ dispatch on get/post/put/...
+;https://github.com/3b/clws for websockets & https://github.com/e-user/hunchensocket.git
 ;https://twitter.com/MBstream iswc2013.semanticweb.org work worth looking@
 ;Document this more:
 ;
