@@ -130,3 +130,6 @@
 ;tried rpy but had probs
 ;
 ;try interacting w/: https://github.com/msiemens/tinydb
+;
+;http://stackoverflow.com/questions/20226663/timing-problems-in-lisp-and-python-programs-communicating-over-sockets
+;slime/swank nREPL like comm
