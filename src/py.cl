@@ -133,3 +133,4 @@
 ;
 ;http://stackoverflow.com/questions/20226663/timing-problems-in-lisp-and-python-programs-communicating-over-sockets
 ;slime/swank nREPL like comm
+;like: http://asciinema.org/a/1148 https://github.com/lmacken/pyrasite
