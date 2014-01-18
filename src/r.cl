@@ -46,3 +46,5 @@
 ;R(6): [print [_qplot 'mpg 'wt :data 'mtcars :size 'cyl :geom '("smooth" "point")]]
 ;
 ;http://www.r-bloggers.com/r-fiddle-an-online-playground-for-r-code/ other more web based interaction
+;
+;cl->r then rJava ;might be easier than cl-j  ;also clj over java libs, then make a websrvc 
