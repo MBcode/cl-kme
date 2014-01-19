@@ -65,3 +65,5 @@
 ;lrwxrwxrwx 1 vagrant  23 Jan 17 07:33 hydro -> ros/hydro/share/roslisp/
 ;-rw-rw-r-- 1 vagrant 110 Jan 17 07:32 note
 ;lrwxrwxrwx 1 vagrant   8 Jan 17 07:32 ros -> /opt/ros/ 
+;
+;knowrob/   roboearth/ ros-0.4.3@ ros-code/  rosdistro/
