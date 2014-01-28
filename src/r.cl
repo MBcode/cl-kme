@@ -48,3 +48,5 @@
 ;http://www.r-bloggers.com/r-fiddle-an-online-playground-for-r-code/ other more web based interaction
 ;
 ;cl->r then rJava ;might be easier than cl-j  ;also clj over java libs, then make a websrvc 
+;
+;https://amplab.cs.berkeley.edu/2014/01/26/large-scale-data-analysis-made-easier-with-sparkr/

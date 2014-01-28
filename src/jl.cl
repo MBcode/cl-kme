@@ -27,6 +27,29 @@
 ;"
 ;134
 ;USER(3):
+;=this works now:
+;
+;USER(1): (jl0 "3 + 9 + 8 * 9")
+;
+;84
+;USER(2): (jl0 "3 + 9")
+;
+;12
+;
+
+(defun jlp (s)
+ (let ((r (trivial-shell:shell-command (format nil "julia -E \"~a\" --print" s))))
+   (when (stringp r) (eval-str r))))
+
+;USER(1): (jlp "3 + 5")
+;
+;8
+;USER(2): (jlp "3 + 9")
+;
+;12
+;USER(3): (jlp "3 + 9 + 8 * 9")
+;
+;84
 
 ;;http://blog.leahhanson.us/julia-calling-python-calling-julia.html
 ;If I can get a direct call going, then try the julia2py part
@@ -128,3 +151,25 @@
 ;USER(3): (jl0 "1+2+3")
 ;
 ;6
+;
+;http://strata.oreilly.com/2014/01/ipython-a-unified-environment-for-interactive-data-analysis.html 
+; http://3.bp.blogspot.com/-QpPwDBSrJvk/UtXWB8j0KdI/AAAAAAAADh8/m6egJ2vhkE0/s1600/ipython2.jpg
+; http://nbviewer.ipython.org/url/jdj.mit.edu/~stevenj/IJulia%20Preview.ipynb
+;
+; julia> help("I/O")
+; Loading help data...
+; Help is available for the following items:
+; Base.STDOUT Base.STDERR Base.STDIN Base.open Base.open Base.memio Base.fdio Base.flush Base.close Base.write Base.read Base.read Base.position Base.seek Base.seek_end Base.skip
+;
+; julia> help("Base.STDIN")
+; Base.STDIN
+;
+;  Global variable referring to the standard input stream.
+;
+; julia> help("Base.STDOUT")
+; Base.STDOUT
+;
+;    Global variable referring to the standard out stream.
+;
+;&much more in cdjulia j27; in julia/src/flisp found parser is done in a scheme:
+; https://groups.google.com/forum/#!topic/julia-users/qHRDj80rIvA
