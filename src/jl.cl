@@ -11,7 +11,8 @@
     (when (stringp r) (eval-str r)))))
 
 (defun jl0 (s)
- (let ((r (trivial-shell:shell-command (format nil "julia -E \"~a\"" s))))
+ ;let ((r (trivial-shell:shell-command (format nil "julia -E \"~a\"" s))))
+ (let ((r (trivial-shell:shell-command (format nil "julia-release-basic -E \"~a\"" s))))
    (when (stringp r) (eval-str r))))
 
 ;USER(4): (jl1 "1+1")
@@ -50,6 +51,13 @@
 ;USER(3): (jlp "3 + 9 + 8 * 9")
 ;
 ;84
+;USER(4): (jlp "x = 1; x")
+;
+;1
+;USER(5): (jlp "x = 1;y=2; x+y")
+;
+;3
+;
 
 ;;http://blog.leahhanson.us/julia-calling-python-calling-julia.html
 ;If I can get a direct call going, then try the julia2py part
