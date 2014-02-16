@@ -182,4 +182,11 @@
 ;&much more in cdjulia j27; in julia/src/flisp found parser is done in a scheme:
 ; https://groups.google.com/forum/#!topic/julia-users/qHRDj80rIvA
 ;
-; https://github.com/o-jasper/parse-c-header has to-julia code
+; https://github.com/o-jasper/parse-c-header has to-julia code (to wrap c code)
+; https://github.com/o-jasper/julia-ffi.git &re:
+; USER(3): (j-commandline:command  "julia -E \"~a\" --print" "3 + 5")
+;
+; "8
+; "
+; ""
+; 0
