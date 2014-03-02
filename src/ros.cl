@@ -253,4 +253,11 @@
 ; libgssapi-krb5-2 libjpeg-turbo8 libk5crypto3 libkrb5-3 libkrb5support0 libldap-2.4-2
 ; libpixman-1-0 libsqlite3-0 libtasn1-3 libx11-6 libxcb1 libxext6 libxfixes3 libxi6 libxml2 python
 ; python-gi python-minimal
- 
+;-------------------------
+;3versions of the roslisp client, 
+;
+;/home/vagrant/dwn/lang/lsp/code/project/src/roslisp
+;/opt/ros/hydro/share/roslisp
+;/home/vagrant/dwn/lang/lsp/code/project/src/ros_comm/clients/roslisp
+;
+;all w/the same ros_comm error:   System "rosgraph_msgs-msg" not found
