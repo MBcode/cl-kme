@@ -261,3 +261,106 @@
 ;/home/vagrant/dwn/lang/lsp/code/project/src/ros_comm/clients/roslisp
 ;
 ;all w/the same ros_comm error:   System "rosgraph_msgs-msg" not found
+;http://www.ros.org/browse/list.php has several incl:
+;http://wiki.ros.org/cl_semantic_map_utils http://wiki.ros.org/actionlib_lisp 
+;git_ https://github.com/cram-code/cram_physics.git
+;git_ https://github.com/cram-code/cram_highlevel.git
+;git_ https://github.com/moesenle/cram_core.git
+;git_ http://code.in.tum.de/git/roll.git
+;git_ https://github.com/ros/genlisp.git
+;git_ https://code.ros.org/svn/ros-pkg/stacks/roslisp_common/trunk
+;has:
+;cram_core/cram-execution-trace.asd
+;cram_core/cram-language.asd
+;cram_core/cram-language-tests.asd
+;cram_core/cram-math.asd
+;cram_core/cram-math-test.asd
+;cram_core/cram-projection.asd
+;cram_core/cram-projection-tests.asd
+;cram_core/cram-reasoning.asd
+;cram_core/cram-reasoning-tests.asd
+;cram_core/cram-test-utilities.asd
+;cram_core/cram-test-utilities-tests.asd
+;cram_core/cram-utilities.asd
+;cram_core/cram-utilities-tests.asd
+;cram_core/designators.asd
+;cram_core/designators-test.asd
+;cram_core/process-modules.asd
+;cram_core/process-modules-test.asd
+;         synchronization-tools.asd
+;roll/cl-libsvm.asd
+;roll/roll.asd
+;
+;add: -repl & -utilities:
+;ros-hydro-roslisp - Lisp client library for ROS, the Robot Operating System.
+;ros-hydro-roslisp-common - Common libraries to control ROS based robots. This stack contains an implementation of actionlib (client and server) in Common Lisp, a transformation library and an implementation of tf in Common Lisp.
+;ros-hydro-roslisp-repl - This package provides a script that launches Emacs with Slime (the Superior Lisp Interaction Mode) ready for Lisp development and roslisp.
+;ros-hydro-roslisp-utilities - Some utility functionality to interact with ROS using roslisp. 
+;
+;outside the vagrant/in osx, git got:
+;λ▶<140 m2local: /src/lsp> ls
+;bullet-reasoning-demo.asd@              cram_highlevel/
+;bullet-reasoning-designators.asd@       cram_physics/
+;bullet-reasoning-test.asd@              designators-ros.asd@
+;bullet-reasoning.asd@                   designators-test.asd@
+;cffi-ros-utils.asd@                     designators.asd@
+;cl-bullet-examples.asd@                 doc/
+;cl-bullet-vis-examples.asd@             execution-trace-server.asd@
+;cl-bullet-vis-tests.asd@                fake-process-modules.asd@
+;cl-bullet-vis.asd@                      genlisp/
+;cl-bullet.asd@                          get
+;cl-glx.asd@                             get~
+;cl-libsvm.asd@                          git1
+;cl-semantic-map-utils.asd@              la
+;cl-urdf.asd@                            la~
+;cram-environment-representation.asd@    location-costmap-test.asd@
+;cram-execution-trace.asd@               location-costmap.asd@
+;cram-language-tests.asd@                location-designator-projection.asd@
+;cram-language.asd@                      map-annotation.asd@
+;cram-manipulation-knowledge.asd@        object-location-designators.asd@
+;cram-math-test.asd@                     occupancy-grid-costmap.asd@
+;cram-math.asd@                          perception-process-module.asd@
+;cram-plan-actionserver.asd@             physics-utils.asd@
+;cram-plan-failures.asd@                 process-modules-test.asd@
+;cram-plan-knowledge.asd@                process-modules.asd@
+;cram-plan-library.asd@                  projection-process-modules.asd@
+;cram-plan-transformations.asd@          robot-mask.asd@
+;cram-pr2-knowledge.asd@                 roll/
+;cram-projection-tests.asd@              roll.asd@
+;cram-projection.asd@                    roslisp_runtime - ROS Wiki.html
+;cram-reasoning-tests.asd@               roslisp_support - ROS Wiki.html
+;cram-reasoning.asd@                     semantic-map-cache.asd@
+;cram-roslisp-common.asd@                semantic-map-collision-environment.asd@
+;cram-test-utilities-tests.asd@          semantic-map-costmap.asd@
+;cram-test-utilities.asd@                spatial-relations-costmap.asd@
+;cram-utilities-tests.asd@               synchronization-tools/
+;cram-utilities.asd@                     synchronization-tools.asd@
+;cram_core/                              visibility-costmap.asd@
+;
+;roslisp_common/
+;actionlib_lisp/  cl_tf/  cl_transforms/  cl_utils/  roslisp_common/  roslisp_utilities/
+;
+;home server now has:  (running 13.10, so had to ftp over from 12... install)
+;/roslisp/ros> ls
+;actionlib.asd@                navfn-srv.asd@             rospy_tutorials-srv.asd@
+;actionlib_lisp/               nav_msgs-msg.asd@          sensor_msgs-msg.asd@
+;actionlib-msg.asd@            nav_msgs-srv.asd@          sensor_msgs-srv.asd@
+;actionlib_msgs-msg.asd@       nodelet-srv.asd@           shape_msgs-msg.asd@
+;actionlib_tutorials-msg.asd@  note                       smach_msgs-msg.asd@
+;base_local_planner-msg.asd@   pcl_msgs-msg.asd@          std_msgs-msg.asd@
+;bond-msg.asd@                 polled_camera-srv.asd@     std_srvs-srv.asd@
+;common-lisp/                  robot_pose_ekf-srv.asd@    stereo_msgs-msg.asd@
+;control_msgs-msg.asd@         roscpp-msg.asd@            s-xml.asd@
+;control_msgs-srv.asd@         roscpp-srv.asd@            s-xml-rpc.asd@
+;costmap_2d-msg.asd@           roscpp_tutorials-srv.asd@  tf2_msgs-msg.asd@
+;diagnostic_msgs-msg.asd@      rosgraph_msgs-msg.asd@     tf2_msgs-srv.asd@
+;diagnostic_msgs-srv.asd@      roslisp/                   tf-msg.asd@
+;driver_base-msg.asd@          roslisp.asd@               tf-srv.asd@
+;dynamic_reconfigure-msg.asd@  roslisp_common/            theora_image_transport-msg.asd@
+;dynamic_reconfigure-srv.asd@  roslisp-msg-protocol.asd@  topic_tools-srv.asd@
+;gazebo_msgs-msg.asd@          roslisp_repl/              trajectory_msgs-msg.asd@
+;gazebo_msgs-srv.asd@          roslisp_utilities/         turtle_actionlib-msg.asd@
+;geometry_msgs-msg.asd@        roslisp-utilities.asd@     turtlesim-msg.asd@
+;map_msgs-msg.asd@             roslisp-utils.asd@         turtlesim-srv.asd@
+;map_msgs-srv.asd@             ros-load-manifest.asd@     visualization_msgs-msg.asd@
+;move_base_msgs-msg.asd@       rospy_tutorials-msg.asd@   z/
