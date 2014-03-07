@@ -177,6 +177,7 @@
 ;ml/pulcinella@             sw/SWCLOSforILC2005@       sw/reasoner-3.2 
 ;pd/Common-Lisp-Actors@     sw/cl-4store@              sw/cl-ace restricted-nl
 ;pd/cl-p2p liquid-sim  wolfcoin ..chirp ;get linda/tuple blackboard  w/lisa /gbbopen
+;    http://www.cliki.net/csp Calispel chanl https://github.com/jessealama/cl-parallel.git
 ;  have been waiting for streaming sparql: https://github.com/aaltodsg/instans.git /get it going
 ;                              wilbur        http://ap5.com/doc/ap5-man.html
 ;pd: https://github.com/cpc26/netclos    sw: http://ap5.com/ http://ap5.com/ap5-20120509.zip
