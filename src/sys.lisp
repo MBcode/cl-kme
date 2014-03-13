@@ -129,9 +129,14 @@
 ; https://github.com/MBcode/LispUtils/blob/master/tsparql.cl does this;generalize for any qry.
 ;(ql 'lisp-matrix) ;gsll, etc..  ;maxima (w/in sage w/py)
 ;(ql 'zeromq) ;or similar to ipython if possible
-;(ql 'screamer) ;try on optimization assignments ;soon
 ;(ql 'cl-graph) ;might want2try
+;Cnstr:
+;(ql 'screamer) ;try on optimization assignments ;soon
 ;(ql 'kr) ;km has most of ;miss garnet
+;&tie in to protege cnstr description(for interchange)&http://www.w3.org/2005/rules/wg/wiki/CIF
+;
+;-also ModelBasedReasoning, look back at compositional-modeling-language, can be used4web-srves
+;
 ;(ql 'arnesi) ;for dt
 ;(al 'cl-decision-tree) ;https://github.com/kroger/cl-decision-tree
 ;or: ;might skip these soon:
