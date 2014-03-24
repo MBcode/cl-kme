@@ -137,3 +137,4 @@
 ;
 ;Installed: https://github.com/redsh/IPyXMPP &on the lisp side:
 ;  #<SYSTEM cl-xmpp-tls / cl-xmpp-0.8.1 / quicklisp 2014-03-17>
+; using xmlpp more widely e.g. for things like: http://www.mact-usa.com/events.html
