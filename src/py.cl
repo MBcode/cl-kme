@@ -134,3 +134,6 @@
 ;http://stackoverflow.com/questions/20226663/timing-problems-in-lisp-and-python-programs-communicating-over-sockets
 ;slime/swank nREPL like comm
 ;like: http://asciinema.org/a/1148 https://github.com/lmacken/pyrasite
+;
+;Installed: https://github.com/redsh/IPyXMPP &on the lisp side:
+;  #<SYSTEM cl-xmpp-tls / cl-xmpp-0.8.1 / quicklisp 2014-03-17>
