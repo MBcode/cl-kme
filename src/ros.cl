@@ -364,3 +364,10 @@
 ;map_msgs-msg.asd@             roslisp-utils.asd@         turtlesim-srv.asd@
 ;map_msgs-srv.asd@             ros-load-manifest.asd@     visualization_msgs-msg.asd@
 ;move_base_msgs-msg.asd@       rospy_tutorials-msg.asd@   z/
+;
+;ros-indigo-roslisp - Lisp client library for ROS, the Robot Operating System. ;new apr2014
+;http://fei.edu.br/~murilo/rosfei/2014/ROS_Day1_Intro_handout.pdf 
+;intersting communication model, might be useable beyond some 'robotics' work
+;
+;tie in w/r.cl http://journal.r-project.org/archive/2013-2/dietrich-zug-kaiser.pdf
+; svn co http://svn.code.sf.net/p/ivs-ros-pkg/code/trunk/rosR_demos
