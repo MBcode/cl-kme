@@ -371,3 +371,16 @@
 ;
 ;tie in w/r.cl http://journal.r-project.org/archive/2013-2/dietrich-zug-kaiser.pdf
 ; svn co http://svn.code.sf.net/p/ivs-ros-pkg/code/trunk/rosR_demos
+;
+;-web-srvc:
+;http://www.rosbridge.org/doku.php json msg  ;also: py.cl cl-xmpp
+; also just installed: ros-indigo-xmlrpcpp 
+;
+; http://wiki.ros.org/rosbridge_server 
+; https://www.google.com/search?q=lisp+websocket&oq=lisp+websocket
+;
+; http://wiki.ros.org/rosbridge_suiterosbridge protocol is a specification for sending JSON based commands to ROS (and in theory, any other robot middleware). An example of the protocol for subscribing to a topic:
+; { "op": "subscribe",
+;   "topic": "/cmd_vel",
+;   "type": "geometry_msgs/Twist" }
+;;have sparql qry/minip via json-ld also interesting
