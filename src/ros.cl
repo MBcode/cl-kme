@@ -384,3 +384,27 @@
 ;   "topic": "/cmd_vel",
 ;   "type": "geometry_msgs/Twist" }
 ;;have sparql qry/minip via json-ld also interesting
+;/opt/ros> du5  ;have turtle demo going, &some of the lisp going, but roslisp tutorials not/yet
+;http://wiki.ros.org/roslisp/Tutorials/BasicUsage  I have ~1/2doz version,main ones w/side lib probs
+;23M     ./hydro/lib/python2.7/dist-packages
+;23M     ./hydro/lib/python2.7
+;85M     ./hydro/lib
+;17M     ./hydro/include
+;20M     ./hydro/share/OpenCV/haarcascades
+;20M     ./hydro/share/OpenCV
+;44M     ./hydro/share
+;147M    ./hydro
+;12M     ./indigo/lib/python2.7/dist-packages/ecto
+;35M     ./indigo/lib/python2.7/dist-packages/ecto_ros
+;74M     ./indigo/lib/python2.7/dist-packages
+;74M     ./indigo/lib/python2.7
+;162M    ./indigo/lib
+;14M     ./indigo/include
+;13M     ./indigo/share/moveit_resources/test/urdf/meshes/gripper_v0
+;47M     ./indigo/share/moveit_resources/test/urdf/meshes
+;48M     ./indigo/share/moveit_resources/test/urdf
+;48M     ./indigo/share/moveit_resources/test
+;48M     ./indigo/share/moveit_resources
+;65M     ./indigo/share
+;241M    ./indigo
+;388M    .  
