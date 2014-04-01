@@ -408,3 +408,40 @@
 ;65M     ./indigo/share
 ;241M    ./indigo
 ;388M    .  
+;on mac
+;λ▶<112 m31local: /ros/indigo> ls 
+;_setup_util.py* env.sh*         include/        setup.bash      setup.zsh
+;bin/            etc/            lib/            setup.sh        share/
+;λ▶<113 m31local: /ros/indigo> ls bin
+;catkin_find*              roscore*                  rosparam*
+;catkin_init_workspace*    roscreate-pkg*            rosrun*
+;catkin_make*              rosgraph*                 rosservice*
+;catkin_make_isolated*     roslaunch*                rossrv*
+;catkin_package_version*   roslaunch-complete*       rosstack*
+;catkin_prepare_release*   roslaunch-deps*           rostest*
+;catkin_test_results*      roslaunch-logs*           rostopic*
+;catkin_topological_order* rosmake*                  rosunit*
+;check_urdf*               rosmaster*                roswtf*
+;plugin_macro_update*      rosmsg*                   tf_remap*
+;rosbag*                   rosmsg-proto*             urdf_mem_test*
+;rosboost-cfg*             rosnode*                  urdf_to_graphiz*
+;rosclean*                 rospack*                  view_frames* 
+;λ▶<121 m31local: /opt/ros> du5
+; 16M    ./hydro/include
+; 22M    ./hydro/lib/python2.7/dist-packages
+; 22M    ./hydro/lib/python2.7
+; 83M    ./hydro/lib
+; 19M    ./hydro/share/OpenCV/haarcascades
+; 19M    ./hydro/share/OpenCV
+; 40M    ./hydro/share
+;141M    ./hydro
+; 12M    ./indigo/lib/python2.7/dist-packages/ecto
+; 35M    ./indigo/lib/python2.7/dist-packages/ecto_ros
+; 62M    ./indigo/lib/python2.7/dist-packages
+; 62M    ./indigo/lib/python2.7
+;111M    ./indigo/lib
+; 11M    ./indigo/share
+;130M    ./indigo
+;271M    . 
+; /roslisp/ros> count *.asd ;       64      64    1338
+; /robot/ros> count *.asd ;      169     169    3847
