@@ -50,3 +50,6 @@
 ;cl->r then rJava ;might be easier than cl-j  ;also clj over java libs, then make a websrvc 
 ;
 ;https://amplab.cs.berkeley.edu/2014/01/26/large-scale-data-analysis-made-easier-with-sparkr/
+;
+;use of sparql:
+;http://events.linkeddata.org/ldow2014/papers/ldow2014_paper_07.pdf 
