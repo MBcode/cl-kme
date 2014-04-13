@@ -138,3 +138,7 @@
 ;Installed: https://github.com/redsh/IPyXMPP &on the lisp side:
 ;  #<SYSTEM cl-xmpp-tls / cl-xmpp-0.8.1 / quicklisp 2014-03-17>
 ; using xmlpp more widely e.g. for things like: http://www.mact-usa.com/events.html
+;
+;Retweeted by Fernando Perez
+; Matthew Frazier ‏@LeafStorm  16h
+;Yo dawg, I heard you like Julia, so we put Julia in IPython (and interleaved the call stacks) so you can Julia while you Python. #PyCon2014 

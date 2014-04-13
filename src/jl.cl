@@ -193,3 +193,7 @@
 ;
 ;http://www.meetup.com/Bay-Area-Julia-Users/events/157317652 on http://juliaopt.org/ &parts of
 ; 2nd talk also possibly applicable to scipm work. Might be a place to try a larger call2julia.
+;
+;Retweeted by Fernando Perez
+; Matthew Frazier ‏@LeafStorm  16h
+;Yo dawg, I heard you like Julia, so we put Julia in IPython (and interleaved the call stacks) so you can Julia while you Python. #PyCon2014 
