@@ -53,3 +53,9 @@
 ;
 ;use of sparql:
 ;http://events.linkeddata.org/ldow2014/papers/ldow2014_paper_07.pdf 
+;
+;http://paddytherabbit.com/exploring-telenovela-with-dbpedia-r-and-gephi/
+;http://www.reddit.com/r/semanticweb/comments/21w5cr/rfc_reproducible_statistics_and_linked_data/
+;
+;data-cube
+;http://www.w3.org/TR/vocab-data-cube/ http://www.w3.org/2011/gld/wiki/Data_Cube_Implementations
