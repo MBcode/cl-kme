@@ -59,3 +59,6 @@
 ;
 ;data-cube
 ;http://www.w3.org/TR/vocab-data-cube/ http://www.w3.org/2011/gld/wiki/Data_Cube_Implementations
+
+;https://www.google.com/search?q=R+to+octave  or might just try:
+;http://www.sagemath.org/doc/reference/interfaces/sage/interfaces/octave.html
