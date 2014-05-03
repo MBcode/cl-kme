@@ -31,6 +31,7 @@
 ;(lt) ;was test for new u2.lisp fncs
 (ql 'cl-csv) ;for io ;look@ data-table, not yet
 (ql 'trivial-shell) ;for io
+;xml: https://github.com/Shinmera/plump/
 ;cl-ace works w/the osx git version of cxml /ql v has had probs4awhile
 ;s-xml xmls for sparql-w:
 (when (member 'rdf *t*)
@@ -190,7 +191,9 @@
 ;clpython  rcl rclg rclmath;looked@lsp/clj-hdf5/sci-db /but R-sci-db might be better  so rcl/etc
 ;pd(parallel/distributed)stuff might be able to be done via the R/Py pkgs
 ;   r.cl py.cl (jl.cl, but ijulia, or just mq);ql: zeromq|zmq|pzmq
+;pd: https://github.com/mikelevins/apis
 ;lots of math/stat,  &data-table cl-linq
+;https://github.com/tpapp/cl-data-frame/
 ;
 ;m/Maxima-CAS        m/gnoem             m/mma               m/rclmath
 ;m/cl-mathstats      m/gsll              m/mulm              m/simlab

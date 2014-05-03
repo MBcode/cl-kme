@@ -142,3 +142,7 @@
 ;Retweeted by Fernando Perez
 ; Matthew Frazier ‏@LeafStorm  16h
 ;Yo dawg, I heard you like Julia, so we put Julia in IPython (and interleaved the call stacks) so you can Julia while you Python. #PyCon2014 
+;
+;http://xach.livejournal.com/323383.html
+;Butler is a Common Lisp kernel for IPython Notebook, but "don't expect anything to happen yet until more messages and sockets are set up." Pull requests welcome.
+;https://github.com/agentultra/butler
