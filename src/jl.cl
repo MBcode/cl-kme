@@ -197,3 +197,5 @@
 ;Retweeted by Fernando Perez
 ; Matthew Frazier ‏@LeafStorm  16h
 ;Yo dawg, I heard you like Julia, so we put Julia in IPython (and interleaved the call stacks) so you can Julia while you Python. #PyCon2014 
+;
+;Might use http://forio.com/products/julia-studio/ and then www.nicklevine.org/claude to get lisp
