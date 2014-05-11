@@ -187,6 +187,16 @@
 ;  have been waiting for streaming sparql: https://github.com/aaltodsg/instans.git /get it going
 ;                              wilbur        http://ap5.com/doc/ap5-man.html
 ;pd: https://github.com/cpc26/netclos    sw: http://ap5.com/ http://ap5.com/ap5-20120509.zip
+;pd: http://www.cliki.net/concurrency http://www.cliki.net/distributed
+;pd: https://github.com/mikelevins/apis.git  a worker bee for building application hives
+                            ;Apis is a library that supports shared-nothing concurrency 
+;pd: PCall, or parallel call, is a Common Lisp library intended to simplify 'result-oriented'
+ ;parallelism. It uses a thread pool to concurrently run small computations without spawning a new
+ ;thread. This makes it possible to exploit multiple cores without much extra fuss
+;pd:lfarm is a Common Lisp library for distributing work across machines
+    ;using the [lparallel] (http://lparallel.org) API.
+ ;lparallel is a library for parallel programming in Common Lisp, featuring
+ ;10: simple model fine-grain ||, map/reduce/sort/rm,.., .. ..  tasks priority/category..
 ;cl-graph graph-utils epigraph ;vivace-graph-v2           cl-nlp langutils /cl-registry  /tagger
 ;clpython  rcl rclg rclmath;looked@lsp/clj-hdf5/sci-db /but R-sci-db might be better  so rcl/etc
 ;pd(parallel/distributed)stuff might be able to be done via the R/Py pkgs
