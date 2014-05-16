@@ -279,6 +279,7 @@
 ;simple Service-wise pipe or ~like: https://github.com/joewalnes/websocketd ..
 ;tried2get de.setf going wilbur does, but not thrift/cassandra yet
 ; still think of pg (scidb) &hdf which now had a lighter more db like connection: Supporting a Light-Weight Data Management Layer over #HDF5: HDF5_SQL #tweet: Supporting a Light-We... http://bit.ly/1dmwqK8 
+; hdf-table is cl-ana works now
 ;http://architects.dzone.com/articles/openstack-meets-lisp-cl & http://bit.ly/TP8gfz has more..
 ;Look@lisp for different chips/mem-size/etc. eg. clozure, ecl  ;also on android other than clj
 ;Look@even more background IoT work,comm&semantics, try kmp exmpl w/what I have,@same time
