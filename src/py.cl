@@ -146,3 +146,5 @@
 ;http://xach.livejournal.com/323383.html
 ;Butler is a Common Lisp kernel for IPython Notebook, but "don't expect anything to happen yet until more messages and sockets are set up." Pull requests welcome.
 ;https://github.com/agentultra/butler
+;
+;also https://github.com/twosigma/beaker-notebook ide might be interesting someday?
