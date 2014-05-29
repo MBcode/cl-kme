@@ -148,3 +148,6 @@
 ;https://github.com/agentultra/butler
 ;
 ;also https://github.com/twosigma/beaker-notebook ide might be interesting someday?
+;
+;https://github.com/haroldl/clip.git then turn chunks of py code to lisp
+; turns out it is only working on small simple bits of code

@@ -62,3 +62,8 @@
 
 ;https://www.google.com/search?q=R+to+octave  or might just try:
 ;http://www.sagemath.org/doc/reference/interfaces/sage/interfaces/octave.html
+
+;Jeroen Janssens ‏@jeroenhjanssens  5h
+;Rio (#rstats from the command line) has been updated to correctly output vectors | http://bit.ly/RioScript 
+;http://jeroenjanssens.com/2013/09/19/seven-command-line-tools-for-data-science.html 
+;https://github.com/jeroenjanssens/command-line-tools-for-data-science 
