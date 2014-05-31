@@ -83,6 +83,8 @@
 (defun jl1 (s)
   (trivial-shell:shell-command (format nil "julia -E \"~a\"" s)))
 
+;look@ https://github.com/fperez/zmq-pykernel to see how ipy started&use (ql 'zeromq)
+
 ;there is a julia ipython connection so use clpython instead
 ;https://github.com/JuliaLang/IJulia.jl  though uses zmq, which I'd love to just go to directly
 ;julia> Pkg.add("IJulia")
