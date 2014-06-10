@@ -200,3 +200,5 @@
 ;
 ;Might use http://forio.com/products/julia-studio/ and then www.nicklevine.org/claude to get lisp
 ;also try it's web interfaces: https://github.com/JuliaLang/HttpServer.jl /WebSockets.jl
+;
+;https://github.com/lindahua/MATLAB.jl (so jl->octave?) but so far cl-octave is better?/=ly bad
