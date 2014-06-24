@@ -84,6 +84,7 @@
   (trivial-shell:shell-command (format nil "julia -E \"~a\"" s)))
 
 ;look@ https://github.com/fperez/zmq-pykernel to see how ipy started&use (ql 'zeromq)
+; (ql 'pzmq)  ;zmq
 
 ;there is a julia ipython connection so use clpython instead
 ;https://github.com/JuliaLang/IJulia.jl  though uses zmq, which I'd love to just go to directly
