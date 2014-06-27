@@ -70,3 +70,7 @@
 ;
 ;http://www.r-bloggers.com/controlling-rstudio-python-child-processes
 ; if not mq try json interop w/R's rjson or RJSONIO
+; https://github.com/jeroenooms/jsonlite http://arxiv.org/abs/1403.2805 
+; The jsonlite Package: A Practical and Consistent Mapping Between JSON Data and R Objects
+; http://arxiv.org/abs/1401.7372 RProtoBuf: Efficient Cross-Language Data Serialization in R
+; https://www.opencpu.org/ &parenscript/?
