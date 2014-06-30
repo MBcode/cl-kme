@@ -74,3 +74,6 @@
 ; The jsonlite Package: A Practical and Consistent Mapping Between JSON Data and R Objects
 ; http://arxiv.org/abs/1401.7372 RProtoBuf: Efficient Cross-Language Data Serialization in R
 ; https://www.opencpu.org/ &parenscript/?
+
+;Scientific Python ‏@SciPyTip  see if easier to just py interface?
+;Calling R from Python with RPy http://rpy.sourceforge.net/  
