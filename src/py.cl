@@ -157,3 +157,7 @@
  
 ;Scientific Python ‏@SciPyTip  see if easier to just py interface?
 ;Calling R from Python with RPy http://rpy.sourceforge.net/  
+ 
+;IPython Dev @IPythonDev  ·  5h
+;The language-agnosting parts of IPython are moving to a new home that's not so Python-specific: @ProjectJupyter 
+;https://speakerdeck.com/fperez/project-jupyter 
