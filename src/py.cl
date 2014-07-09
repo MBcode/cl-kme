@@ -161,3 +161,4 @@
 ;IPython Dev @IPythonDev  ·  5h
 ;The language-agnosting parts of IPython are moving to a new home that's not so Python-specific: @ProjectJupyter 
 ;https://speakerdeck.com/fperez/project-jupyter 
+;http://jupyter.org/ http://colaboratory.jupyter.org/welcome/ https://github.com/jupyter
