@@ -344,3 +344,4 @@ values are returned with the values function)."
   (subseq string (1+ (position #\> string :from-end t)))) 
 
 (trace send receive find-number-string-from-end )
+;look@ http://blink1073.github.io/oct2py/docs/
