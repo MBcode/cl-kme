@@ -3,6 +3,15 @@ http://sebastianraschka.com/Articles/2014_matrix_cheatsheet.html
 http://blog.yhathq.com/posts/yhat-sciencebox.html want easy iPy Rserver mixing&beyond on anythhing? 
 lush.sourceforge.net/ yann.lecun.com/ex/downloads/ https://news.ycombinator.com/item?id=7928738 
 June14 touched 195quicklisp, 1.1-5k uniq asd, .8-.9k .git/dirs,sys.lisp kmpq/lnk breakdwn Look@
-http://www.r-bloggers.com/recording-of-opencpu-talk-at-user2014/ 
+
+http://www.r-bloggers.com/recording-of-opencpu-talk-at-user2014/  ;functional/but key2reuse
+  https://www.opencpu.org/    jsfiddle.net/opencpu once setup ;~ twitter.com/rstudiotips
+
 The language-agnosting parts of IPython are moving to a new home that's not so Python-specific: @ProjectJupyter 
 @_inundata @ellisonbg IPython's not going away, it's just shrinking to the Python Jupyter kernel + "better Python shell" (sloooowly)  
+
+http://james.howison.name/pubs/HowisonHerbsleb-Sustainability.pdf
+
+my slides for today's #ESIPfed: Working towards Sustainable Software for Science (an NSF and community view) http://www.slideshare.net/danielskatz/working-towards-sustainable-software-for-science-a … #ESIPfed 
+
+https://speakerdeck.com/fperez/the-berkeley-institute-for-data-science-a-place-for-people-like-us 
