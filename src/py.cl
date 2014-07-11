@@ -162,6 +162,7 @@
 ;The language-agnosting parts of IPython are moving to a new home that's not so Python-specific: @ProjectJupyter 
 ;https://speakerdeck.com/fperez/project-jupyter 
 ;http://jupyter.org/ http://colaboratory.jupyter.org/welcome/ https://github.com/jupyter
+; https://github.com/jupyter/colaboratory
 ;-have also been looking@ https://github.com/Inaimathi/cl-notebook but subsys not compiling yet
 
 ;http://blink1073.github.io/oct2py/docs/ 
