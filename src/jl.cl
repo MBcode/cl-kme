@@ -202,3 +202,6 @@
 ;also try it's web interfaces: https://github.com/JuliaLang/HttpServer.jl /WebSockets.jl
 ;
 ;https://github.com/lindahua/MATLAB.jl (so jl->octave?) but so far cl-octave is better?/=ly bad
+ 
+;http://lambda-the-ultimate.org/node/4990 -> http://graydon2.dreamwidth.org/189377.html
+;me: would love a f2cl for julia, call-it: jl2cl
