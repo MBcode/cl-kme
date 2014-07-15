@@ -166,3 +166,11 @@
 ;-have also been looking@ https://github.com/Inaimathi/cl-notebook but subsys not compiling yet
 
 ;http://blink1073.github.io/oct2py/docs/ 
+ 
+;http://www.cbinsights.com/blog/python-tools-machine-learning
+;Integration with other languages
+;R -> RPython
+;Matlab -> matpython
+;Java -> Jython
+;Lua -> Lunatic Python
+;Julia -> PyCall.jl
