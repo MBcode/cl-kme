@@ -174,3 +174,6 @@
 ;Java -> Jython
 ;Lua -> Lunatic Python
 ;Julia -> PyCall.jl
+ 
+;another reason to bridge or even just shell out:
+;https://pypi.python.org/pypi/SPARQLWrapper/1.6.1
