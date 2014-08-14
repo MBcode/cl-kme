@@ -182,3 +182,5 @@
 ;"sh is a full-fledged subprocess interface for Python that allows you to call any program as if it were a function": http://amoffat.github.io/sh/#  
 
 ;have wanted spark RDD easy access: https://github.com/holdenk/sparklingpandas 
+ 
+;http://blog.cloudera.com/blog/2014/08/how-to-use-ipython-notebook-with-apache-spark/
