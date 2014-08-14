@@ -184,3 +184,9 @@
 ;have wanted spark RDD easy access: https://github.com/holdenk/sparklingpandas 
  
 ;http://blog.cloudera.com/blog/2014/08/how-to-use-ipython-notebook-with-apache-spark/
+ 
+;http://cjelupton.wordpress.com/2014/08/14/quantum-computing-and-lisp/
+;  https://github.com/thephoeron/silver-sword.git
+;   would be even better if the underlying Lisp–Python bridge,
+;    BURGLED-BATTERIES, supported Python Class to CLOS.
+;     https://github.com/pinterface/burgled-batteries.git
