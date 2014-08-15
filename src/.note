@@ -31,3 +31,6 @@ http://linkedscience.org/tutorials/ incl some R tutorials
 really do want data-cube/etc to annotae sci data, maybe w/kmp &hdf part of cl-ana/?
  =https://github.com/ghollisjr/cl-ana  has hdf-table,&much more for data-analysis
  https://github.com/ghollisjr/cl-ana/wiki/Tables Histograms Fitting Plotting Generic-Math tutorials4 cl-ana
+
+;     https://github.com/pinterface/burgled-batteries.git
+;     http://talks.kepibu.org/2012/pyowa-bb/talk.html 

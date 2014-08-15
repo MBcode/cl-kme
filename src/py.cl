@@ -190,3 +190,8 @@
 ;   would be even better if the underlying Lisp–Python bridge,
 ;    BURGLED-BATTERIES, supported Python Class to CLOS.
 ;     https://github.com/pinterface/burgled-batteries.git
+;     http://talks.kepibu.org/2012/pyowa-bb/talk.html
+;      http://www.cliki.net/burgled-batteries  embeds cpython into Lisp
+;        BURGLED-BATTERIES(9): (run* "1+3;")
+;        4
+;      http://www.cliki.net/python%20programming%20language
