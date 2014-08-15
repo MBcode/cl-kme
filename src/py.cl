@@ -194,4 +194,17 @@
 ;      http://www.cliki.net/burgled-batteries  embeds cpython into Lisp
 ;        BURGLED-BATTERIES(9): (run* "1+3;")
 ;        4
+;      http://pinterface.livejournal.com/39435.html
+;        
+;        BURGLED-BATTERIES(12): (run "1+1")
+;        2
+;        BURGLED-BATTERIES(13): (run "[1, 2, 3]")  
+;        #(1 2 3)  
+;        BURGLED-BATTERIES(14): (run "(1, 2, 3)")  
+;        (1 2 3)  
+;        BURGLED-BATTERIES(15): (run "dict(a=1, b=2, c=3)")  
+;        #<HASH-TABLE :TEST EQUAL :COUNT 3 {10053D1A93}>  
+;        BURGLED-BATTERIES(16): (alexandria:hash-table-alist *)  
+;        (("b" . 2) ("c" . 3) ("a" . 1)) 
+;      https://cjelupton.wordpress.com/tag/lisp-python-bridge/
 ;      http://www.cliki.net/python%20programming%20language
