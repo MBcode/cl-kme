@@ -77,3 +77,17 @@
 
 ;Scientific Python ‏@SciPyTip  see if easier to just py interface?
 ;Calling R from Python with RPy http://rpy.sourceforge.net/  
+;
+;http://rpython.r-forge.r-project.org loaded in rstudio&examples work
+;> library("rPython", lib.loc="/Library/Frameworks/R.framework/Versions/3.0/Resources/library")
+;Loading required package: RJSONIO
+;> python.call( "len", 1:3 )
+;[1] 3
+;> a <- 1:4
+;> b <- 5:8
+;> python.exec( "def concat(a,b): return a+b" )
+;> python.call( "concat", a, b)
+;[1] 1 2 3 4 5 6 7 8
+;> python.assign( "a",  "hola hola" )
+;> python.method.call( "a", "split", " " )
+;[1] "hola" "hola" 
