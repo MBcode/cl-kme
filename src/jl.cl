@@ -207,3 +207,5 @@
 ;me: would love a f2cl for julia, call-it: jl2cl
  
 ;http://p-cos.blogspot.be/2014/07/a-lispers-first-impression-of-julia.html
+ 
+;https://news.ycombinator.com/item?id=8216321 julia0.3  
