@@ -208,4 +208,17 @@
  
 ;http://p-cos.blogspot.be/2014/07/a-lispers-first-impression-of-julia.html
  
-;https://news.ycombinator.com/item?id=8216321 julia0.3  
+;;https://news.ycombinator.com/item?id=8216321 julia0.3  
+;* Very efficient interaction with C and Fortran libraries is a core Julia feature, with the ability to pass arrays and structs directly between C and Julia.
+;Calling C: http://docs.julialang.org/en/latest/manual/calling-c-and-for...
+;* Python libraries can be used through PyCall.jl, which is used most famously to call matplotlib (PyPlot.jl) but also other libraries like pandas (Pandas.jl).
+;PyCall.jl: https://github.com/stevengj/PyCall.jl
+;PyPlot.jl: https://github.com/stevengj/PyPlot.jl
+;Pandas.jl: https://github.com/malmaud/Pandas.jl
+;* Java libraries can be used through JavaCall.jl, which is used in Taro.jl to call Apache Tika and Apache POI
+;JavaCall.jl: https://github.com/aviks/JavaCall.jl
+;Taro.jl: https://github.com/aviks/Taro.jl
+;* R libraries can be called through Rif.jl
+;Rif.jl: https://github.com/lgautier/Rif.jl
+ 
+;http://mth229.github.io
