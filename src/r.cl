@@ -91,3 +91,5 @@
 ;> python.assign( "a",  "hola hola" )
 ;> python.method.call( "a", "split", " " )
 ;[1] "hola" "hola" 
+ 
+;http://databricks.com/blog/2014/08/27/statistics-functionality-in-spark.html SparkR?
