@@ -222,3 +222,5 @@
 ;Rif.jl: https://github.com/lgautier/Rif.jl
  
 ;http://mth229.github.io
+ 
+;https://github.com/svaksha/Julia.jl/blob/master/AI.md 
