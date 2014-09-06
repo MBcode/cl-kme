@@ -224,3 +224,7 @@
 ;http://mth229.github.io
  
 ;https://github.com/svaksha/Julia.jl/blob/master/AI.md 
+
+; Viral B. Shah ‏@Viral_B_Shah  6h
+;#julialang 0.4-dev on an #ARM #Chromebook. Thanks Isaiah Norton. Next step: world domination. ;-)  
+;http://en.wikipedia.org/wiki/Julia_(programming_language) 
