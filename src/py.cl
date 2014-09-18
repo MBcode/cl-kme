@@ -208,3 +208,6 @@
 ;        (("b" . 2) ("c" . 3) ("a" . 1)) 
 ;      https://cjelupton.wordpress.com/tag/lisp-python-bridge/
 ;      http://www.cliki.net/python%20programming%20language
+ 
+;    http://mmontone-programming.blogspot.com.ar/2014/09/embedding-python-in-common-lisp.html
+;    but not quite working yet/right now
