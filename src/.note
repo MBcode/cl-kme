@@ -56,3 +56,4 @@ http://wssspe.researchcomputing.org.uk/wssspe2/accepted-papers/
     Continuous Integration for Concurrent MOOSE Framework and Application Development on GitHub
     The Nebuchadnezzar Effect: Dreaming of Sustainable Software through Sustainable Software Architectures
      
+Not sure how quickly Jupyter will come along, so might try hdf5 connection, then run remote code off of that.
