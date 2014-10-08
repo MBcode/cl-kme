@@ -228,3 +228,7 @@
 ; Viral B. Shah ‏@Viral_B_Shah  6h
 ;#julialang 0.4-dev on an #ARM #Chromebook. Thanks Isaiah Norton. Next step: world domination. ;-)  
 ;http://en.wikipedia.org/wiki/Julia_(programming_language) 
+ 
+;http://radar.oreilly.com/2013/10/julias-role-in-data-science.html
+; https://github.com/stevengj/PyCall.jl 
+; https://github.com/lindahua/MATLAB.jl
