@@ -211,3 +211,5 @@
  
 ;    http://mmontone-programming.blogspot.com.ar/2014/09/embedding-python-in-common-lisp.html
 ;    but not quite working yet/right now
+;
+;http://mail.scipy.org/pipermail/ipython-dev/2014-November/015347.html less py specific format
