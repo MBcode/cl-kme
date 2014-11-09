@@ -232,3 +232,5 @@
 ;http://radar.oreilly.com/2013/10/julias-role-in-data-science.html
 ; https://github.com/stevengj/PyCall.jl 
 ; https://github.com/lindahua/MATLAB.jl
+;
+; @newsyc100  Julia: A fresh approach to numerical computing http://arxiv.org/abs/1411.1607  (http://bit.ly/1siEpNY )
