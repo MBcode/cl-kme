@@ -213,3 +213,9 @@
 ;    but not quite working yet/right now
 ;
 ;http://mail.scipy.org/pipermail/ipython-dev/2014-November/015347.html less py specific format
+;
+;from http://www.meetup.com/San-Francisco-PyData/events/215142332/ looked@/thought about:
+;connect to https://github.com/apache/spark/tree/master/python/pyspark rdd.py etc
+; &maybe someday replace,  but would need py4j replacement so maybe easier w/abcl ;&I'm sure clj already exists
+; maybe someday it can all just hit llvm  ;~re:was looking at rhine recently
+; also look@lsp libs that do much of the core of what i want from spark/&try those again as well
