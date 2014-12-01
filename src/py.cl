@@ -219,3 +219,5 @@
 ; &maybe someday replace,  but would need py4j replacement so maybe easier w/abcl ;&I'm sure clj already exists
 ; maybe someday it can all just hit llvm  ;~re:was looking at rhine recently
 ; also look@lsp libs that do much of the core of what i want from spark/&try those again as well
+;
+; http://www.pixelmonkey.org/2014/11/02/clojonic or hy etc, so easier2exchange s-expr w/py
