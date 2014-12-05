@@ -221,3 +221,5 @@
 ; also look@lsp libs that do much of the core of what i want from spark/&try those again as well
 ;
 ; http://www.pixelmonkey.org/2014/11/02/clojonic or hy etc, so easier2exchange s-expr w/py
+;
+; http://python.berkeley.edu/events/2014/12/05/rpy2-and-ropensci.html
