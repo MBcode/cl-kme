@@ -71,7 +71,8 @@ Ben Lorica @bigdata  ·  Nov 7 Data scientists who work in many languages: v1.1.
  http://www.datatau.com/item?id=4920    2 points by izyda 6 hours ago | link 
     This may be like blasphemy for those who love the ipython type notebook, but I hope that I could use this API for passing objects in other IDEs.
     I find programming in R Studio (for the purpose of data analysis) far better than a notebook style setup. Notebooks seems good for documenting / presenting but any serious machine learning seems hard to do in it...
-    reply
+    reply/similar:
+https://github.com/NFLabs/zeppelin Zeppelin is data analytics environment http://zeppelin-project.org
 
 If I have not said before bobak@balisp.org no longer works; the site was not paid for&even though I heard it would be taken care of/it looks like it is gone for good.
  Unfortunately there are many places that I used this email, &very few sites that take into account the loss of an email.  Please use my gmail instead.
