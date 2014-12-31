@@ -236,3 +236,5 @@
 ; @newsyc100  Julia: A fresh approach to numerical computing http://arxiv.org/abs/1411.1607  (http://bit.ly/1siEpNY )
 ;
 ; http://www.meetup.com/Bay-Area-Julia-Users/events/218098882/ amos used fortran2julia ;more in news recently &a few new thoughts
+;
+; http://en.wikipedia.org/wiki/Julia_(programming_language)
