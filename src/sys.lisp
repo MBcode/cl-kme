@@ -112,7 +112,7 @@
 ;-want more plotting, look at vecto/sparklines, as well as links to ext plotting
 (when (member 'graph *t*) 
  (ql 'cl-graph) (al 'graph-utils) ;might need linux
- ;(al 'vivace-graph-v2) ;not loading anymore
+ ;(al 'vivace-graph-v2) ;not loading anymore ;v3 did load/but not@moment
  ;consider looking at/4 an agraph like interface
  (ql 'epigraph)
 ;(ql 'fgraph)
