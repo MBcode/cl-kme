@@ -122,6 +122,7 @@
 ;
 ;might start calling out to: https://github.com/halgari/clojure-py ;could still go mq comm route too
 ;     _maybe http://docs.hylang.org/en/latest/ instead of clj-py
+;     http://docs.hylang.org/en/latest/quickstart.html https://github.com/hylang/hy ;virtualenv quickstart works
 ;  _maybe nrepl/slime or even easier start to send code2it, &then have it run other py code
 ;http://cjelupton.wordpress.com/2013/09/26/hacking-d-wave-one-in-common-lisp/
 ;http://cjelupton.wordpress.com/2013/11/12/hacking-d-wave-one-in-common-lisp-introducing-silver-sword/
