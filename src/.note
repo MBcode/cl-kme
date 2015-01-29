@@ -87,7 +87,9 @@ Scientific Computing and the Joy of Language Interop: http://technicae.cogitat.i
 List of Lisp software: https://github.com/kozross/awesome-cl 
  
 github cbaggers/cepl not working yet
-Mezzanine: A Commone Lisp based 64bit OS for Virtualbox bit.ly/1GU3kVg ;also want2try
+
+Mezzanine: A Commone Lisp based 64bit OS for Virtualbox bit.ly/1GU3kVg 
+@LispDaily  ·  The new Common #Lisp based #Lisp OS for x86-64 has been renamed Mezzano and has been published on Github: https://github.com/froggey/Mezzano 
  
 Using Vim for Lisp dev bit.ly/15AnZN5
  
