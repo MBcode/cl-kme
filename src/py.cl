@@ -224,3 +224,6 @@
 ; http://www.pixelmonkey.org/2014/11/02/clojonic or hy etc, so easier2exchange s-expr w/py
 ;
 ; http://python.berkeley.edu/events/2014/12/05/rpy2-and-ropensci.html
+;
+;@DougBlank  · @ProjectJupyter now at 30 languages... more on the way!  https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages …
+    ;https://pypi.python.org/pypi?:action=browse&show=all&c=586
