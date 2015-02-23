@@ -100,3 +100,10 @@ https://bitbucket.org/monoid/lpvm works, maybe use w/lisa.sf like I did w/clips
 
 http://www.hpcadvisorycouncil.com/events/2015/stanford-workshop/agenda.php @HPC_Guru  ·  
 All presentations from today's #HPC Advisory Council Stanford sessions are now posted http://hpcadvisorycouncil.com/events/2015/stanford-workshop/agenda.php … #HPCAC15 via @hpccouncil
+
+3.10 A functional programming approach: SGP 
+Simple Grid Protocol (SGP) is a set of protocols and software for Linux and BSD. It is programmed 
+in CLISP (a Common Lisp implementation). LISP is a well-known functional programming language.  
+Programs written in such languages are nearly automatically (without much extra effort) useable for 
+multithreaded, parralel execution. Each function can be executed in parralel. SGP is a small and not 
+widely used project, but the functional approach is interesting.  • http://grid.bmk.com.au/
