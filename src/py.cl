@@ -227,3 +227,5 @@
 ;
 ;@DougBlank  · @ProjectJupyter now at 30 languages... more on the way!  https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages …
     ;https://pypi.python.org/pypi?:action=browse&show=all&c=586
+
+;http://www.meetup.com/San-Francisco-PyData/events/219507758/ though cl-neo4j too
