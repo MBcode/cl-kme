@@ -107,3 +107,6 @@ in CLISP (a Common Lisp implementation). LISP is a well-known functional program
 Programs written in such languages are nearly automatically (without much extra effort) useable for 
 multithreaded, parralel execution. Each function can be executed in parralel. SGP is a small and not 
 widely used project, but the functional approach is interesting.  • http://grid.bmk.com.au/
+
+silk demo: http://www.meetup.com/USF-Seminar-Series-in-Analytics/events/219199389/ Easier cheaper than tableau &mo web map friendly. open github4data etc
+use of:;Import.io Kimono labs; Monkeylearn alchemy Mode analytics;
