@@ -238,3 +238,7 @@
 ; http://www.meetup.com/Bay-Area-Julia-Users/events/218098882/ amos used fortran2julia ;more in news recently &a few new thoughts
 ;
 ; http://en.wikipedia.org/wiki/Julia_(programming_language)
+
+; http://www.meetup.com/Multithreaded-Data/events/220356115/ reminded me of:
+;@planarrowspace · Feb 25 "the Lisp version is 380 times faster than R and 150 times faster than Python." #Lisp #Rstats #python http://www.springer.com/cda/content/document/cda_downloaddocument/9783790820836-c2.pdf?SGWID=0-0-45-596302-p173832348 …
+;as the same sort of claims are being made for julia now
