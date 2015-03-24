@@ -205,6 +205,8 @@
 ;pd: https://github.com/mikelevins/apis
 ;lots of math/stat,  &data-table cl-linq
 ;https://github.com/tpapp/cl-data-frame/
+;pd:LispDaily (@LispDaily) tweeted at 10:59am - 23 Mar 15: ;
+;Common #Lisp Parallel Programming - bit.ly/1HqzFio (https://twitter.com/LispDaily/status/580107236418142209?s=17
 ;
 ;m/Maxima-CAS        m/gnoem             m/mma               m/rclmath
 ;m/cl-mathstats      m/gsll              m/mulm              m/simlab
