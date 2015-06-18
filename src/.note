@@ -60,6 +60,20 @@ Not sure how quickly Jupyter will come along, so might try hdf5 connection, then
 
 Try our https://github.com/plops/sb-hdf/blob/master/hdf.lisp further/looks good so far.
 
+mikiobraun ‏@mikiobraun  18h18 hours ago
+Now I can report I discussed HDF5 on HDFS potential at least once seriously. Wonder about HDF5's splitability, though.
+ Andrew Musselman ‏@akm  17h17 hours ago
+@mikiobraun Ha we toyed with that @agibsonccc
+ mikiobraun ‏@mikiobraun  17h17 hours ago
+@akm @agibsonccc And? Is it splittable?
+ Andrew Musselman ‏@akm  17h17 hours ago
+@mikiobraun Never looked at that, just put the hdf5 files into HBase cells one by one @agibsonccc
+ agibsonccc ‏@agibsonccc  17h17 hours ago
+@akm @mikiobraun It's an interesting idea. My interest in this was seeing two things that normally aren't in the same sentence together
+ mikiobraun ‏@mikiobraun  17h17 hours ago
+@agibsonccc @akm I think this is even a somewhat legitimate question as HDF5 is used to store scientific data.
+
+
 http://www.meetup.com/USF-Seminar-Series-in-Analytics/events/210833942/ use storm share components open-src soon
  
 Miss xlispstat& http://forrest.psych.unc.edu/research/vista-frames/links.html love it when (ql 'cls) works
