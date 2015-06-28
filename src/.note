@@ -55,6 +55,8 @@ http://wssspe.researchcomputing.org.uk/wssspe2/accepted-papers/
     Building Portable Analytical Environments to improve sustainability of computational-analysis pipelines in the sciences
     Continuous Integration for Concurrent MOOSE Framework and Application Development on GitHub
     The Nebuchadnezzar Effect: Dreaming of Sustainable Software through Sustainable Software Architectures
+
+worflow: went2 http://www.meetup.com/Bay-Area-KNIME-Users/events/221569911/ re: nceas kepler, isi.edu/~gil /resarch/workflows.html semantic-wf,taverna ;show parallel/s w/notebook Rstudio like setups 
      
 Not sure how quickly Jupyter will come along, so might try hdf5 connection, then run remote code off of that.
 
