@@ -57,6 +57,7 @@ http://wssspe.researchcomputing.org.uk/wssspe2/accepted-papers/
     The Nebuchadnezzar Effect: Dreaming of Sustainable Software through Sustainable Software Architectures
 
 worflow: went2 http://www.meetup.com/Bay-Area-KNIME-Users/events/221569911/ re: nceas kepler, isi.edu/~gil /resarch/workflows.html semantic-wf,taverna ;show parallel/s w/notebook Rstudio like setups 
+ www.wings-workflows.org v4, want repl, w/java/tomcat maybe clj/pedestal?, though abcl-web.sf.net or lisplets.sf.net or just the idea in something even more extensible(still looking kep/tav)2
      
 Not sure how quickly Jupyter will come along, so might try hdf5 connection, then run remote code off of that.
 
