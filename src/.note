@@ -146,4 +146,4 @@ Hacker News @HNTweets   The Chirp Distributed Filesystem: http://ccl.cse.nd.edu/
 Karin Ahlin @karinahlin Do you need tool(s) for creating, opening up and publishing #opendata ? Here are some suggestions: https://github.com/theodi/open-data-tech-review/wiki … …? 
 
 github.com/angavrilov/cl-mpi or github.com/marcoheisig/cl-mpi http://cucis.ece.northwestern.edu/projects/PnetCDF/ https://trac.mcs.anl.gov/projects/parallel-netcdf or hdf5, though py/R bridges too
-Would still like a semantic HDF(5), metadata/tree w/the data
+    Would still like a semantic HDF(5), metadata/tree w/the data; so could auto-connect via urn/uri between ipy/r/etc compuatation, no just data-frame or cube, (well semantic datacube re).
