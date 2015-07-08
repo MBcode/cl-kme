@@ -148,4 +148,5 @@ Karin Ahlin @karinahlin Do you need tool(s) for creating, opening up and publish
 github.com/angavrilov/cl-mpi or github.com/marcoheisig/cl-mpi http://cucis.ece.northwestern.edu/projects/PnetCDF/ https://trac.mcs.anl.gov/projects/parallel-netcdf or hdf5, though py/R bridges too
     Would still like a semantic HDF(5), metadata/tree w/the data; so could auto-connect via urn/uri between ipy/r/etc compuatation, no just data-frame or cube, (well semantic datacube re).
 
-Spark Kernal (w/IMB) http://meetu.ps/2K44lf Storm to spark, ipy..use, Livesheets viz, me: Py-Wf (or any workflow2mirror jupyter work-book)
+Spark Kernal (w/IMB) http://meetu.ps/2K44lf Storm to spark: https://m.youtube.com/watch?v=2AX6g0tK-us&feature=youtu.be ipy..use, Livesheets viz, me: Py-Wf (or any workflow2mirror jupyter work-book)
+-
