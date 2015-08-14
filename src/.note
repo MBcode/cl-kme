@@ -154,3 +154,8 @@ Spark Kernal (w/IMB) http://meetu.ps/2K44lf Storm to spark: https://m.youtube.co
 Kirk Borne @KirkDBorne  Maryland, USA >@NCSAatIllinois Director Ed Seidel talks about Supercomputing, #HPC, #BigData, and @LSST: http://insidehpc.com/2015/06/ed-seidel-presents-supercomputing-in-an-era-of-big-data-and-big-collaboration/ … #DataScience
 
 @TextMining_r  Dataframes – Julia, R, Python: https://www.reddit.com/r/textdatamining/comments/3fsxvc/dataframes_julia_r_python/ … #textmining
+
+I've been thinking of this for awhile, great to see it: https://github.com/fredokun/cl-jupyter now to get interop betwee it&other: https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages
+ as well as https://github.com/IRkernel/IRkernel.git though would love the ipy/jypyter interaction from w/in R-studio, and getting to see the current()variables;data-frame/cube(semantic)interop @least
+ Work might have started w/: https://github.com/robert-dodier/maxima-fishbowl.git   diff -r src ../cl-jupyter/src | wc 649, of: wc */src/*.* ~1820
+ * config.lisp display.lisp evaluator.lisp iopub.lisp kernel.lisp message.lisp myjson.lisp packages.lisp shell.lisp user.lisp utils.lisp , cl-jupyter.asd 
