@@ -158,4 +158,5 @@ Kirk Borne @KirkDBorne  Maryland, USA >@NCSAatIllinois Director Ed Seidel talks 
 I've been thinking of this for awhile, great to see it: https://github.com/fredokun/cl-jupyter now to get interop betwee it&other: https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages
  as well as https://github.com/IRkernel/IRkernel.git though would love the ipy/jypyter interaction from w/in R-studio, and getting to see the current()variables;data-frame/cube(semantic)interop @least
  Work might have started w/: https://github.com/robert-dodier/maxima-fishbowl.git   diff -r src ../cl-jupyter/src | wc 649, of: wc */src/*.* ~1820
+      "" yes: https://github.com/robert-dodier/maxima-fishbowl/issues/1  ;even ipy4/jup setup not smooth yet; ..also for sharing wf/config/versioning dat &even ipfs.io
  * config.lisp display.lisp evaluator.lisp iopub.lisp kernel.lisp message.lisp myjson.lisp packages.lisp shell.lisp user.lisp utils.lisp , cl-jupyter.asd 
