@@ -161,4 +161,4 @@ I've been thinking of this for awhile, great to see it: https://github.com/fredo
       "" yes: https://github.com/robert-dodier/maxima-fishbowl/issues/1  ;even ipy4/jup setup not smooth yet; ..also for sharing wf/config/versioning dat &even ipfs.io
  * config.lisp display.lisp evaluator.lisp iopub.lisp kernel.lisp message.lisp myjson.lisp packages.lisp shell.lisp user.lisp utils.lisp , cl-jupyter.asd 
 
-https://github.com/pixie-lang/pixie clojure like over PyPy
+https://github.com/pixie-lang/pixie clojure like over PyPy https://www.youtube.com/watch?v=1AjhFZVfB9c
