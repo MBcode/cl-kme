@@ -160,5 +160,6 @@ I've been thinking of this for awhile, great to see it: https://github.com/fredo
  Work might have started w/: https://github.com/robert-dodier/maxima-fishbowl.git   diff -r src ../cl-jupyter/src | wc 649, of: wc */src/*.* ~1820
       "" yes: https://github.com/robert-dodier/maxima-fishbowl/issues/1  ;even ipy4/jup setup not smooth yet; ..also for sharing wf/config/versioning dat &even ipfs.io
  * config.lisp display.lisp evaluator.lisp iopub.lisp kernel.lisp message.lisp myjson.lisp packages.lisp shell.lisp user.lisp utils.lisp , cl-jupyter.asd 
+ python3 ./install-cl-jupyter.py ;setup via: http://totoprojects.blogspot.com/2015/06/installing-ipython-v31-with-r-julia.html?m=1 ;need os-x now
 
 https://github.com/pixie-lang/pixie clojure like over PyPy https://www.youtube.com/watch?v=1AjhFZVfB9c
