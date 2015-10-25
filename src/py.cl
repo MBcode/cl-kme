@@ -235,3 +235,5 @@
 ;http://jupyter.cs.brynmawr.edu/hub/dblank/public/CS245%20Programming%20Languages/2014/Notes/Hy%20Lisp%20Examples.ipynb ;want jupyter/R-studio lisp interaction
 
 ;DataTau ‏@__DataTau__  Bolt – a unified Python interface for local and distributed ndarrays: http://www.datatau.com/item?id=8637  ;in end want multilang shared multidim array passing w/metadata
+
+;https://github.com/rongarret/ergolib/blob/master/layer1/pylink.lisp PyLink and BashLink are socket-based connections to a python interpreter and a bash shell. Easiest to explain by example:(not working)yet
