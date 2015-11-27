@@ -207,7 +207,9 @@
 ;https://github.com/tpapp/cl-data-frame/
 ;pd:LispDaily (@LispDaily) tweeted at 10:59am - 23 Mar 15: ;
 ;Common #Lisp Parallel Programming - bit.ly/1HqzFio (https://twitter.com/LispDaily/status/580107236418142209?s=17
-;
+
+;Paul Khuong @pkhuong  .@GaborMelis asked me about http://www.pvk.ca/Blog/Lisp/Pipes/introducing_pipes.html … and I had to rediscover the domain specific type system I wrote 4 years ago :|
+ 
 ;m/Maxima-CAS        m/gnoem             m/mma               m/rclmath
 ;m/cl-mathstats      m/gsll              m/mulm              m/simlab
 ;m/cl-octave_0.1     m/lassie            m/nlisp_0.8.2       m/soundlab
