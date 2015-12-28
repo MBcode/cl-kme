@@ -208,6 +208,8 @@
 ;pd:LispDaily (@LispDaily) tweeted at 10:59am - 23 Mar 15: ;
 ;Common #Lisp Parallel Programming - bit.ly/1HqzFio (https://twitter.com/LispDaily/status/580107236418142209?s=17
 
+;pd: http://link.springer.com/book/10.1007/BFb0024148  Parallel Lisp: Languages and Systems
+
 ;Paul Khuong @pkhuong  .@GaborMelis asked me about http://www.pvk.ca/Blog/Lisp/Pipes/introducing_pipes.html … and I had to rediscover the domain specific type system I wrote 4 years ago :|
  
 ;m/Maxima-CAS        m/gnoem             m/mma               m/rclmath
