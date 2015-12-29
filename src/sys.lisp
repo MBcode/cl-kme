@@ -210,6 +210,8 @@
 
 ;ml/nlp @RainerJoswig  Dec 26 #lisp book for download: Common Lisp Modules http://link.springer.com/book/10.1007/978-1-4612-3186-8 …
 
+;ml/pd RainerJoswig  #lisp #ai book for download Parallel Computation and Computers for Artificial Intelligence http://link.springer.com/book/10.1007/978-1-4613-1989-4 …
+
 ;pd: http://link.springer.com/book/10.1007/BFb0024148  Parallel Lisp: Languages and Systems
 
 ;Paul Khuong @pkhuong  .@GaborMelis asked me about http://www.pvk.ca/Blog/Lisp/Pipes/introducing_pipes.html … and I had to rediscover the domain specific type system I wrote 4 years ago :|
