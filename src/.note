@@ -163,3 +163,6 @@ I've been thinking of this for awhile, great to see it: https://github.com/fredo
  python3 ./install-cl-jupyter.py ;setup via: http://totoprojects.blogspot.com/2015/06/installing-ipython-v31-with-r-julia.html?m=1 ;os-x activestate.com/activepython
 
 https://github.com/pixie-lang/pixie clojure like over PyPy https://www.youtube.com/watch?v=1AjhFZVfB9c
+
+@planet_lisp  Jan 8 Patrick Stein: Building Supplies http://nklein.com/building-supplies … 
+According to Clean Architecture, I should start with my application logic independent of whether it will be a command-line tool, a series of tools, a web-application, or what-have-you. 
