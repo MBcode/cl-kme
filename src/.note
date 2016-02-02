@@ -162,7 +162,8 @@ I've been thinking of this for awhile, great to see it: https://github.com/fredo
  * config.lisp display.lisp evaluator.lisp iopub.lisp kernel.lisp message.lisp myjson.lisp packages.lisp shell.lisp user.lisp utils.lisp , cl-jupyter.asd 
  python3 ./install-cl-jupyter.py ;setup via: http://totoprojects.blogspot.com/2015/06/installing-ipython-v31-with-r-julia.html?m=1 ;os-x activestate.com/activepython
 
-http://junolab.org/ julia ide, using lightable(originally for clojure); look for lang interop here(still would be nice)
+http://junolab.org/ julia ide, using lightable(originally for clojure); look for lang interop here(still would be nice); still use https://github.com/oakes/Nightcode for clojure ide
+@KirkDBorne  Jan 26 Maryland, USA Julia Programming Language Tutorials: http://bit.ly/1lPyO5Q  #abdsc #DataScience #JuliaLang ; http://p-cos.blogspot.com/2014/07/a-lispers-first-impression-of-julia.html
 
 https://github.com/pixie-lang/pixie clojure like over PyPy https://www.youtube.com/watch?v=1AjhFZVfB9c
 
