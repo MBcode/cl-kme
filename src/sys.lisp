@@ -216,6 +216,8 @@
 
 ;pd: https://github.com/brown/swank-crew
 
+;pd: http://www.sbcl.org/manual/#Mailbox-_0028lock_002dfree_0029 ;https://gitlab.com/embeddable-common-lisp/ecl/blob/develop/CHANGELOG mp:mailbox-try-{send,read} ;~erlang~ish
+
 ; @RainerJoswig  #lisp books: the mentioned downloadable Lisp books published by Springer, listed: http://lispm.de/springer-lisp-books …
 
 ;Paul Khuong @pkhuong  .@GaborMelis asked me about http://www.pvk.ca/Blog/Lisp/Pipes/introducing_pipes.html … and I had to rediscover the domain specific type system I wrote 4 years ago :|
