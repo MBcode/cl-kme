@@ -164,6 +164,7 @@ I've been thinking of this for awhile, great to see it: https://github.com/fredo
 
 http://junolab.org/ julia ide, using lightable(originally for clojure); look for lang interop here(still would be nice); still use https://github.com/oakes/Nightcode for clojure ide
 @KirkDBorne  Jan 26 Maryland, USA Julia Programming Language Tutorials: http://bit.ly/1lPyO5Q  #abdsc #DataScience #JuliaLang ; http://p-cos.blogspot.com/2014/07/a-lispers-first-impression-of-julia.html
+https://github.com/swadey/LispSyntax.jl
 
 https://github.com/pixie-lang/pixie clojure like over PyPy https://www.youtube.com/watch?v=1AjhFZVfB9c
 
