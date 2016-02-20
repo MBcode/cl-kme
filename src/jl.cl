@@ -246,3 +246,13 @@
 ;@JuliaLanguage: .@filipstachura but #JuliaLang _is_ a Lisp! @JeffBezanson's FemtoLisp, to be precise. https://t.co/EcYZ5McZLp
 ;julia --lisp
 ;@filipstachura: “Like Lisp, #julialang represents its own code as a data structure of the language itself.” – Metaprogramming https://t.co/Mn0mXPMOas
+
+;=/cl-kme/src> grep julia .note
+;cientific Computing and the Joy of Language Interop: http://technicae.cogitat.io/2015/01/scientific-computing-and-joy-of.html … #erlang #python #java #lisp #julia -  
+;TextMining_r  Dataframes – Julia, R, Python: https://www.reddit.com/r/textdatamining/comments/3fsxvc/dataframes_julia_r_python/ … #textmining
+;python3 ./install-cl-jupyter.py ;setup via: http://totoprojects.blogspot.com/2015/06/installing-ipython-v31-with-r-julia.html?m=1 ;os-x activestate.com/activepython
+;ttp://junolab.org/ julia ide, using lightable(originally for clojure); look for lang interop here(still would be nice); still use https://github.com/oakes/Nightcode for clojure ide
+;KirkDBorne  Jan 26 Maryland, USA Julia Programming Language Tutorials: http://bit.ly/1lPyO5Q  #abdsc #DataScience #JuliaLang ; http://p-cos.blogspot.com/2014/07/a-lispers-first-impression-of-julia.html
+;= 
+;Pkg.add("LispSyntax") mentioned above, &use: Pkg.add("RCall") Pkg.add("PyCall") Pkg.add("JavaCall")
+;clasp also uses llvm, might be interesting to mix the two, in some way
