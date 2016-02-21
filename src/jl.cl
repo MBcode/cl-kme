@@ -254,5 +254,5 @@
 ;ttp://junolab.org/ julia ide, using lightable(originally for clojure); look for lang interop here(still would be nice); still use https://github.com/oakes/Nightcode for clojure ide
 ;KirkDBorne  Jan 26 Maryland, USA Julia Programming Language Tutorials: http://bit.ly/1lPyO5Q  #abdsc #DataScience #JuliaLang ; http://p-cos.blogspot.com/2014/07/a-lispers-first-impression-of-julia.html
 ;= 
-;Pkg.add("LispSyntax") mentioned above, &use: Pkg.add("RCall") Pkg.add("PyCall") Pkg.add("JavaCall")
-;clasp also uses llvm, might be interesting to mix the two, in some way
+;Pkg.add("LispSyntax") mentioned above, &use: Pkg.add("RCall") Pkg.add("PyCall") Pkg.add("JavaCall")   Pkg.add("Polyglot")
+;clasp also uses llvm, might be interesting to mix the two, in some way               https://github.com/wavexx/Polyglot.jl 
