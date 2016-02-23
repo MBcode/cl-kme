@@ -254,5 +254,11 @@
 ;ttp://junolab.org/ julia ide, using lightable(originally for clojure); look for lang interop here(still would be nice); still use https://github.com/oakes/Nightcode for clojure ide
 ;KirkDBorne  Jan 26 Maryland, USA Julia Programming Language Tutorials: http://bit.ly/1lPyO5Q  #abdsc #DataScience #JuliaLang ; http://p-cos.blogspot.com/2014/07/a-lispers-first-impression-of-julia.html
 ;= 
-;Pkg.add("LispSyntax") mentioned above, &use: Pkg.add("RCall") Pkg.add("PyCall") Pkg.add("JavaCall")   Pkg.add("Polyglot")
-;clasp also uses llvm, might be interesting to mix the two, in some way               https://github.com/wavexx/Polyglot.jl 
+;Pkg.add("LispSyntax") mentioned above, &use: Pkg.add("RCall") Pkg.add("PyCall") Pkg.add("JavaCall") Pkg.add("Polyglot") https://github.com/wavexx/Polyglot.jl
+;    try Lisp syn/repl polygot(but have to make json init files for lisp) & https://github.com/wavexx/Expect.jl Synchronous comm w/interactive programs
+; expect would be like the sys-call code above unless I can keep the other process open; so I've also looked @named-pipes other comm,slime,beaker-notebooks...
+; beaker said better interlang interop than julia-notebooks(which has lisp kernal), but so far not much works out of the box/is a clear win.
+;re:slime https://github.com/jpalardy/vim-slime w/screen,tmux,or whimrepl      ;would be happy going from Rstudio/if possible
+;if Pkg.add("Redis") loaded maybe try it as a ~blackboard   ;more to look@/try from http://pkg.julialang.org/
+;clasp also uses llvm, might be interesting to mix the two, in some way               
+;https://github.com/swadey now has https://github.com/swadey/LispREPL.jl over https://github.com/swadey/LispSyntax.jl
