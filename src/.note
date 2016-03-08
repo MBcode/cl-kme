@@ -174,3 +174,6 @@ According to Clean Architecture, I should start with my application logic indepe
 @lemonodor  First terminal I ever used was a Silent 700 in my junior high, connected to U of Wis. Thermal paper+acoustic coupler  
  (I also used this to code from home for my 1st programming job (started jr yr hs), acoustical sim in FORTRAN, vi/ed on thermal paper;) 
   well of course https://en.wikipedia.org/wiki/PLATO_(computer_system) in early grade school, mike.bobak.googlepages.com/plato
+
+https://sourceforge.net/projects/opaltoolkit/ is a toolkit for wrapping scientific applications as Web services on Cluster, Grid and Cloud resources with ease. Users may access these software as a service using simple Web service APIs from their custom application and workflow environment.  
+ Convert any command line application as a Web Service; Automatic User Interface Generation in Opal Dashboard; Workflow Plugins available for Kepler, Vision, Vistrails and Taverna;....
