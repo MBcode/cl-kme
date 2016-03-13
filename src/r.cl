@@ -95,3 +95,5 @@
 ;http://databricks.com/blog/2014/08/27/statistics-functionality-in-spark.html SparkR?
 ;
 ;http://python.berkeley.edu/events/2014/12/05/rpy2-and-ropensci.html
+
+; http://yihui.name/knitr/demo/engines/ rJava(abcl..) PythonInR(hy) rJulia(LispSyntax/REPL) 
