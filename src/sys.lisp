@@ -300,3 +300,5 @@
 ;http://architects.dzone.com/articles/openstack-meets-lisp-cl & http://bit.ly/TP8gfz has more..
 ;Look@lisp for different chips/mem-size/etc. eg. clozure, ecl  ;also on android other than clj
 ;Look@even more background IoT work,comm&semantics, try kmp exmpl w/what I have,@same time
+
+; http://quickdocs.org/gendl Generative Programming and Knowledge Based Engineering framework genworks.com http://genworks.com/downloads/tutorial.pdf
