@@ -263,3 +263,8 @@
 ;if Pkg.add("Redis") loaded maybe try it as a ~blackboard   ;more to look@/try from http://pkg.julialang.org/
 ;clasp also uses llvm, might be interesting to mix the two, in some way               
 ;https://github.com/swadey now has https://github.com/swadey/LispREPL.jl over https://github.com/swadey/LispSyntax.jl
+
+;> library("rjulia", lib.loc="~/R/x86_64-pc-linux-gnu-library/3.2") 
+;> julia_init() 
+;> julia_eval("1+1") 
+;[1] 2
