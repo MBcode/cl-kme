@@ -188,3 +188,8 @@ http://hn.premii.com/#/article/11364718
 https://www.quora.com/What-is-the-Parameter-Server/answer/Alex-Smola-1?share=231bafbd
 
 Would still love to get a KM gui like this http://www.algo.be/cl/KMgen/snapshots.htm or even the semantic-media-wiki as in SRI's AURA 
+
+@xiongtx  Nov 23 Steel Bank Common Lisp (SBCL) is great, but the name is strange. Being a fork of CMUCL, it refers to the industries of Carnegie and Mellon.
+m bobak @MBstream @xiongtx it also stands for Sanely-Bootable https://pdfs.semanticscholar.org/5732/50380a241ea54fa0379daf7b978497cfd02a.pdf …
+Reply to @xiongtx Tianxiang Xiong @xiongtx  @MBstream It is easier to use than some Lisp distributions, I'll give you that. 
+ 
