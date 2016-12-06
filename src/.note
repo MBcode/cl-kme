@@ -193,3 +193,7 @@ Would still love to get a KM gui like this http://www.algo.be/cl/KMgen/snapshots
 m bobak @MBstream @xiongtx it also stands for Sanely-Bootable https://pdfs.semanticscholar.org/5732/50380a241ea54fa0379daf7b978497cfd02a.pdf …
 Reply to @xiongtx Tianxiang Xiong @xiongtx  @MBstream It is easier to use than some Lisp distributions, I'll give you that. 
  
+/cl-kme/src> ag sparql-query
+sparql-w.lisp 49:;(defvar *i2* "sparql-query -np http://dbpedia.org/sparql < i2.txt")
+Also in kmp/s/sparql-query;  also some python code around, but could use the python bridge ideas for that
+ 

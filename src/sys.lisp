@@ -128,6 +128,7 @@
 ; will get this &/or malecoli(w/protege-links)going, might link2 any old sparql client
 ;Maybe clpython calling: SPARQLWrapper as a start ;get this going
 ; https://github.com/MBcode/LispUtils/blob/master/tsparql.cl does this;generalize for any qry.
+                ;kmp/s/sparql-query for more on this
 ;(ql 'lisp-matrix) ;gsll, etc..  ;maxima (w/in sage w/py)
 ;(ql 'zeromq) ;or similar to ipython if possible
 ;(ql 'cl-graph) ;might want2try
@@ -211,6 +212,8 @@
 ;ml/nlp @RainerJoswig  Dec 26 #lisp book for download: Common Lisp Modules http://link.springer.com/book/10.1007/978-1-4612-3186-8 …
 
 ;ml/pd RainerJoswig  #lisp #ai book for download Parallel Computation and Computers for Artificial Intelligence http://link.springer.com/book/10.1007/978-1-4613-1989-4 …
+
+;ml nn https://github.com/meatich/NEAT
 
 ;pd: http://link.springer.com/book/10.1007/BFb0024148  Parallel Lisp: Languages and Systems
 
