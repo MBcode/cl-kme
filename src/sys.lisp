@@ -51,6 +51,8 @@
 ;(ql '(drakma cxml fare-matcher))
 (ql 'cxml)
 (ql '(#:drakma #:cl-json #:alexandria #:babel)) ;then could load generized sparql.lisp
+;http://www.cliki.net/current%20recommended%20libraries dexador v drakma; ..ironclad
+;fjames86/cerberus /glass, ql 'cl-oauth ...
 (when (member 'sicl *t*)
  (ql 'puri)
 ;(import 'puri::render-uri)
