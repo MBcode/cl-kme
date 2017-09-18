@@ -186,6 +186,7 @@
 ;ml/pulcinella@             sw/SWCLOSforILC2005@       sw/reasoner-3.2 
 ;pd/Common-Lisp-Actors@     sw/cl-4store@              sw/cl-ace restricted-nl
 ;                           sw/de.setf.resource (incl cassandra)
+; http://www.cliki.net/machine%20learning Concurrency Distributed .. Lisp%20-%20Next%20Generation
 ;pd/cl-p2p liquid-sim  wolfcoin ..chirp ;get linda/tuple blackboard  w/lisa /gbbopen
 ;    http://www.cliki.net/csp Calispel chanl https://github.com/jessealama/cl-parallel.git
 ;  have been waiting for streaming sparql: https://github.com/aaltodsg/instans.git /get it going

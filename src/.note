@@ -197,3 +197,4 @@ Reply to @xiongtx Tianxiang Xiong @xiongtx  @MBstream It is easier to use than s
 sparql-w.lisp 49:;(defvar *i2* "sparql-query -np http://dbpedia.org/sparql < i2.txt")
 Also in kmp/s/sparql-query;  also some python code around, but could use the python bridge ideas for that
  
+http://www.cliki.net/machine%20learning
